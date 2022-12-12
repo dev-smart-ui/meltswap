@@ -1,6 +1,17 @@
 @import "src/var";
 .header {
+  padding: 20px;
   height: 60px;
   background-color: $dark;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.logo{
+  width: 100px;
+  img{
+    object-fit: contain;
+  }
 }
