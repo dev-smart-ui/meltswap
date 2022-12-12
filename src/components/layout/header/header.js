@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './header.module.scss'
 import {ROUTES} from "../../../constanst/routes";
 import {Link} from "react-router-dom";
-
+import logo from "media/logo.svg"
 
 
 
@@ -16,6 +16,9 @@ export const Header = () => {
         ROUTES.contact ]
 
         return <header className={styles.header}>
+            <figure>
+                <img src={logo} alt="Melt swap logo"/>
+            </figure>
             <nav>
                 <ul>
                     {navList.map((item, i)=>{

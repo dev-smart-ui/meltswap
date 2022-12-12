@@ -1,13 +1,8 @@
-import './App.css';
 import {createBrowserRouter,  RouterProvider} from "react-router-dom";
 import {   ROUTES} from "./constanst/routes";
 import {Layout} from "./components/layout/layout";
 
-
-
-
 const App = ()=>{
-
   const reactRouterConfig =Object.entries(ROUTES).map(r=>( {
        path:r[1].path,
       element:r[1].element
@@ -17,11 +12,8 @@ const App = ()=>{
       element: <Layout/>,
       children:reactRouterConfig
   }])
-    console.log(reactRouterConfig)
-  //   const router =createBrowserRouter(reactRouterConfig)
-  return (
-          <RouterProvider router={router}/>
-  )
+  return  <RouterProvider router={router}/>
+
 }
 
 export default App

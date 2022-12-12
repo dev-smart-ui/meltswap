@@ -1,3 +1,6 @@
+@import "src/var";
 .header {
-
+  height: 60px;
+  background-color: $dark;
+  display: flex;
 }
