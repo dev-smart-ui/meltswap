@@ -15,3 +15,13 @@
     object-fit: contain;
   }
 }
+
+.isHome{
+  background-color: transparent;
+  position: absolute;
+  left: 0;
+  right: 0;
+  @include md{
+    background-color: $dark;
+  }
+}

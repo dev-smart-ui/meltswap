@@ -10,14 +10,14 @@ const navList =  [
     ROUTES.faq ,
     ROUTES.about ,
     ROUTES.contact ]
-export const Nav = ({isOpen}) => {
+export const Nav = ({isOpen ,onClose}) => {
 
     return <nav className={classNames(styles.nav , {[styles.active]:isOpen}) }>
 
             <ul className={styles.list}>
                 {navList.map((item, i)=>{
                     return <li className={styles.item} key ={i}>
-                        <Link  to={item.path}>
+                        <Link onClick={onClose} to={item.path}>
                             {item.linkText}
                         </Link>
                     </li>
