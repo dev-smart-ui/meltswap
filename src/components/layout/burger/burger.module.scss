@@ -9,7 +9,7 @@
   padding: 0;
   position: relative;
 
-  @include md {
+  @include lg {
     display: none;
   }
 }

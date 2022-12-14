@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './footer.module.scss'
 import logo from "media/logo.svg"
 import {Link} from "react-router-dom";
-import {Nav} from "../nav/nav";
+import {Nav} from "../header/nav/nav";
 import {ROUTES} from "../../../constanst/routes";
 const companyNav =  [
     ROUTES.how,

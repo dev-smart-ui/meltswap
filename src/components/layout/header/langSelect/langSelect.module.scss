@@ -1,0 +1,56 @@
+@import "src/var";
+
+.langSelect  {
+    width: max-content;
+  @include lg{
+    justify-content:flex-end;
+    align-items:center;
+    flex-grow: 1;
+    display:flex;
+    height: 20px;
+  }
+
+  :global {
+    .ls{
+     *{
+       cursor: pointer;
+     }
+      padding: 10px;
+    }
+    .ls-prefix {
+      &__menu{
+        //position: static;
+      }
+      &__control {
+        background-color: transparent;
+        box-shadow: 0 0 0 0 transparent;
+        border: none;
+        &--is-focused, &:hover{
+          box-shadow: 0 0 0 1px lighten($dark, 60%);
+        }
+      }
+
+      &__single-value {
+        @include lg{
+          color: white;
+        }
+
+      }
+
+      &__indicator-separator {
+        width: 0;
+        background-color: transparent;
+      }
+
+      &__option {
+        &--is-focused{
+          background-color: lighten($dark, 60%);
+        }
+        &--is-selected {
+          display: none;
+          background-color: $dark;
+        }
+      }
+    }
+  }
+}
