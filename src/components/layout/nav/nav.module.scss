@@ -1,3 +1,5 @@
+@import "src/var";
+
 .nav {
   position: absolute;
   top: 100%;
@@ -8,25 +10,54 @@
   overflow: hidden;
   pointer-events: none;
   transition: 0.5s;
+
+  @include md {
+    margin-left: 114px;
+    position: static;
+    overflow: inherit;
+    max-height: max-content;
+    background-color: transparent;
+    pointer-events: auto;
+  }
 }
 
 .item {
   border-bottom: 1px solid #E0E0E0;
-  width: 100%;
+  padding: 13px 20px;
+
+  @include md {
+    padding: 0;
+    border: none;
+  }
+
+  &:not(:last-child) {
+    margin-right: 25px;
+  }
 }
 
 .list {
-  width:calc(100% - 40px );
-  margin-left: 20px;
 
   a {
     width: 100%;
     transition: 0.3s;
     display: block;
+    font-family: 'Sora';
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    color: $dark;
 
     &:hover {
       margin-left: 5px;
     }
+
+    @include md {
+      color: #fff;
+    }
+  }
+
+  @include md {
+    display: flex;
   }
 }
 

@@ -1,12 +1,21 @@
 @import "src/var";
 .header {
   padding: 20px;
-  height: 60px;
   background-color: $dark;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   position: relative;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1147px;
+  width: 100%;
+  margin: auto;
+  
+  @include md{
+    justify-content: initial;
+  }
 }
 
 .logo{
@@ -23,5 +32,6 @@
   right: 0;
   @include md{
     background-color: $dark;
+    position: relative;
   }
 }

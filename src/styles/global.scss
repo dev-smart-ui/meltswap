@@ -24,6 +24,7 @@ a{
 ul{
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 figure{
@@ -45,7 +46,7 @@ img {
   padding: 0 20px;
   margin: auto;
 
-  @include lg {
+  @include xl {
     padding: 0;
   }
 }
