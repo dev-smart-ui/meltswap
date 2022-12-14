@@ -1,11 +1,11 @@
 import React from 'react';
 
-import {Exchange} from "../home/exchange/exchange";
-import {CompanySection} from "../home/companySection/companySection";
-import {HowSection} from "../home/howSection/howSection";
-import {Advantages} from "../home/advantages/advantages";
-import {Application} from "../home/application/application";
-import {Price} from "../home/price/price";
+import {Exchange} from "./exchange/exchange";
+import {CompanySection} from "./companySection/companySection";
+import {HowSection} from "./howSection/howSection";
+import {Advantages} from "./advantages/advantages";
+import {Application} from "./application/application";
+import {Price} from "./price/price";
 
 export const Home = () => {
 
