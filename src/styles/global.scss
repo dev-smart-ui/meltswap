@@ -51,6 +51,14 @@ img {
   }
 }
 
+button{
+  flex-shrink: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+
 .btn {
   border-radius: 10px;
   font-family: 'Sora';
@@ -72,4 +80,18 @@ img {
     font-size: 14px;
     padding: 14px 0;
   }
+}
+*::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;/* width of the entire scrollbar */
+}
+
+*::-webkit-scrollbar-track {
+  background: white;        /* color of the tracking area */
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: $primary;    /* color of the scroll thumb */
+  border-radius: 5px;       /* roundness of the scroll thumb */
+  border: 1px solid $light;  /* creates padding around scroll thumb */
 }
