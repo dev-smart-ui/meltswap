@@ -6,6 +6,9 @@
     a {
         background: #6DD7C3;
         margin-top: 72px;
+        &:hover {
+            background: #53C4AF;
+        }
 
         @include md {
             margin-top: 67px;

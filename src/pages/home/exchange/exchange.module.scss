@@ -54,8 +54,18 @@
             color: #6DD7C3;
         }
 
+        @include md {
+            font-size: 47px;
+            line-height: 46px;        
+        }
+
         @include lg {
-            font-size: 53px;
+            font-size: 38px;
+            line-height: 53px;
+        }
+
+        @include xl {
+            font-size: 49px;
             line-height: 60px;
         }
     }
@@ -70,7 +80,8 @@
         margin: 14px 0 50px;
 
         @include md {
-            margin: 18px 0 0;
+            margin: 18px 0;
+            font-size: 17px;
         }
 
         @include lg { 
@@ -79,6 +90,7 @@
     }  
 
     @include md{
+        max-width: 500px;
         padding: 0 4% 0 33px;
     }
 
@@ -86,7 +98,11 @@
         margin: 0;
         max-width: 50%;
         text-align: start;
-        padding: 0 91px 0 54px;
+        padding: 0 35px 0 54px;
+    }
+
+    @include xl {
+        padding: 0 45px 0 54px;
     }
 
 }

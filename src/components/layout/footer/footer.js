@@ -4,6 +4,8 @@ import logo from "media/logo.svg"
 import {Link} from "react-router-dom";
 import {Nav} from "../header/nav/nav";
 import {ROUTES} from "../../../constanst/routes";
+import {LINKS} from "../../../constanst/links";
+
 const companyNav =  [
     ROUTES.how,
     ROUTES.status ,
@@ -21,13 +23,13 @@ const privacy =[
 ]
 
 const socialNetwork =[
-    ROUTES.facebook,
-    ROUTES.twitter,
-    ROUTES.instagram,
-    ROUTES.linkedIn,
-    ROUTES.github,
-    ROUTES.discord,
-    ROUTES.reddit
+    LINKS.facebook,
+    LINKS.twitter,
+    LINKS.instagram,
+    LINKS.linkedIn,
+    LINKS.github,
+    LINKS.discord,
+    LINKS.reddit
 ]
 
 export const Footer = ({isOpen ,onClose}) => {

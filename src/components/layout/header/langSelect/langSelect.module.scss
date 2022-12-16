@@ -1,6 +1,10 @@
 @import "src/var";
 
 .langSelect  {
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
     width: max-content;
   @include lg{
     justify-content:flex-end;
@@ -25,9 +29,6 @@
         background-color: transparent;
         box-shadow: 0 0 0 0 transparent;
         border: none;
-        &--is-focused, &:hover{
-          box-shadow: 0 0 0 1px lighten($dark, 60%);
-        }
       }
 
       &__single-value {
