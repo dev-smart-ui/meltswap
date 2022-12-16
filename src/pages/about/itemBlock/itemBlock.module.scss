@@ -1,0 +1,63 @@
+@import 'src/var';
+
+.block{
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  margin-bottom: 60px;
+  font-family: 'Sora';
+  @include sm{
+    font-size: 16px;
+    line-height: 26px;
+  }
+  @include lg{
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &:last-child{
+    margin-bottom: 0;
+  }
+  &:nth-child(2n+1){
+    @include lg{
+      .wrapImg{
+        order: 1;
+      }
+    }
+
+  }
+}
+.title{
+  font-family: 'Epilogue';
+  font-size: 16px;
+  color: $fontColor;
+  margin-bottom: 6px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  @include sm{
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+}
+.wrapImg{
+  margin-bottom: 35px;
+  @include md{
+    margin-bottom: 0;
+  }
+  @include lg{
+    width: 45%;
+  }
+  img{
+    max-width: 100%;
+    margin: 0 auto;
+    height: auto;
+    width: auto;
+  }
+}
+.content{
+  @include lg{
+    width: 45%;
+  }
+}

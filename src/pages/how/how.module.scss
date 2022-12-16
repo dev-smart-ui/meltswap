@@ -1,3 +1,22 @@
+@import "src/var";
 .how {
-
+  :global{
+    .container{
+      padding: 0 20px;
+    }
+  }
+}
+.wrapper{
+  display: flex;
+}
+.wrapImg{
+  display: none;
+  @include lg{
+    display: block;
+  }
+}
+.wrapHowWorksCard{
+  flex-wrap: wrap;
+  display: flex;
+  gap: 65px 50px;
 }

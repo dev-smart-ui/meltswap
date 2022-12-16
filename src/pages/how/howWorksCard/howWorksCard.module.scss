@@ -1,0 +1,33 @@
+@import "src/var";
+
+.howWorksCard{
+  display: flex;
+  width: calc(50% - 25px);
+}
+.title{
+  font-size: 14px;
+  line-height: 14px;
+  color: $accentColor;
+  margin-bottom: 10px;
+  @include sm{
+    font-size: 16px;
+    line-height: 18px;
+    margin-bottom: 5px;
+  }
+}
+.svg{
+  margin-right: 20px;
+  @include lg{
+    margin-right: 27px;
+    margin-top: -5px;
+  }
+}
+.content{
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  @include sm{
+    font-size: 16px;
+    line-height: 26px;
+  }
+}

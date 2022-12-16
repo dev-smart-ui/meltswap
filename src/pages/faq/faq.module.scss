@@ -1,3 +1,26 @@
+@import 'src/var';
 .faq {
-
+  letter-spacing: 0.5px;
+  padding: 30px 0 64px;
+  @include md{
+    padding: 50px 0 75px;
+  }
+  :global{
+    .title{
+      margin-bottom: 80px;
+      @include lg{
+        margin-bottom: 110px;
+      }
+    }
+  }
+}
+.wrapAccardion{
+  margin: 0 auto 60px;
+  max-width: 900px;
+  @include md{
+    margin-bottom: 80px;
+  }
+  @include lg{
+    margin-bottom: 105px;
+  }
 }

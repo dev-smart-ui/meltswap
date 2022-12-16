@@ -1,0 +1,85 @@
+@import "src/var";
+
+.accordion{
+  border-bottom: 0.5px solid #9C9C9C;
+  overflow: hidden;
+  transition: .4s;
+  height: 60px;
+  @include md{
+    height: 80px;
+  }
+  @include lg{
+    height: 100px;
+  }
+  &.open{
+    transition: .4s;
+    height: auto;
+    padding-bottom: 20px;
+    .title{
+      &::after{
+        transform: rotate(0);
+      }
+    }
+  }
+}
+.title{
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+  padding: 0 20px 0 0;
+  margin: 0;
+
+  background-color: transparent;
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 700;
+  color: $fontColor;
+  text-align: left;
+
+  border: none;
+  cursor: pointer;
+  &::before, &::after{
+    position: absolute;
+    right: 0;
+    content: '';
+    height: 1px;
+    width: 12px;
+    background-color: $accentColor;
+    border: 1px solid $accentColor;
+    border-radius: 10px;
+    transition: .4s;
+    @include md{
+      width: 15px;
+    }
+    @include lg{
+      width: 18px;
+    }
+  }
+  &::after{
+    transform: rotate(90deg);
+  }
+  @include md{
+    font-size: 16px;
+    height: 80px;
+  }
+  @include lg{
+    font-size: 18px;
+    height: 100px;
+  }
+}
+.content{
+  transition: .4s;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: $secondFontColor;
+  letter-spacing: 0.02em;
+  padding-right: 15px;
+  font-family: 'Sora';
+  @include lg{
+    font-size: 16px;
+    line-height: 30px;
+  }
+}
