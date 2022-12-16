@@ -2,11 +2,18 @@
 
 .about {
   letter-spacing: 0.5px;
-  padding: 30px 0 60px;
+  color: $secondFontColor;
+  padding: 30px 0 63px;
   @include lg{
     padding: 65px 0 105px;
   }
+  @include xl{
+    padding-bottom: 165px;
+  }
   :global{
+    .container{
+      padding: 0 20px;
+    }
     .title{
       margin-bottom: 45px;
       @include md{
