@@ -13,6 +13,7 @@ $secondBg: #C4C4C4;
 
 $bgBtn: #9C9C9C;
 
+
 @mixin sm {
   @media (min-width:$sm) {
     @content
