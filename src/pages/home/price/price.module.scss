@@ -8,7 +8,7 @@
     }
 
     a {
-        background: #6DD7C3;
+        background: $primary;
         margin-top: 37px;
         &:hover {
             background: #53C4AF;
@@ -164,7 +164,7 @@ h2 {
     font-weight: 700;
     font-size: 0;
     text-align: center;
-    color: #6DD7C3;
+    color: $primary;
     border: none;
     display: block;
     cursor: pointer;
