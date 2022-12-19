@@ -5,6 +5,7 @@ import {How} from "../pages/how/how";
 import {Faq} from "../pages/faq/faq";
 import {Status} from "../pages/status/status";
 import {About} from "../pages/about/about";
+import {Price} from "../pages/price/price";
 
 export const ROUTES = {
     home:{
@@ -31,6 +32,11 @@ export const ROUTES = {
         linkText:"About Us",
         path:"/about",
         element:<About/>
+    },
+    price:{
+        linkText:"Price chart",
+        path:"/price",
+        element:<Price/>
     },
 
     contact:{

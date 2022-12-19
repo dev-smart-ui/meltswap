@@ -145,3 +145,10 @@ button{
   border-radius: 5px;       /* roundness of the scroll thumb */
   border: 1px solid $light;  /* creates padding around scroll thumb */
 }
+
+#root > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
