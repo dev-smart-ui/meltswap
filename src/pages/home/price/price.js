@@ -2,6 +2,10 @@ import React from 'react';
 import styles from './price.module.scss'
 import bitcoin from './img/bitcoin.svg'
 import {Tabs} from "../../../components/tabs/tabs";
+import {DataPrices} from "./data";
+import {PriceItem} from "./priceItem/priceItem";
+
+
 
 
 const tab1=()=> { return <div>
@@ -83,6 +87,7 @@ export const Price = () => {
         <div className='container'>
             <h2 className={styles.title}>Price charts</h2>
             <Tabs tabList={tabList}/>
+            {DataPrices.map((item,i)=> <PriceItem key={i} item={item}/>)}
             <a href='/' className='btn'>More assets</a>
         </div>
     </section>
