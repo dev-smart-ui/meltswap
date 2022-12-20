@@ -1,0 +1,43 @@
+@import "src/var";
+
+.card{
+  width: 100%;
+  text-align: center;
+  @include sm{
+    width: calc(50% - 38px);
+  }
+  @include lg{
+    width: calc(33.3% - 50px);
+  }
+}
+.title{
+  font-size: 16px;
+  line-height: 16px;
+  color: $fontColor;
+  margin-bottom: 8px;
+  @include sm{
+    font-size: 18px;
+    line-height: 18px;
+  }
+  @include lg{
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 19px;
+  }
+}
+.svg{
+  margin-bottom: 24px;
+  @include lg{
+    margin-bottom: 40px;
+  }
+}
+.text{
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  color: $secondFontColor;
+  @include sm{
+    font-size: 16px;
+    line-height: 26px;
+  }
+}

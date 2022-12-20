@@ -1,4 +1,4 @@
-window.dataFaq = {
+export const dataFaq = {
     title: 'Frequently Asked Questions',
     subtitle: 'Have questions? We’re here to help',
 

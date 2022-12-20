@@ -1,9 +1,8 @@
 @import "src/var";
 .how {
-  :global{
-    .container{
-      padding: 0 20px;
-    }
+  padding: 40px 0 80px;
+  @include lg{
+    padding: 75px 0 90px;
   }
 }
 .wrapper{
@@ -19,4 +18,23 @@
   flex-wrap: wrap;
   display: flex;
   gap: 65px 50px;
+}
+.offerTitle{
+  text-align: center;
+  color: $fontColor;
+  margin-bottom: 54px;
+  @include lg{
+    margin-bottom: 80px;
+  }
+}
+.wrapOfferCard{
+  flex-wrap: wrap;
+  display: flex;
+  gap: 40px;
+  @include sm{
+    gap: 45px 60px;
+  }
+  @include md{
+    gap: 54px 75px;
+  }
 }

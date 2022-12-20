@@ -1,6 +1,6 @@
 @import "src/var";
 
-.howWorksCard{
+.card{
   display: flex;
   width: calc(50% - 25px);
 }
@@ -26,6 +26,7 @@
   font-size: 12px;
   line-height: 20px;
   letter-spacing: 0.02em;
+  color: $secondFontColor;
   @include sm{
     font-size: 16px;
     line-height: 26px;
