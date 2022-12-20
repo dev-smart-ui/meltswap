@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './exchange.module.scss'
-import exchanges from './img/Exchange.svg';
+
+import {ExchangeForm} from "../../../components/exchangeForm/exchangeForm";
 
 
 export const Exchange = () => {
@@ -10,9 +11,7 @@ export const Exchange = () => {
             <h1> <span>Trusted</span> & <span>secure</span> platform for crypto exchange </h1>
             <p>Get started with the easiest and most secure platform to exchange cryptocurrencies</p>
         </div>
-        <div className={styles.img}>
-            <img src={exchanges} alt='Exchange' />
-        </div>
+     <ExchangeForm />
     </section>
 };
  
