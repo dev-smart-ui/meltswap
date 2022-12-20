@@ -14,7 +14,6 @@ export const LangSelect = () => {
 
     return <li className={styles.langSelect}>
         <Select
-            // menuIsOpen={true}
             className="ls"
             classNamePrefix="ls-prefix"
             value={language}

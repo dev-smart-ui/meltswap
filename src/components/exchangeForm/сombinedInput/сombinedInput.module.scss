@@ -1,0 +1,42 @@
+.wrap{
+  display: flex;
+  align-items: flex-end;
+}
+
+.label{
+  display: flex;
+  flex-direction: column;
+}
+
+.input{
+  background-color: rgba(255, 255, 255, 0.5);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  height: 55px;
+
+}
+
+.select{
+  :global{
+    .prefix{
+      &__control{
+        margin: 0;
+        padding: 0;
+        border:none;
+        height: 55px;
+      }
+    }
+  }
+}
+.option{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon{
+  height: 40px;
+  width: 40px;
+  object-fit: contain;
+}
+
