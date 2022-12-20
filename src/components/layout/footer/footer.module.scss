@@ -1,3 +1,137 @@
+@import "src/var";
 .footer {
+    background: #2B2B37;
+}
 
+.logo{
+    width: 163px;
+    margin: auto auto 47px; 
+    img {
+        object-fit: contain;
+    }
+
+    @include md{
+       margin: 0;
+    }
+}
+
+
+.top {
+    padding: 46px 0 85px;  
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    @include md{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.bottom {
+    padding: 25px 0 46px;
+
+    @include md{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.wrap {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    p {
+        order: 2;
+
+        @include md{
+          margin-right: 30px;
+        }
+    }
+
+    @include md{
+        flex-wrap: wrap;
+        flex-direction: inherit;
+    }
+}
+
+.privacy {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+
+    @include md{
+        margin-bottom: 0;
+        order: 2;
+    }
+}
+
+.privacyItem:not(:last-child) {
+    margin-right: 24px;
+}
+
+.privacyItem, .bottom p {
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    color: #fff;
+}
+
+.menuPc {
+    display: none;
+    
+    @include md{
+        display: block;
+    }
+}
+
+.menuList {
+    display: flex;
+
+    li {
+        margin-left: 25px;
+    }
+}
+
+.menuMobile {
+    display: flex;  
+    justify-content: space-between;
+    max-width: 260px;
+    width: 100%;
+    margin: auto;
+    @include md{
+        display: none;
+    }
+}
+
+.title {
+    font-family: 'Sora';
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #666666;
+    margin-bottom: 20px;
+}
+
+.item {
+    font-family: 'Sora';
+    font-weight: 400;
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.socialNetwork {
+    display: flex;
+    max-width: 315px;
+    width: 100%;
+    margin: 60px auto 0;
+    align-items: center;
+    justify-content: space-between;
+
+    @include md{
+        margin: 0;
+    }
 }

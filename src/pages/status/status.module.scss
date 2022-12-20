@@ -1,3 +1,116 @@
-.status {
+@import 'src/var';
+.main {
+  padding: 42px 0 61px;
+  @include md {
+    padding: 77px 0 98px;
+  }
+}
 
+.title {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 49px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  color: $dark;
+  margin-bottom: 42px;
+  @include md {
+    margin-bottom: 81px;
+    font-size: 48px;
+  }
+}
+
+.tabHeader {
+  align-items: center;
+  padding: 21px 12px;
+  display: grid;
+  grid-template-rows: repeat(1, 1fr);
+  grid-template-columns: 40% 23% 39%;
+
+  @include sm {
+    padding: 21px 18px;
+    grid-template-columns: 50% 25% 25%;
+  }
+
+  @include md {
+    padding: 16px 20px 24px;
+    grid-template-columns: 31% 15% 22% 19% 16%;
+  }
+
+  @include xl {
+    padding: 16px 58px 24px;
+    grid-template-columns: 31% 14% 22% 19% 14%;
+  }
+
+  div {
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    color: $dark;
+    text-align: center;
+
+    @include md {
+        font-size: 14px;
+    }
+
+    @include lg {
+        font-size: 16px;
+    }
+  }
+
+  .currencyBlock {
+    text-align: start;
+  }
+}
+
+
+
+.exchangeTo, .fixedRate {
+  display: none;
+  @include md {
+    display: block;    
+  }
+}
+
+
+.filterIcon {
+  width: 18px;
+  display: none;
+  @include sm {
+    display: inline-block;
+    margin-left: 9px;
+  }
+  @include lg {
+    margin-left: 18px;
+  }
+}
+
+.wrap {
+  margin-bottom: 23px;
+
+  @include md {
+    display: flex;
+    margin-bottom: 46px;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.available {
+  padding-bottom: 94px;
+}
+
+.availableTitle {
+  font-size: 28px;
+  margin-bottom: 18px;
+
+  @include md {
+    font-size: 32px;
+  }
+}
+
+.wrapper {
+  max-width: 335px;
+  width: 100%;
 }

@@ -1,0 +1,23 @@
+@import "src/var";
+
+.company {
+    padding: 55px 20px; 
+}
+
+.wrap {
+    max-width: 888px;
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 25px;
+
+    @include md {
+        grid-column-gap: 110px;
+    } 
+}
+
+.logo  {
+    display: flex;
+    align-items: center;            
+}

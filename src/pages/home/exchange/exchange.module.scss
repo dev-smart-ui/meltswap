@@ -1,0 +1,108 @@
+@import "src/var";
+
+.exchange {
+    padding: 114px 20px 58px;
+    background: linear-gradient(358.75deg, rgb(183 150 155) 0.85%, rgb(72 106 99 / 74%) 16.31%, rgb(44 56 66) 62.46%);
+    
+    @include lg {
+        background: #2B2B37;
+        display: flex;
+        align-items: center;
+        max-width: 1245px;
+        width: 90%;
+        margin: 36px auto;
+        border-radius: 30px;
+        padding: 0;
+    }
+}
+
+.img {
+    max-width: 400px;
+    margin: auto;
+
+    @include lg {
+        padding: 20px 20px 15px;
+        max-width: 50%;
+        border-radius: 0 30px 30px 0;
+        margin: 0;
+        background: linear-gradient(335.29deg, rgba(234, 189, 196, 0.6) 20.2%, rgba(109, 215, 195, 0.372) 71.74%, rgba(44, 56, 66, 0.6) 120.96%);
+    }
+
+    @include lg {
+        padding: 60px 69px 61px 73px;
+    }
+}
+
+.content {
+    max-width: 306px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+
+    h1 {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 35px;
+        letter-spacing: 0.5px;
+        color: #fff;
+
+        & span:first-child {
+            color: #EABDC4;
+        }
+
+        & span:last-child {
+            color: #6DD7C3;
+        }
+
+        @include md {
+            font-size: 47px;
+            line-height: 46px;        
+        }
+
+        @include lg {
+            font-size: 38px;
+            line-height: 53px;
+        }
+
+        @include xl {
+            font-size: 49px;
+            line-height: 60px;
+        }
+    }
+
+    p {
+        font-family: 'Sora';
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 20px;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+        margin: 14px 0 50px;
+
+        @include md {
+            margin: 18px 0;
+            font-size: 17px;
+        }
+
+        @include lg { 
+            font-size: 18px;
+        }
+    }  
+
+    @include md{
+        max-width: 500px;
+        padding: 0 4% 0 33px;
+    }
+
+    @include lg {
+        margin: 0;
+        max-width: 50%;
+        text-align: start;
+        padding: 0 35px 0 54px;
+    }
+
+    @include xl {
+        padding: 0 45px 0 54px;
+    }
+
+}

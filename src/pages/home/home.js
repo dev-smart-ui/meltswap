@@ -1,10 +1,21 @@
 import React from 'react';
-import styles from './home.module.scss'
+
+import {Exchange} from "./exchange/exchange";
+import {CompanySection} from "./companySection/companySection";
+import {HowSection} from "./howSection/howSection";
+import {Advantages} from "./advantages/advantages";
+import {Application} from "./application/application";
+import {Price} from "./price/price";
 
 export const Home = () => {
 
-    return <div className={styles.home}>
-        home
-    </div>
+    return <>
+        <Exchange/>
+        <CompanySection/>
+        <Price/>
+        <HowSection/>
+        <Advantages/>
+        <Application/>
+    </>
 };
  

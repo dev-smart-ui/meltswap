@@ -5,7 +5,16 @@ $lg: 992px;
 $xl: 1200px;
 $xxl: 1400px;
 
+$primary:#6DD7C3;
 $dark :#2B2B37;
+$accentColor:  #6DD7C3;
+$fontColor: #2B2B37;
+$secondFontColor: #666666;
+$secondBg: #C4C4C4;
+
+$bgBtn: #9C9C9C;
+
+$light:#F6F8FA;
 
 @mixin sm {
   @media (min-width:$sm) {

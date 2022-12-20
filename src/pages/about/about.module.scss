@@ -1,3 +1,27 @@
-.about {
+@import 'src/var';
 
+.about {
+  letter-spacing: 0.5px;
+  color: $secondFontColor;
+  padding: 30px 0 63px;
+  @include lg{
+    padding: 65px 0 105px;
+  }
+  @include xl{
+    padding-bottom: 165px;
+  }
+  :global{
+    .container{
+      padding: 0 20px;
+    }
+    .title{
+      margin-bottom: 45px;
+      @include md{
+        margin-bottom: 70px;
+      }
+      @include xl{
+        margin-bottom: 100px;
+      }
+    }
+  }
 }
