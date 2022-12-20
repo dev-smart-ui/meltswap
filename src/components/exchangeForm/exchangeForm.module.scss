@@ -1,5 +1,23 @@
+@import "var";
+
 .form{
   height: 400px;
   width: 400px;
-  background-color: red;
+  background: rgba(255, 255, 255, 0.6);
+  border: 1px solid #FFFFFF;
+  box-shadow: 0 11px 24px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  padding: 26px;
+}
+
+.switch{
+
+  font-size: 0;
+  height: 33px;
+  width: 33px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $primary;
+  margin: 50px;
 }

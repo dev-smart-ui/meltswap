@@ -1,29 +1,29 @@
 
 import btc from "./1.svg"
-import usdt from "./1.svg"
-import eth from "./1.svg"
-import usdtc from "./1.svg"
+import usdt from "./2.svg"
+import eth from "./eth.svg"
+import usdtc from "./3.svg"
 
 
 export const exchangeMock = [
     {
-        name : "BCT",
-        value:16823,
+        value : "BCT",
+        currency:16823,
         icon:btc
     },
     {
-        name: "USDT",
-        value:1,
+        value: "USDT",
+        currency:1,
         icon:usdt
     },
     {
-        name: "ETH",
-        value:1212,
+        value: "ETH",
+        currency:1212,
         icon:eth
     },
     {
-        name: "USDTC",
-        value:1,
+        value: "USDTC",
+        currency:1,
         icon:usdtc
     }
 ]
