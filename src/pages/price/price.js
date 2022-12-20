@@ -3,7 +3,7 @@ import styles from './price.module.scss'
 import {Title} from "../../components/title";
 import {Search} from "../../components/search/search";
 import {Tabs} from "../../components/tabs/tabs";
-import {DataPrices} from "../../components/priceItem/data";
+import {Cryptocurrencies} from "../../components/priceItem/dataCryptocurrencies";
 import {PriceItem} from "../../components/priceItem/priceItem";
 
 const tab1=()=> <>
@@ -27,7 +27,7 @@ const tab1=()=> <>
 
     </div>
 </div>
-{DataPrices.map((item,i)=> <PriceItem key={i} item={item}/>)}
+{Cryptocurrencies.map((item,i)=> <PriceItem key={i} item={item}/>)}
 </>
 
 const tab2=()=> { return <div>

@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './priceItem.module.scss'
 
-export const PriceItem = ({item}) => {
+export const PriceItem = ({item, i}) => {
 
     return <div className={styles.priceItem}>
         <div className={styles.numb}>

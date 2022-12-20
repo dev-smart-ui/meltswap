@@ -1,42 +1,38 @@
 @import 'src/var';
 
-.coinItem {
+.pairItem {
     display: grid;
+    align-items: center;
+    padding: 17px 12px;
     grid-template-rows: repeat(1, 1fr);
-    grid-template-columns: 51% 41% 38% 48% 34%;
-
+    grid-template-columns: 45% 10% 45%;
+  
     @include sm {
-        grid-template-columns: 29% 25% 30% 31% 18%;
+        padding: 21px 18px;
+        grid-template-columns: 28% 9% 30% 19% 14%;
     }
   
     @include md {
-        grid-template-columns: 31% 15% 22% 19% 13%;
-        border-bottom: 1px solid #E0E0E0;
+        padding: 16px 20px 24px;
+        grid-template-columns: 31% 8% 37% 15% 9%;
     }
 
-    @include lg {
+    @include xl {
         padding: 16px 58px 24px;
-        grid-template-columns: 31% 14% 22% 19% 14%;
     }
 
-    & > div {
-        padding: 17px;
-        border-bottom: 1px solid #E0E0E0;
-
-        @include md {
-            border-bottom: none;
-        }
+    &:not(:first-child) {
+        border-top: 1px solid #E0E0E0;
     }
-
 }
 
-.currency {
+.pairFrom, .pairTo {
     display: flex;
     align-items: center;
     font-family: 'Sora';
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 11px;
     color: #666666;
 
     @include md {
@@ -65,10 +61,10 @@
     }
 }
 
-.status button {
+.status button, .fixedRate button {
     background: rgba(234, 189, 196, 0.15);
     border-radius: 10px;
-    max-width: 89px;
+    max-width: 75px;
     width: 100%;
     padding: 10px 0;
     font-family: 'Sora';
@@ -76,7 +72,7 @@
     font-size: 12px;
     text-align: center;
     color: #EABDC4;
-    display: block;
+    display: none;
     margin: auto;
 
     &.active {
@@ -84,13 +80,18 @@
         color: #fff;
     }
 
+    @include sm {
+       
+        display: block;
+    }
+
     @include md {
+        max-width: 89px;
         padding: 12px 0;
         font-size: 14px;
     }
 }
 
-.checkIcon {
-    width: 20px;
-    margin: auto;
+.pairArrow img {
+    width: auto;
 }

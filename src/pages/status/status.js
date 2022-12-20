@@ -4,7 +4,9 @@ import filter from './img/filter.svg';
 import {Search} from "../../components/search/search";
 import {Tabs} from "../../components/tabs/tabs";
 import {DataCoin} from "./coins/dataCoin";
+import {DataPair} from "./pair/dataPair";
 import {ConstItem} from "./coins/coinItem";
+import {PairItem} from "./pair/pairItem";
 import {SearchStatus} from "../../components/searchStatus/searchStatus";
 
 const tab1=()=> <div className={styles.coinWrap}>
@@ -28,8 +30,20 @@ const tab1=()=> <div className={styles.coinWrap}>
 {DataCoin.map((item,i)=> <ConstItem key={i} item={item}/>)}
 </div>
 
-const tab2=()=> <>
-</>
+const tab2=()=> <div className={styles.pair}>
+<div className={styles.pairWrap}>
+    <div className={styles.currencyBlock}>
+        
+    </div>
+    <div className={styles.statusBlock}>
+        Status <img src={filter} className={styles.filterIcon} alt="Filter" />
+    </div>
+    <div className={styles.fixedRate}>
+        Fixed Rate <img src={filter} className={styles.filterIcon} alt="Filter" />
+    </div>
+</div>
+{DataPair.map((item,i)=> <PairItem key={i} item={item}/>)}
+</div>
 
 const tabList = [
     {  anchor:"Coin Status",  element :tab1   },

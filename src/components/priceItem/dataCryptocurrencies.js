@@ -2,7 +2,7 @@ import bitcoin from './img/bitcoin.svg';
 import ethereum from './img/ethereum.svg';
 import tether from './img/tether.svg';
 
-export const DataPrices = [
+export const Cryptocurrencies = [
     {
         name:"BTC",
         icon: bitcoin,
