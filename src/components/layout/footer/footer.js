@@ -2,9 +2,17 @@ import React from 'react';
 import styles from './footer.module.scss'
 import logo from "media/logo.svg"
 import {Link} from "react-router-dom";
-import {Nav} from "../header/nav/nav";
 import {ROUTES} from "../../../constanst/routes";
 import {LINKS} from "../../../constanst/links";
+
+
+const navList =  [
+    ROUTES.how,
+    ROUTES.status ,
+    ROUTES.faq ,
+    ROUTES.about ,
+    ROUTES.contact,
+    ROUTES.price ]
 
 const companyNav =  [
     ROUTES.how,
@@ -32,7 +40,7 @@ const socialNetwork =[
     LINKS.reddit
 ]
 
-export const Footer = ({isOpen ,onClose}) => {
+export const Footer = ({onClose}) => {
 
     return <footer className={styles.footer}>
         <div className='container'>
@@ -43,7 +51,15 @@ export const Footer = ({isOpen ,onClose}) => {
                     </Link>
                 </figure>
                 <div className={styles.menuPc}>
-                    <Nav/>
+                    <ul className={styles.menuList}>
+                        {navList.map((item, i)=>{
+                            return <li className={styles.item} key ={i}>
+                                <Link onClick={onClose} to={item.path}>
+                                    {item.linkText}
+                                </Link>
+                            </li>
+                        })}
+                    </ul>
                 </div>
                 <div className={styles.menuMobile}>
                     <div className={styles.block}>

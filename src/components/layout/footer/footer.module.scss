@@ -78,16 +78,19 @@
     color: #fff;
 }
 
-.menuPc nav {
-    margin-left: 0;
+.menuPc {
+    display: none;
+    
+    @include md{
+        display: block;
+    }
 }
 
-.menuPc ul li {
-    margin-right: 0!important;
-    margin-left: 25px;
+.menuList {
+    display: flex;
 
-    &:last-child {
-        display: none;
+    li {
+        margin-left: 25px;
     }
 }
 

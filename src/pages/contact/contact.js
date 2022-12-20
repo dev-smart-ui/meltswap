@@ -1,46 +1,19 @@
 import React from 'react';
 import styles from './contact.module.scss'
 import {Title} from "../../components/title";
+import {Form} from "./form/form";
 import email from "./img/email.svg";
 import adress from "./img/adress.svg";
 import logo from "./img/contact-logo.svg";
-import { useState } from 'react';
 
 export const Contact = () => {
     const dataContact = window.dataContact;
-
-    const [inputs, setInputs] = useState({});
-
-    const handleChange = (event) => {
-      const name = event.target.name;
-      const value = event.target.value;
-      setInputs(values => ({...values, [name]: value}))
-    }
-  
-    const handleSubmit = (event) => {
-      event.preventDefault();
-    }
 
     return <section className={styles.contact}>
         <Title title={dataContact.title} subtitle={dataContact.subtitle}/>
         <div className={styles.wrap}>
             <div className={styles.left}>
-                <form onSubmit={handleSubmit}>
-                    <div className={styles.input}>
-                        <label>Full Name</label>
-                        <input type='text' name='name' value={inputs.name || ""} placeholder="Your name" className={styles.field} onChange={handleChange}></input>
-                    </div>
-                    <div className={styles.input}>
-                        <label>Email</label>
-                        <input type='text' name='email' value={inputs.email || ""} placeholder="yourname@company.com" className={styles.field} onChange={handleChange}></input>
-                    </div>
-                    <div className={styles.input}>
-                        <label>How can we help?</label>
-                        <textarea type='text' name='message' value={inputs.message || ""} placeholder="Your message"  className={styles.field} onChange={handleChange}></textarea>
-                    </div>
-                    
-                    <button type='submit' onChange={handleSubmit} className="btn">Submit</button>
-                </form>
+                <Form/>
             </div>
             <div className={styles.right}>
                 <div className={styles.block}>
