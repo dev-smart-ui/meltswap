@@ -30,19 +30,8 @@
         grid-column-gap: 6.25%;
     }
 
-    @include md {
+    @include lg {
         grid-template-columns: 1fr 1fr 1fr;
-    }
-
-    img {
-        width: auto;
-        margin: auto;
-        height: 200px;
-        object-fit: contain;
-
-        @include lg {
-            height: 289px;
-        }
     }
 
     h3 {

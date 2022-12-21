@@ -4,6 +4,7 @@ import exchanges from './img/Exchange.svg';
 
 
 export const Exchange = () => {
+    const sizePaddingBottom = ((393 / 491)  * 100);  // (( height / width)  * 100)
 
     return <section className={styles.exchange}>
         <div className={styles.content}>
@@ -11,7 +12,9 @@ export const Exchange = () => {
             <p>Get started with the easiest and most secure platform to exchange cryptocurrencies</p>
         </div>
         <div className={styles.img}>
-            <img src={exchanges} alt='Exchange' />
+            <figure className={"figure-webp"}  style={{paddingBottom: `${sizePaddingBottom}%`}}>
+                <img src={exchanges} alt='Exchange' />
+            </figure>
         </div>
     </section>
 };

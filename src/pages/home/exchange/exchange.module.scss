@@ -18,6 +18,7 @@
 
 .img {
     max-width: 400px;
+    width: 100%;
     margin: auto;
 
     @include lg {
@@ -39,6 +40,21 @@
     margin: auto;
     text-align: center;
 
+    @include md{
+        max-width: 500px;
+        padding: 0 4% 0 33px;
+    }
+
+    @include lg {
+        margin: 0;
+        max-width: 50%;
+        text-align: start;
+        padding: 0 35px 0 54px;
+    }
+
+    @include xl {
+        padding: 60px 45px 60px 54px;
+    }
     h1 {
         font-weight: 700;
         font-size: 30px;
@@ -87,22 +103,5 @@
         @include lg { 
             font-size: 18px;
         }
-    }  
-
-    @include md{
-        max-width: 500px;
-        padding: 0 4% 0 33px;
     }
-
-    @include lg {
-        margin: 0;
-        max-width: 50%;
-        text-align: start;
-        padding: 0 35px 0 54px;
-    }
-
-    @include xl {
-        padding: 0 45px 0 54px;
-    }
-
 }
