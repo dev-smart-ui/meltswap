@@ -1,0 +1,56 @@
+@import 'src/var';
+
+.input {
+    margin-bottom: 20px;
+  
+    @include md {
+      margin-bottom: 30px;
+    }
+  
+    label {
+      font-weight: 600;
+      font-size: 14px;
+      color: #2C3842;
+      margin-bottom: 10px;
+      display: block;
+    }
+  }
+  
+  .field {
+    padding: 14px 18px;
+    border: none;
+    background: #F6F8FA;
+    border-radius: 10px;
+    font-family: 'Sora';
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    color: #666666;
+    display: block;
+    width: 100%;
+  
+    @include md {
+      font-size: 16px;
+      border: 1px solid #E0E0E0;
+      background: #FFFFFF;
+      padding: 17px 22px;
+    }
+  }
+  
+  textarea {
+    resize:none;
+    height: 195px;
+  }
+  
+  
+  .btn {
+    background: $primary;
+    &:hover {
+      background: #53C4AF;
+    }
+  
+    @include md {
+      margin: 0 auto 0 0!important;
+    }
+  }
+  

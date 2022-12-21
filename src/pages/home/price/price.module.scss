@@ -1,3 +1,71 @@
-.price {
+@import "src/var";
 
+.price {
+    padding: 0 0 72px ;
+    
+    @include md {
+        padding: 54px 0;
+    }
+
+    a {
+        background: $primary;
+        margin-top: 37px;
+        &:hover {
+            background: #53C4AF;
+        }
+
+        @include md {
+            margin-top: 59px;
+        }
+    }
 }
+
+h2 {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 32px;
+    text-align: center;
+    color: $dark;
+    margin-bottom: 35px;
+    
+    @include md {
+        font-size: 40px;
+        margin-bottom: 58px;
+    }
+}
+
+.tabsBlock {
+   display: none;
+   align-items: center;
+
+   @include md {
+    display: grid;
+    padding: 16px 30px 24px;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: 8% 26% 16.75% 13% 23.5% 13%;
+    grid-template-areas:
+    "numberBlock currencyBlock  priceBlock changeBlock marketBlock";
+  }
+
+  @include xl {
+    padding: 16px 58px 24px;
+    grid-template-columns: 7% 27% 18% 17% 21% 11%;
+  }
+}
+
+
+
+
+
+.tabsBlock div {
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    color: $dark;
+
+    @include md {
+        font-size: 16px;
+    }
+}
+

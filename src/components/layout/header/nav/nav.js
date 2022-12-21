@@ -1,8 +1,9 @@
 import React from 'react';
 import styles from './nav.module.scss'
 import {Link} from "react-router-dom";
-import {ROUTES} from "../../../constanst/routes";
+import {ROUTES} from "../../../../constanst/routes";
 import classNames from "classnames";
+import {LangSelect} from "../langSelect/langSelect";
 
 const navList =  [
     ROUTES.how,
@@ -11,8 +12,10 @@ const navList =  [
     ROUTES.about ,
     ROUTES.contact ]
 export const Nav = ({isOpen ,onClose}) => {
-
-    return <nav className={classNames(styles.nav , {[styles.active]:isOpen}) }>
+    const heightAnimation ={
+        maxHeight:isOpen? navList.length*60+100:0
+    }
+    return <nav style={heightAnimation} className={classNames(styles.nav , {[styles.active]:isOpen}) }>
 
             <ul className={styles.list}>
                 {navList.map((item, i)=>{
@@ -22,6 +25,7 @@ export const Nav = ({isOpen ,onClose}) => {
                         </Link>
                     </li>
                 })}
+                  <LangSelect/>
             </ul>
 
     </nav>

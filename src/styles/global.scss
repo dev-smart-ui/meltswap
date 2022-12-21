@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@600;700&family=Sora:wght@400;700&display=swap');
 
 body , html {
+
   font-family: $mainFont;
   //height: 100%;
   margin: 0;
@@ -24,6 +25,7 @@ a{
 ul{
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 figure{
@@ -44,6 +46,14 @@ img {
   padding: 0 20px;
   margin: auto;
 }
+
+button{
+  flex-shrink: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
 
 .title{
   font-weight: 700;
@@ -97,4 +107,29 @@ img {
   overflow: hidden;
   height: 0;
   padding-bottom: 100%; // calc(height% / width * 100)
+  @include lg{
+    font-size: 20px;
+    min-width: 220px;
+  }
+}
+*::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;/* width of the entire scrollbar */
+}
+
+*::-webkit-scrollbar-track {
+  background: white;        /* color of the tracking area */
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: $primary;    /* color of the scroll thumb */
+  border-radius: 5px;       /* roundness of the scroll thumb */
+  border: 1px solid $light;  /* creates padding around scroll thumb */
+}
+
+#root > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
 }

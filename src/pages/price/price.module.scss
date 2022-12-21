@@ -1,0 +1,43 @@
+@import 'src/var';
+
+.price {
+    padding: 42px 0 ;
+    
+    @include md {
+        padding: 54px 0;
+    }
+}
+
+.tabsBlock {
+    display: none;
+    align-items: center;
+ 
+    @include md {
+     display: grid;
+     padding: 16px 30px 24px;
+     grid-template-rows: repeat(1, 1fr);
+     grid-template-columns: 8% 26% 16.75% 13% 23.5% 13%;
+   }
+ 
+   @include xl {
+     padding: 16px 58px 24px;
+     grid-template-columns: 7% 27% 18% 17% 21% 11%;
+   }
+
+   div {
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    color: $dark;
+
+        @include md {
+            font-size: 16px;
+        }
+    }
+ } 
+
+ .searchBlock{
+    max-width: 500px;
+    margin: auto auto 70px;
+ }
