@@ -14,6 +14,7 @@
   font-size: 16px;
   line-height: 16px;
   color: $fontColor;
+  font-weight: 600;
   margin-bottom: 8px;
   @include sm{
     font-size: 18px;
@@ -36,6 +37,7 @@
   line-height: 20px;
   letter-spacing: 0.02em;
   color: $secondFontColor;
+  font-family: $secondFont;
   @include sm{
     font-size: 16px;
     line-height: 26px;

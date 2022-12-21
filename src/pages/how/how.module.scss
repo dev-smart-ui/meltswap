@@ -5,25 +5,73 @@
     padding: 75px 0 90px;
   }
 }
-.wrapper{
-  display: flex;
+.wrapperWorks{
+  margin-bottom: 82px;
+  @include md{
+    display: flex;
+    align-items: center;
+    margin-bottom: 120px;
+  }
+  @include lg{
+    margin-bottom: 170px;
+  }
 }
 .wrapImg{
   display: none;
   @include lg{
     display: block;
+    position: relative;
+    width: 40%;
+  }
+  &::before, &::after{
+    position: absolute;
+    content: "";
+    filter: blur(87px);
+  }
+  &::after{
+    width: 251px;
+    height: 328px;
+    top: 0;
+    left: 0;
+    background: linear-gradient(180deg, #EABDC4 22.3%, #6DD7C3 99.95%);
+  }
+  &::before{
+    width: 250.71px;
+    height: 327.56px;
+    bottom: 0;
+    right: 50px;
+    background: linear-gradient(180deg, #EABDC4 22.3%, #6DD7C3 99.95%);
+    transform: rotate(142.96deg);
+  }
+  figure{
+    position: relative;
+    z-index: 1;
+    max-width: 265px;
+    padding-bottom: 518px;
+    margin: auto;
   }
 }
 .wrapHowWorksCard{
   flex-wrap: wrap;
   display: flex;
-  gap: 65px 50px;
+  gap: 30px;
+  position: relative;
+  z-index: 1;
+  @include md{
+    gap: 65px 50px;
+  }
+  @include lg{
+    width: 60%;
+  }
 }
 .offerTitle{
   text-align: center;
   color: $fontColor;
   margin-bottom: 54px;
+  font-size: 28px;
+  font-weight: 700;
   @include lg{
+    font-size: 32px;
     margin-bottom: 80px;
   }
 }

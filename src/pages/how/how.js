@@ -7,15 +7,14 @@ import imgMobile from "./img-mobile-how.png";
 import {HowOfferCard} from "./howOfferCard/howOfferCard";
 
 export const How = () => {
-    const paddingBottomMobileImg = (535 / 265 * 100); // (height / width * 100)
 
     return <div className={styles.how}>
             <div className="container">
                 <Title title={dataHow.title}/>
 
-                <div className={styles.wrapper}>
+                <div className={styles.wrapperWorks}>
                     <div className={styles.wrapImg}>
-                        <figure className={"figure-webp"} style={{paddingBottom: `${paddingBottomMobileImg}%`}}>
+                        <figure className={"figure-webp"} >
                             <img src={imgMobile} alt="imgMobile"/>
                         </figure>
                     </div>
