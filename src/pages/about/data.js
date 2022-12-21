@@ -1,4 +1,4 @@
-import whoWeAre from './images/who-we-are.jpeg';
+import whoWeAre from './images/who-we-are.jpg';
 import ourService from './images/our-service.jpeg';
 import ourGoal from './images/our-goal.jpeg';
 
