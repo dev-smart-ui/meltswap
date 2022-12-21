@@ -71,7 +71,7 @@
 }
 
 .privacyItem, .bottom p {
-    font-family: 'Sora';
+    font-family: $secondFont;
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -106,7 +106,7 @@
 }
 
 .title {
-    font-family: 'Sora';
+    font-family: $secondFont;
     font-weight: 600;
     font-size: 14px;
     letter-spacing: 0.02em;
@@ -116,7 +116,7 @@
 }
 
 .item {
-    font-family: 'Sora';
+    font-family: $secondFont;
     font-weight: 400;
     font-size: 14px;
     color: #fff;

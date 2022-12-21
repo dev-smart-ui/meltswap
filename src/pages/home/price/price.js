@@ -92,11 +92,9 @@ export const Price = () => {
     return <section className={styles.price}>
         <div className='container'>
             <h2 className={styles.title}>Price charts</h2>
-            <Tabs tabList={tabList}/>
-            
-            <a href='/' className='btn'>More assets</a>
+            <Tabs hideArrow={560} tabList={tabList}/>
+            <a href='/' className='button'>More assets</a>
         </div>
     </section>
-
 };
  

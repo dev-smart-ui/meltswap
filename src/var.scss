@@ -14,7 +14,12 @@ $secondBg: #C4C4C4;
 
 $bgBtn: #9C9C9C;
 
+
+$mainFont: 'Epilogue', sans-serif;
+$secondFont: 'Sora', sans-serif;
+
 $light:#F6F8FA;
+
 
 @mixin sm {
   @media (min-width:$sm) {

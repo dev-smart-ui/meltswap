@@ -10,7 +10,7 @@ export const Application = () => {
             <div className={styles.wrap}>
                 <div className={styles.content}>
                     <h2>Mobile management application </h2>
-                    <a href='/' className='btn'>Coming soon</a>
+                    <a href='/' className='button'>Coming soon</a>
                 </div>
                 <div className={styles.image}>
                     <img src={phone} alt="phone" />

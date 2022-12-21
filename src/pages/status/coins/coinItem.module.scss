@@ -37,7 +37,7 @@
 .currency {
     display: flex;
     align-items: center;
-    font-family: 'Sora';
+    font-family: $secondFont;
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -75,7 +75,7 @@
     max-width: 89px;
     width: 100%;
     padding: 10px 0;
-    font-family: 'Sora';
+    font-family: $secondFont;
     font-weight: 700;
     font-size: 12px;
     text-align: center;

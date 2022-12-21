@@ -20,25 +20,7 @@
   }
 }
 
-.coinWrap .tabHeader {
-  grid-template-columns: 51% 41% 47% 42% 39%;
-  
-
-  @include sm {
-    grid-template-columns: 29% 25% 35% 31% 20%;
-  }
-
-  @include md {
-    padding: 16px 20px 24px;
-    grid-template-columns: 31% 15% 22% 19% 13%;
-  }
-
-  @include lg {
-    padding: 16px 58px 24px;
-}
-}
-
-.tabHeader, .pairWrap {
+.tabHeader {
   align-items: center;
   padding: 21px 12px;
   display: grid;
@@ -61,15 +43,15 @@
   }
 
   div {
+    font-family: 'Sora';
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 12px;
     color: $dark;
     text-align: center;
-    white-space: nowrap;
 
     @include md {
-      font-size: 14px;
+        font-size: 14px;
     }
 
     @include lg {
@@ -79,6 +61,15 @@
 
   .currencyBlock {
     text-align: start;
+  }
+}
+
+
+
+.exchangeTo, .fixedRate {
+  display: none;
+  @include md {
+    display: block;    
   }
 }
 

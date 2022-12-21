@@ -2,8 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@600;700&family=Sora:wght@400;700&display=swap');
 
 body , html {
-  font-family: 'Epilogue', sans-serif;
-  height: 100%;
+
+  font-family: $mainFont;
+  //height: 100%;
   margin: 0;
   padding: 0;
 }
@@ -44,14 +45,10 @@ img {
 }
 
 .container {
-  max-width: 1140px;
+  max-width: 1180px;
   width: 100%;
   padding: 0 20px;
   margin: auto;
-
-  @include xl {
-    padding: 0;
-  }
 }
 
 button{
@@ -81,46 +78,26 @@ button{
     font-weight: 500;
     padding-top: 6px;
     color: $secondFontColor;
-    font-family: 'Sora';
+    font-family: $secondFont;
     @include lg{
       font-size: 16px;
     }
   }
 }
-.btn {
-  border-radius: 10px;
-  font-family: 'Sora';
-  font-weight: 700;
-  font-size: 12px;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  text-align: center;
-  padding: 12px 0;
-  max-width: 216px;
-  width: 100%;
-  border: none;
-  display: block;
-  margin: auto;
-  cursor: pointer;
-
-  @include lg {
-    font-size: 14px;
-    padding: 14px 0;
-  }
-}
 .button{
   transition: .4s;
   border-radius: 10px;
-  font-weight: 400;
-  font-size: 16px;
-  letter-spacing: .5px;
-  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
   color: #FFFFFF;
+  font-family: $secondFont;
   background-color: $accentColor;
   text-align: center;
   padding: 15px 20px;
-  min-width: 200px;
+  max-width: 216px;
+  width: 100%;
   border: none;
   display: block;
   margin: auto;
@@ -129,6 +106,11 @@ button{
     background-color: rgba($accentColor, .15);
     color: $accentColor;
   }
+}
+.figure-webp{
+  overflow: hidden;
+  height: 0;
+  padding-bottom: 100%; // calc(height% / width * 100)
   @include lg{
     font-size: 20px;
     min-width: 220px;
