@@ -26,7 +26,7 @@ export const Advantages = () => {
                     <p>To maintain your right to privacy and guarantee the security of your assets, Meltswap remains a non-custodial exchange service. We do NOT hold your cryptocurrencies on your behalf.</p>
                 </div>
             </div>
-            <a href="/" className='btn'>Learn MORE</a>
+            <a href="/" className='button'>Learn MORE</a>
         </div>
     </section>
 };

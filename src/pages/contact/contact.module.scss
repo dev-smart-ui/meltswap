@@ -18,7 +18,7 @@
 }
 
 .subtitle {
-  font-family: 'Sora';
+  font-family: $secondFont;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -115,7 +115,7 @@
 
 .infoEmail, .infoText {
   display: block;
-  font-family: 'Sora';
+  font-family: $secondFont;
   font-weight: 400;
   font-size: 12px;
   line-height: 22px;
