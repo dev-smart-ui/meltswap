@@ -30,7 +30,7 @@ const tab1=()=> <>
 
         </div>
     </div>
-    {Cryptocurrencies.map((item,i)=> <PriceItem key={i} item={item}/>)}
+    {Cryptocurrencies.map((item,i)=> <PriceItem key={i} counter={i} item={item}/>)}
 </>
 
 const tab2=()=> <>
@@ -54,7 +54,7 @@ const tab2=()=> <>
 
     </div>
 </div>
-    {Gainers.map((item,i)=> <PriceItem key={i} item={item}/>)}
+    {Gainers.map((item,i)=> <PriceItem key={i} counter={i} item={item}/>)}
 </>
 
 const tab3=()=> <> 
