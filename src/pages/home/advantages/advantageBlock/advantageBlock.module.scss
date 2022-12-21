@@ -1,0 +1,16 @@
+@import 'src/var';
+
+.wrapImg{
+  max-height: 290px;
+  figure{
+    @include md{
+      padding-bottom: 290px !important;
+    }
+  }
+  img{
+    max-width: 100%;
+    margin: 0 auto;
+    height: auto;
+    width: auto;
+  }
+}

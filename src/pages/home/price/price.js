@@ -94,7 +94,7 @@ export const Price = () => {
             <h2 className={styles.title}>Price charts</h2>
             <Tabs tabList={tabList}/>
             
-            <a href='/' className='btn'>More assets</a>
+            <a href='/' className='button'>More assets</a>
         </div>
     </section>
 

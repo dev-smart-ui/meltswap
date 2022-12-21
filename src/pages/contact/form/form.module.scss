@@ -21,7 +21,7 @@
     border: none;
     background: #F6F8FA;
     border-radius: 10px;
-    font-family: 'Sora';
+    font-family: $secondFont;
     font-weight: 400;
     font-size: 14px;
     letter-spacing: 0.02em;
@@ -43,7 +43,7 @@
   }
   
   
-  .btn {
+  .button {
     background: $primary;
     &:hover {
       background: #53C4AF;

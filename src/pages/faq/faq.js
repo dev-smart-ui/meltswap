@@ -3,9 +3,9 @@ import styles from './faq.module.scss'
 import {Accordion} from "./accordion/accordion";
 import {GetInTouch} from "./getInTouch/getInTouch";
 import {Title} from "../../components/title";
+import {dataFaq} from "./data";
 
 export const Faq = () => {
-    const dataFaq = window.dataFaq;
 
     return (
         <div className={styles.faq}>
