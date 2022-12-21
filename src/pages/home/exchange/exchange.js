@@ -11,7 +11,9 @@ export const Exchange = () => {
             <h1> <span>Trusted</span> & <span>secure</span> platform for crypto exchange </h1>
             <p>Get started with the easiest and most secure platform to exchange cryptocurrencies</p>
         </div>
-     <ExchangeForm />
+        <div className={styles.img}>
+            <ExchangeForm />
+        </div>
     </section>
 };
  

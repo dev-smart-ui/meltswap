@@ -1,23 +1,87 @@
 @import "var";
 
 .form{
-  height: 400px;
-  width: 400px;
+  width: 100%;
   background: rgba(255, 255, 255, 0.6);
   border: 1px solid #FFFFFF;
   box-shadow: 0 11px 24px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
-  padding: 26px;
+  padding: 23px 16px;
+
+  @include sm {
+    padding: 33px 26px 43px;
+  }
 }
 
 .switch{
-
-  font-size: 0;
   height: 33px;
   width: 33px;
   display: inline-flex;
   justify-content: center;
   align-items: center;
   background-color: $primary;
-  margin: 50px;
+}
+
+.info {
+  position: relative;
+  padding: 16px 0 16px 15px;
+  border-left: 1px solid rgb(255, 255, 255);
+
+  span {
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 8px;
+    margin-right: 10px;
+    color: $secondFontColor;
+    display: flex;
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: -19px;
+      top: 3px;
+      width: 7px;
+      border-radius: 50%;
+      height: 7px;
+      background: #F6F8FA;
+    } 
+
+    @include sm {
+      font-size: 11px;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 7px;
+    }
+  }
+}
+
+.time {
+  width: 14px;
+  height: 14px;
+  margin: 0 6px 0 16px;
+  object-fit: contain;
+}
+
+.wrapper {
+  display: flex;
+  margin: 12px 0;
+  align-items: center;
+  justify-content: space-between;
+
+  @include xl {
+    margin: 12px 0 12px 21px;
+  }
+}
+
+.btn {
+  max-width: 100%;
+  margin-top: 22px;
+  background-color: $accentColor;
+
+  &:hover{
+    background: #53C4AF;
+  }
 }

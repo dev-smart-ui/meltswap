@@ -3,6 +3,7 @@ import styles from './price.module.scss'
 import {Tabs} from "../../../components/tabs/tabs";
 import {Cryptocurrencies} from "../../../components/priceItem/dataCryptocurrencies";
 import {Gainers} from "../../../components/priceItem/dataGainers";
+import {Lorens} from "../../../components/priceItem/dataLorens";
 import {PriceItem} from "../../../components/priceItem/priceItem";
 
 
@@ -56,7 +57,30 @@ const tab2=()=> <>
     {Gainers.map((item,i)=> <PriceItem key={i} item={item}/>)}
 </>
 
-const tab3=()=> <h2> tab3</h2>
+const tab3=()=> <> 
+<div className={styles.tabsBlock}>
+    <div className={styles.numberBlock}>
+        #
+    </div>
+    <div className={styles.currencyBlock}>
+        Currency
+    </div>
+    <div className={styles.priceBlock}>
+        Price
+    </div>
+    <div className={styles.changeBlock}>
+        24 Change
+    </div>
+    <div className={styles.marketBlock}>
+        Market Cap
+    </div>
+    <div>
+
+    </div>
+</div>
+{Lorens.map((item,i)=> <PriceItem key={i} item={item}/>)}
+
+</>
 
 const tabList = [
     {  anchor:"Top Cryptocurrencies",  element :tab1   },

@@ -2,7 +2,8 @@ import React, {useState} from 'react';
 import styles from './exchangeForm.module.scss'
 import {CombinedInput} from "./сombinedInput/combinedInput";
 import {exchangeMock} from "./mockData";
-import switchIcon from "./switch.svg"
+import switchIcon from "./switch.svg";
+import time from "./time.svg"
 
 
 
@@ -18,20 +19,28 @@ export const ExchangeForm = () => {
         }
 
     return <div   className={styles.form}>
-            <CombinedInput
-                selectValue={from}
-                setSelect={setFrom}
-                label={" you send"}
-                value={input}
-                setValue={setInput}/>
+        <CombinedInput
+            selectValue={from}
+            setSelect={setFrom}
+            label={"You send"}
+            value={input}
+            setValue={setInput}/>
 
-        <button onClick={onSwitch} className={styles.switch}> switch currency
-            <img src={switchIcon} alt="switchIcon"/>
-        </button>
-            <CombinedInput
-                selectValue={  to }
-                setSelect={ setTo }
-                label={" you get"}
-                value={input*currency}  />
+        <div className={styles.wrapper}>
+            <div className={styles.info}>
+                <span>No extra fees</span>
+                <span>Estimated rate: 1 BTC ~ 16.065174 ETH  <img src={time} className={styles.time} alt="time"/>2:00</span>
+            </div>
+            <button onClick={onSwitch} className={styles.switch}>
+                <img src={switchIcon} alt="switchIcon"/>
+            </button>
+        </div>    
+        <CombinedInput
+            selectValue={  to }
+            setSelect={ setTo }
+            label={"You Get"}
+            value={input*currency}  />
+
+        <button type='button' className={"btn " + [styles.btn]}>Exchange</button>
     </div>
 };

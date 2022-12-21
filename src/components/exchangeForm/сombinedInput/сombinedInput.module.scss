@@ -1,19 +1,38 @@
+@import "var";
+
 .wrap{
   display: flex;
   align-items: flex-end;
 }
 
 .label{
-  display: flex;
-  flex-direction: column;
+  display: block;
+  font-family: 'Sora';
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: $secondFontColor;
 }
 
 .input{
   background-color: rgba(255, 255, 255, 0.5);
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
-  height: 55px;
+  border: none;
+  height: 45px;
+  padding-left: 14px;
+  font-family: 'Sora';
+  font-weight: 600;
+  font-size: 16px;
+  color: #2B2B37;
+  max-width: 285px;
+  width: 100%;
 
+  @include md {
+    padding-left: 19px;
+    font-size: 22px;
+    height: 55px;
+  }
 }
 
 .select{
@@ -23,7 +42,14 @@
         margin: 0;
         padding: 0;
         border:none;
-        height: 55px;
+        height: 45px;
+        background-color: rgba(255, 255, 255, 0.5);
+        width: 130px;
+
+        @include md {
+          width: 155px;
+          height: 55px;
+        }
       }
     }
   }
@@ -35,8 +61,8 @@
 }
 
 .icon{
-  height: 40px;
-  width: 40px;
+  height: 21px;
+  width: 21px;
   object-fit: contain;
 }
 

@@ -2,12 +2,16 @@ import React from 'react';
 import styles from './status.module.scss'
 import filter from './img/filter.svg';
 import {Search} from "../../components/search/search";
+import {SearchStatus} from "../../components/searchStatus/searchStatus";
+
 import {Tabs} from "../../components/tabs/tabs";
 import {DataCoin} from "./coins/dataCoin";
-import {DataPair} from "./pair/dataPair";
 import {ConstItem} from "./coins/coinItem";
+
+import {DataPair} from "./pair/pairData/dataPair";
+import {PairHeader} from "./pair/pairHeader";
 import {PairItem} from "./pair/pairItem";
-import {SearchStatus} from "../../components/searchStatus/searchStatus";
+
 
 const tab1=()=> <div className={styles.coinWrap}>
 <div className={styles.tabHeader}>
@@ -31,17 +35,7 @@ const tab1=()=> <div className={styles.coinWrap}>
 </div>
 
 const tab2=()=> <div className={styles.pair}>
-<div className={styles.pairWrap}>
-    <div className={styles.currencyBlock}>
-        
-    </div>
-    <div className={styles.statusBlock}>
-        Status <img src={filter} className={styles.filterIcon} alt="Filter" />
-    </div>
-    <div className={styles.fixedRate}>
-        Fixed Rate <img src={filter} className={styles.filterIcon} alt="Filter" />
-    </div>
-</div>
+<PairHeader/>
 {DataPair.map((item,i)=> <PairItem key={i} item={item}/>)}
 </div>
 

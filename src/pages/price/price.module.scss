@@ -20,7 +20,7 @@
    }
  
    @include xl {
-     padding: 16px 58px 24px;
+     padding: 24px 58px;
      grid-template-columns: 7% 27% 18% 17% 21% 11%;
    }
 
@@ -31,13 +31,25 @@
     font-size: 12px;
     color: $dark;
 
-        @include md {
-            font-size: 16px;
-        }
+    @include md {
+        font-size: 14px;
+    }
+
+    @include lg {
+        font-size: 16px;
+    }
     }
  } 
 
  .searchBlock{
     max-width: 500px;
     margin: auto auto 70px;
+ }
+
+ .blank {
+    margin: 92px 0 84px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+    color: #2C3842;
  }

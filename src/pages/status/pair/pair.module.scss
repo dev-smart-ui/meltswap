@@ -5,7 +5,7 @@
     align-items: center;
     padding: 17px 12px;
     grid-template-rows: repeat(1, 1fr);
-    grid-template-columns: 45% 10% 45%;
+    grid-template-columns: 40% 23% 39%;
   
     @include sm {
         padding: 21px 18px;
@@ -93,5 +93,109 @@
 }
 
 .pairArrow img {
-    width: auto;
+  width: auto;
+  margin: auto;
 }
+
+.select{
+    :global{
+      .prefix{
+        &__control{
+          margin: 0;
+          padding: 0;
+          border: 1px solid #E0E0E0;
+          border-radius: 10px;
+          height: 40px;
+          background-color: rgba(255, 255, 255, 0.5);
+          width: 100%;
+          font-family: 'Sora';
+          font-weight: 400;
+          font-size: 16px;
+          color: #666666;
+
+           div {
+            text-align: start;
+          }
+  
+          @include md {
+          }
+        }
+      }
+    }
+  }
+
+  .option{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .icon{
+    height: 21px;
+    width: 21px;
+    object-fit: contain;
+  }
+  
+  .pairWrap {
+    align-items: center;
+    padding: 21px 12px;
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: 40% 23% 39%;
+  
+    @include sm {
+      padding: 21px 18px;
+      grid-template-columns: 28% 9% 30% 19% 14%;
+    }
+  
+    @include md {
+      padding: 16px 20px 24px;
+      grid-template-columns: 31% 8% 34% 15% 9%;
+    }
+  
+    @include xl {
+      padding: 16px 58px 24px;
+      grid-template-columns: 31% 8% 37% 15% 9%;
+    }
+  
+    div {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      color: $dark;
+      text-align: center;
+      white-space: nowrap;
+  
+      @include md {
+        font-size: 14px;
+      }
+  
+      @include lg {
+          font-size: 16px;
+      }
+    }
+  
+    .currencyBlock {
+      text-align: start;
+    }
+  }
+
+  .filterIcon {
+    width: 18px;
+    display: none;
+    @include sm {
+      display: inline-block;
+    }
+
+    @include xl {
+      margin-left: 18px;
+    }
+  }
+
+  .statusBlock, .fixedRate {
+    display: none;
+    @include sm {
+      display: block;
+    }
+
+  }

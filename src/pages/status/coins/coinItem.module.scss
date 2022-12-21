@@ -26,6 +26,10 @@
         @include md {
             border-bottom: none;
         }
+
+        @include lg {
+            padding: 0;
+        }
     }
 
 }
