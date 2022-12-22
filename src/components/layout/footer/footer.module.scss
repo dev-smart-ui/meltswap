@@ -24,6 +24,9 @@
         align-items: center;
         justify-content: space-between;
     }
+    @include xl{
+        padding-bottom: 125px;
+    }
 }
 
 .bottom {
@@ -71,7 +74,7 @@
 }
 
 .privacyItem, .bottom p {
-    font-family: 'Sora';
+    font-family: $secondFont;
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -91,6 +94,9 @@
 
     li {
         margin-left: 25px;
+        @include lg{
+            margin-left: 35px;
+        }
     }
 }
 
@@ -106,7 +112,7 @@
 }
 
 .title {
-    font-family: 'Sora';
+    font-family: $secondFont;
     font-weight: 600;
     font-size: 14px;
     letter-spacing: 0.02em;
@@ -116,11 +122,14 @@
 }
 
 .item {
-    font-family: 'Sora';
+    font-family: $secondFont;
     font-weight: 400;
     font-size: 14px;
     color: #fff;
     margin-bottom: 20px;
+    @include md{
+        margin-bottom: 0;
+    }
 }
 
 .socialNetwork {

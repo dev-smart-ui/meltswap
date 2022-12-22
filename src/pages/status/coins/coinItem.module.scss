@@ -2,35 +2,42 @@
 
 .coinItem {
     display: grid;
-    align-items: center;
-    padding: 17px 12px;
     grid-template-rows: repeat(1, 1fr);
-    grid-template-columns: 40% 23% 39%;
-  
+    grid-template-columns: 51% 41% 38% 48% 34%;
+
     @include sm {
-        padding: 21px 18px;
-        grid-template-columns: 50% 25% 25%;
+        grid-template-columns: 29% 25% 30% 31% 18%;
     }
   
     @include md {
-        padding: 16px 20px 24px;
-        grid-template-columns: 31% 15% 22% 19% 16%;
+        grid-template-columns: 31% 15% 22% 19% 13%;
+        border-bottom: 1px solid #E0E0E0;
     }
 
-    @include xl {
+    @include lg {
         padding: 16px 58px 24px;
         grid-template-columns: 31% 14% 22% 19% 14%;
     }
 
-    &:not(:first-child) {
-        border-top: 1px solid #E0E0E0;
+    & > div {
+        padding: 17px;
+        border-bottom: 1px solid #E0E0E0;
+
+        @include md {
+            border-bottom: none;
+        }
+
+        @include lg {
+            padding: 0;
+        }
     }
+
 }
 
 .currency {
     display: flex;
     align-items: center;
-    font-family: 'Sora';
+    font-family: $secondFont;
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -68,7 +75,7 @@
     max-width: 89px;
     width: 100%;
     padding: 10px 0;
-    font-family: 'Sora';
+    font-family: $secondFont;
     font-weight: 700;
     font-size: 12px;
     text-align: center;
@@ -76,9 +83,19 @@
     display: block;
     margin: auto;
 
+    &:hover {
+        background: #EABDC4;
+        color: #fff; 
+    }
+
     &.active {
         background: #EABDC4;
         color: #fff;
+
+        &:hover {
+            color: #EABDC4;
+            background: rgba(234, 189, 196, 0.15);
+        }
     }
 
     @include md {
@@ -90,11 +107,4 @@
 .checkIcon {
     width: 20px;
     margin: auto;
-}
-
-.exchangeTo, .fixedRate {
-    display: none;
-    @include md {
-      display: block;    
-    }
 }

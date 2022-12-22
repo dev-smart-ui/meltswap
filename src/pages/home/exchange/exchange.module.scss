@@ -7,10 +7,10 @@
     @include lg {
         background: #2B2B37;
         display: flex;
-        align-items: center;
+        justify-content: space-between;
         max-width: 1245px;
         width: 90%;
-        margin: 36px auto;
+        margin: 53px auto 0;
         border-radius: 30px;
         padding: 0;
     }
@@ -18,10 +18,11 @@
 
 .img {
     max-width: 400px;
+    width: 100%;
     margin: auto;
 
     @include lg {
-        padding: 20px 20px 15px;
+        padding: 50px 25px ;
         max-width: 50%;
         border-radius: 0 30px 30px 0;
         margin: 0;
@@ -29,8 +30,14 @@
     }
 
     @include lg {
+        
+    }
+
+    @include xl {
         padding: 60px 69px 61px 73px;
     }
+
+    
 }
 
 .content {
@@ -38,6 +45,19 @@
     width: 100%;
     margin: auto;
     text-align: center;
+
+    @include md{
+        max-width: 500px;
+        padding: 0 4% 0 33px;
+    }
+
+    @include lg {
+        margin: 0;
+        max-width: 50%;
+        text-align: start;
+        background: linear-gradient(60.04deg, rgba(145, 221, 207, 0.46) -9.01%, rgba(145, 221, 207, 0.22) -9%, rgba(145, 221, 207, 0) 70.99%);
+        padding: 127px 45px 127px 54px;
+    }
 
     h1 {
         font-weight: 700;
@@ -71,7 +91,7 @@
     }
 
     p {
-        font-family: 'Sora';
+        font-family: $secondFont;
         font-weight: 400;
         font-size: 11px;
         line-height: 20px;
@@ -87,22 +107,5 @@
         @include lg { 
             font-size: 18px;
         }
-    }  
-
-    @include md{
-        max-width: 500px;
-        padding: 0 4% 0 33px;
     }
-
-    @include lg {
-        margin: 0;
-        max-width: 50%;
-        text-align: start;
-        padding: 0 35px 0 54px;
-    }
-
-    @include xl {
-        padding: 0 45px 0 54px;
-    }
-
 }

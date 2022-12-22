@@ -2,10 +2,17 @@ import React from 'react';
 import styles from './status.module.scss'
 import filter from './img/filter.svg';
 import {Search} from "../../components/search/search";
+import {SearchStatus} from "../../components/searchStatus/searchStatus";
+
 import {Tabs} from "../../components/tabs/tabs";
 import {DataCoin} from "./coins/dataCoin";
 import {ConstItem} from "./coins/coinItem";
-import {SearchStatus} from "../../components/searchStatus/searchStatus";
+
+import {DataPair} from "./pair/pairData/dataPair";
+import {PairHeader} from "./pair/pairHeader";
+import {PairItem} from "./pair/pairItem";
+import {Pagination} from "../../components/pagination/pagination";
+
 
 const tab1=()=> <div className={styles.coinWrap}>
 <div className={styles.tabHeader}>
@@ -28,8 +35,10 @@ const tab1=()=> <div className={styles.coinWrap}>
 {DataCoin.map((item,i)=> <ConstItem key={i} item={item}/>)}
 </div>
 
-const tab2=()=> <>
-</>
+const tab2=()=> <div className={styles.pair}>
+<PairHeader/>
+{DataPair.map((item,i)=> <PairItem key={i} item={item}/>)}
+</div>
 
 const tabList = [
     {  anchor:"Coin Status",  element :tab1   },
@@ -57,6 +66,7 @@ export const Status = () => {
                 </div>
                 
                 <Tabs tabList={tabList}/>
+                <Pagination length={5} active={4}/>
             </div>
         </section>
     </>

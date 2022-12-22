@@ -1,13 +1,25 @@
 @import "src/var";
 
-.howWorksCard{
+.card{
   display: flex;
-  width: calc(50% - 25px);
+  @include md{
+    width: calc(50% - 25px);
+    &:nth-child(2){
+      order: 2;
+    }
+    &:nth-child(3){
+      order: 1;
+    }
+    &:nth-child(4){
+      order: 3;
+    }
+  }
 }
 .title{
   font-size: 14px;
   line-height: 14px;
   color: $accentColor;
+  font-weight: 600;
   margin-bottom: 10px;
   @include sm{
     font-size: 16px;
@@ -17,15 +29,18 @@
 }
 .svg{
   margin-right: 20px;
+  margin-top: -10px;
   @include lg{
-    margin-right: 27px;
     margin-top: -5px;
+    margin-right: 27px;
   }
 }
 .content{
   font-size: 12px;
   line-height: 20px;
   letter-spacing: 0.02em;
+  color: $secondFontColor;
+  font-family: $secondFont;
   @include sm{
     font-size: 16px;
     line-height: 26px;

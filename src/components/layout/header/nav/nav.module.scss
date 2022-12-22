@@ -9,6 +9,7 @@
    opacity: 0;
   pointer-events: none;
   transition: 0.5s;
+  z-index: 3;
 
   @include lg {
     opacity: 1;
@@ -43,7 +44,7 @@
     width: 100%;
     transition: 0.3s;
     display: block;
-    font-family: 'Sora';
+    font-family: $secondFont;
     font-weight: 400;
     font-size: 14px;
     letter-spacing: 0.02em;

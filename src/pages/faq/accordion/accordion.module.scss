@@ -77,7 +77,7 @@
   color: $secondFontColor;
   letter-spacing: 0.02em;
   padding-right: 15px;
-  font-family: 'Sora';
+  font-family: $secondFont;
   @include lg{
     font-size: 16px;
     line-height: 30px;

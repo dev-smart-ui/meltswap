@@ -8,7 +8,7 @@
     grid-template-areas:
             "currency value  btnExchange"
             "currency change btnExchange";
-
+    letter-spacing: 0.02em;
     @include md {
         padding: 19px 30px 24px;
         grid-template-rows: repeat(1, 1fr);
@@ -19,16 +19,16 @@
     }
 
     @include xl {
-        padding: 19px 58px 24px;
+        padding: 16px 58px 20px;
         grid-template-columns: 7% 27% 18% 17% 21% 11%;
     }
 
-    &:not(:first-child) {
+    &:not(:first-child, :nth-child(2)) {
         border-top: 1px solid #E0E0E0;
     }
 
     div  {
-        font-family: 'Sora';
+        font-family: $secondFont;
         font-style: normal;
         font-size: 12px;
         color: #666666;
@@ -68,7 +68,7 @@
     background: #6dd7c326 url("./img/exchange.svg") no-repeat center;
     border-radius: 10px;
     padding: 11px 0;
-    font-family: 'Sora';
+    font-family: $secondFont;
     font-weight: 700;
     font-size: 0;
     text-align: center;
@@ -76,6 +76,7 @@
     border: none;
     display: block;
     cursor: pointer;
+    transition: 0.4s;
     margin-left: auto;
 
     @include md {
@@ -85,6 +86,11 @@
         height: auto;
         font-size: 14px;
         background: rgba(145, 221, 207, 0.15);
+    }
+
+    &:hover {
+        background: #6DD7C3;
+        color: #fff;
     }
 }
 

@@ -1,6 +1,6 @@
 @import "src/var";
 .header {
-  padding: 28px 20px;
+  padding: 24px 20px;
   background-color: $dark;
   position: relative;
 }
@@ -19,8 +19,8 @@
 }
 
 .logo{
-  width: 163px;
   img{
+    width: 163px;
     object-fit: contain;
   }
 }

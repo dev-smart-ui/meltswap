@@ -8,7 +8,6 @@ import {Application} from "./application/application";
 import {Price} from "./price/price";
 
 export const Home = () => {
-
     return <>
         <Exchange/>
         <CompanySection/>

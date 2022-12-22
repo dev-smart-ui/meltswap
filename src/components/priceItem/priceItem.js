@@ -1,11 +1,11 @@
 import React from 'react';
 import styles from './priceItem.module.scss'
 
-export const PriceItem = ({item}) => {
+export const PriceItem = ({item, counter}) => {
 
     return <div className={styles.priceItem}>
         <div className={styles.numb}>
-            1
+           {counter+1}
         </div>
         <div className={styles.currency}>
             <img src={item.icon} alt={item.currency} /> <div className={styles.currencyTitle}><span>{item.name}</span> {item.currency}</div> 
