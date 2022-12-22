@@ -11,6 +11,7 @@ import {ConstItem} from "./coins/coinItem";
 import {DataPair} from "./pair/pairData/dataPair";
 import {PairHeader} from "./pair/pairHeader";
 import {PairItem} from "./pair/pairItem";
+import {Pagination} from "../../components/pagination/pagination";
 
 
 const tab1=()=> <div className={styles.coinWrap}>
@@ -65,6 +66,7 @@ export const Status = () => {
                 </div>
                 
                 <Tabs tabList={tabList}/>
+                <Pagination length={5} active={4}/>
             </div>
         </section>
     </>

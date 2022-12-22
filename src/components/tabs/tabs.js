@@ -31,7 +31,7 @@ export const Tabs = ({tabList, hideArrow = 500}) => {
                                               onClick={() => setActiveTab(i)}>
                     {tab.anchor}
                 </button>))}
-            <style jsx>{`
+            <style jsx="true">{`
               @media (min-width: ${hideArrow}px) {
                 .${styles.arrow} {
                   display: none;

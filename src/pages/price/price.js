@@ -6,7 +6,7 @@ import {Tabs} from "../../components/tabs/tabs";
 import {Cryptocurrencies} from "../../components/priceItem/dataCryptocurrencies";
 import {Lorens} from "../../components/priceItem/dataLorens";
 import {PriceItem} from "../../components/priceItem/priceItem";
-import {Pagination} from "../../components/tabs/pagination/pagination";
+import {Pagination} from "../../components/pagination/pagination";
 
 const tab1=()=> <>
 <div className={styles.tabsBlock}>

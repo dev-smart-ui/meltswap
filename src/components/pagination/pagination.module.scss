@@ -1,6 +1,7 @@
-@import "src/var";
+@import "../../var";
 
 .pagination {
+    overflow: auto;
     display: flex;
     padding: 60px 0 43px;
     margin: auto;
