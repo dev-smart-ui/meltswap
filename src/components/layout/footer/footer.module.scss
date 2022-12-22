@@ -24,6 +24,9 @@
         align-items: center;
         justify-content: space-between;
     }
+    @include xl{
+        padding-bottom: 125px;
+    }
 }
 
 .bottom {
@@ -91,6 +94,9 @@
 
     li {
         margin-left: 25px;
+        @include lg{
+            margin-left: 35px;
+        }
     }
 }
 
@@ -121,6 +127,9 @@
     font-size: 14px;
     color: #fff;
     margin-bottom: 20px;
+    @include md{
+        margin-bottom: 0;
+    }
 }
 
 .socialNetwork {

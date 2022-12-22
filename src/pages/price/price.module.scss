@@ -20,7 +20,7 @@
    }
  
    @include xl {
-     padding: 24px 58px;
+     padding: 24px 58px 15px;
      grid-template-columns: 7% 27% 18% 17% 21% 11%;
    }
 
@@ -31,13 +31,13 @@
     font-size: 12px;
     color: $dark;
 
-    @include md {
-        font-size: 14px;
-    }
+      @include md {
+          font-size: 14px;
+      }
 
-    @include lg {
-        font-size: 16px;
-    }
+      @include lg {
+          font-size: 16px;
+      }
     }
  } 
 

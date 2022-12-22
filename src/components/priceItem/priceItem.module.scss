@@ -8,7 +8,7 @@
     grid-template-areas:
             "currency value  btnExchange"
             "currency change btnExchange";
-
+    letter-spacing: 0.02em;
     @include md {
         padding: 19px 30px 24px;
         grid-template-rows: repeat(1, 1fr);
@@ -19,11 +19,11 @@
     }
 
     @include xl {
-        padding: 19px 58px 24px;
+        padding: 16px 58px 20px;
         grid-template-columns: 7% 27% 18% 17% 21% 11%;
     }
 
-    &:not(:first-child) {
+    &:not(:first-child, :nth-child(2)) {
         border-top: 1px solid #E0E0E0;
     }
 
