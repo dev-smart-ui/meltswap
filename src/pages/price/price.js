@@ -7,6 +7,7 @@ import {Cryptocurrencies} from "../../components/priceItem/dataCryptocurrencies"
 import {Lorens} from "../../components/priceItem/dataLorens";
 import {PriceItem} from "../../components/priceItem/priceItem";
 import {Pagination} from "../../components/tabs/pagination/pagination";
+import {dataPrice} from "./data";
 
 const tab1=()=> <>
 <div className={styles.tabsBlock}>
@@ -92,7 +93,6 @@ const tabList = [
 
 
 export const Price = () => {
-    const dataPrice = window.dataPrice;
     return <section className={styles.price}>
         <div className='container'>
             <Title title={dataPrice.title} subtitle={dataPrice.subtitle}/>

@@ -11,6 +11,8 @@ import {ConstItem} from "./coins/coinItem";
 import {DataPair} from "./pair/pairData/dataPair";
 import {PairHeader} from "./pair/pairHeader";
 import {PairItem} from "./pair/pairItem";
+import {Title} from "../../components/title";
+import {dataStatus} from "./data";
 
 
 const tab1=()=> <div className={styles.coinWrap}>
@@ -50,7 +52,7 @@ export const Status = () => {
     return <> 
         <section className={styles.main}>
             <div className='container'>
-               <h1 className={styles.title}>Status Page</h1>
+               <Title className={styles.title} title={dataStatus.title}/>
                <SearchStatus/>
             </div>
         </section>

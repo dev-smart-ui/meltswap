@@ -5,9 +5,9 @@ import {Form} from "./form/form";
 import email from "./img/email.svg";
 import adress from "./img/adress.svg";
 import logo from "./img/contact-logo.svg";
+import {dataContact} from "./data";
 
 export const Contact = () => {
-    const dataContact = window.dataContact;
 
     return <section className={styles.contact}>
         <Title title={dataContact.title} subtitle={dataContact.subtitle}/>
