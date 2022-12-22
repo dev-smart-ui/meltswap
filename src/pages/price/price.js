@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './price.module.scss'
-import {Title} from "../../components/title";
 import {Search} from "../../components/search/search";
 import {Tabs} from "../../components/tabs/tabs";
 import {Cryptocurrencies} from "../../components/priceItem/dataCryptocurrencies";
@@ -92,10 +91,10 @@ const tabList = [
 
 
 export const Price = () => {
-    const dataPrice = window.dataPrice;
+
     return <section className={styles.price}>
         <div className='container'>
-            <Title title={dataPrice.title} subtitle={dataPrice.subtitle}/>
+            <h1 className='title'>Price chart <span>Real-time currencies prices</span> </h1>
             <div className={styles.searchBlock}>
                 <Search/>
             </div>

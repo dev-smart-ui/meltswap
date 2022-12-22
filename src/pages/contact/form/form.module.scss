@@ -17,6 +17,9 @@
   }
   
   .field {
+    &::placeholder {
+      color: #666666;
+    }
     padding: 14px 18px;
     border: none;
     background: #F6F8FA;
@@ -25,7 +28,7 @@
     font-weight: 400;
     font-size: 14px;
     letter-spacing: 0.02em;
-    color: #666666;
+    color: #000;
     display: block;
     width: 100%;
   

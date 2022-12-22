@@ -13,28 +13,28 @@ import {PairHeader} from "./pair/pairHeader";
 import {PairItem} from "./pair/pairItem";
 
 
-const tab1=()=> <div className={styles.coinWrap}>
+const tab1=()=> <div>
 <div className={styles.tabHeader}>
     <div className={styles.currencyBlock}>
         Currency
     </div>
-    <div className={styles.statusBlock}>
+    <div>
         Status <img src={filter} className={styles.filterIcon} alt="Filter" />
     </div>
-    <div className={styles.exchangeFrom}>
+    <div>
         Exchange From <img src={filter} className={styles.filterIcon} alt="Filter" />
     </div>
-    <div className={styles.exchangeTo}>
+    <div>
         Exchange To <img src={filter} className={styles.filterIcon} alt="Filter" />
     </div>
-    <div className={styles.fixedRate}>
+    <div>
         Fixed Rate <img src={filter} className={styles.filterIcon} alt="Filter" />
     </div>
 </div>
 {DataCoin.map((item,i)=> <ConstItem key={i} item={item}/>)}
 </div>
 
-const tab2=()=> <div className={styles.pair}>
+const tab2=()=> <div>
 <PairHeader/>
 {DataPair.map((item,i)=> <PairItem key={i} item={item}/>)}
 </div>

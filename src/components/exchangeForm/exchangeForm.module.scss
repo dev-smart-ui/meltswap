@@ -6,10 +6,10 @@
   border: 1px solid #FFFFFF;
   box-shadow: 0 11px 24px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
-  padding: 23px 16px;
+  padding: 31px 15px;
 
   @include sm {
-    padding: 33px 26px 43px;
+    padding: 30px 24px 48px;
   }
 }
 
@@ -26,7 +26,7 @@
 
 .info {
   position: relative;
-  padding: 16px 0 16px 15px;
+  padding: 14px 0 16px 15px;
   border-left: 2px solid #E0E0E0;
 
   span {
@@ -59,8 +59,12 @@
     }
 
     &:not(:last-child) {
-      margin-bottom: 7px;
+      margin-bottom: 6px;
     }
+  }
+
+  @include md {
+    padding: 16px 0 16px 15px;
   }
 }
 
@@ -71,7 +75,7 @@
   object-fit: contain;
 
   @include lg {
-    margin: 0 6px 0 16px;
+    margin: 0 6px 0 25px;
   }
 }
 
@@ -80,7 +84,7 @@
   margin-bottom: 12px;
   align-items: center;
   justify-content: space-between;
-  margin: 0px 0 13px 13px;
+  margin: 0px 0 0px 13px;
 
   @include md {
     margin: 0px 0 12px 22px;
@@ -89,12 +93,16 @@
 
 .btn {
   max-width: 100%;
-  margin-top: 22px;
+  margin-top: 17px;
   background-color: $accentColor;
 
   &:hover{
     background: #53C4AF;
     color: #fff;
+  }
+
+  @include md {
+    margin-top: 29px;
   }
 }
 
@@ -109,7 +117,7 @@ input::-webkit-inner-spin-button {
     .prefix{
       &__control::before{
         content: "";
-        left: -4px;
+        left: 8px;
         display: block;
         position: absolute;
         background: url("./lock.svg");

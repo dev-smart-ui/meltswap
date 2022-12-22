@@ -2,7 +2,7 @@
 .how {
   padding: 40px 0 80px;
   @include lg{
-    padding: 75px 0 90px;
+    padding: 63px 0 64px;
   }
 }
 .wrapperWorks{
@@ -21,7 +21,7 @@
   @include lg{
     display: block;
     position: relative;
-    width: 40%;
+    width: 33%;
   }
   &::before, &::after{
     position: absolute;
@@ -46,8 +46,8 @@
   figure{
     position: relative;
     z-index: 1;
-    max-width: 265px;
-    padding-bottom: 518px;
+    max-width: 281px;
+    padding-bottom: 545px;
     margin: auto;
   }
 }
@@ -58,10 +58,10 @@
   position: relative;
   z-index: 1;
   @include md{
-    gap: 65px 50px;
+    gap: 77px 22px;
   }
   @include lg{
-    width: 60%;
+    width: 62%;
   }
 }
 .offerTitle{

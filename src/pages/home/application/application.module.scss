@@ -26,7 +26,7 @@
 
     @include lg {
         max-width: 100%;
-        padding: 89px 82px;
+        padding: 89px 76px;
     }
 }
 
@@ -54,8 +54,9 @@
         }
     }
 
-    a {
+    button {
         margin-top: 30px;
+        max-width: 193px;
         background: #E0E0E0;
         opacity: 0.6;
         color: #666666;
@@ -78,12 +79,12 @@
 
     @include md {
        position: absolute;
-       right: 45px;
+       right: 51px;
        bottom: -40px;
     }
 
     @include lg {
-        bottom: -100px;
+        bottom: -108px;
         max-width: 100%;
      }
 }

@@ -21,7 +21,7 @@
         padding: 16px 58px 24px;
     }
 
-    &:not(:first-child) {
+    &:not(:first-child, :nth-child(2)) {
         border-top: 1px solid #E0E0E0;
     }
 }

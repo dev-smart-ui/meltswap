@@ -52,8 +52,12 @@
         width: 145px;
         border-radius: 0 4px 4px 0;
         @include md {
+          width: 167px;
           height: 55px;
         }
+      }
+      &__value-container {
+        padding: 0px 2px 0 22px;
       }
       &__menu {
         background-color: rgba(255, 255, 255);
@@ -83,7 +87,11 @@
         display: none;
       }
       &__single-value {
-        font-size: 22px;
+        font-size: 16px;
+        
+        @include md {
+          font-size: 22px;
+        }
       }
      
     }

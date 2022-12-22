@@ -25,27 +25,32 @@
   padding: 21px 12px;
   display: grid;
   grid-template-rows: repeat(1, 1fr);
-  grid-template-columns: 40% 23% 39%;
+  grid-template-columns: 51% 41% 38% 48% 34%;
 
   @include sm {
     padding: 21px 18px;
-    grid-template-columns: 50% 25% 25%;
+    grid-template-columns: 29% 25% 30% 31% 18%;
   }
 
   @include md {
-    padding: 16px 20px 24px;
+    padding: 20px 20px 24px;
     grid-template-columns: 31% 15% 22% 19% 16%;
   }
 
+  @include lg {
+    padding: 20px 58px 24px;
+    grid-template-columns: 31% 14% 22% 19% 14%;
+  }
+
   @include xl {
-    padding: 16px 58px 24px;
     grid-template-columns: 31% 14% 22% 19% 14%;
   }
 
   div {
     font-family: 'Sora';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
+    cursor: pointer;
     font-size: 12px;
     color: $dark;
     text-align: center;
@@ -64,16 +69,6 @@
   }
 }
 
-
-
-.exchangeTo, .fixedRate {
-  display: none;
-  @include md {
-    display: block;    
-  }
-}
-
-
 .filterIcon {
   width: 18px;
   display: none;
@@ -91,7 +86,7 @@
 
   @include md {
     display: flex;
-    margin-bottom: 46px;
+    margin-bottom: 26px;
     align-items: center;
     justify-content: space-between;
   }
