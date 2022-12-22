@@ -9,7 +9,7 @@ import {PriceItem} from "../../../components/priceItem/priceItem";
 
 
 
-const tab1=()=> <>
+const Tab1=()=> <>
     <div className={styles.tabsBlock}>
         <div className={styles.numberBlock}>
             #
@@ -33,7 +33,7 @@ const tab1=()=> <>
     {Cryptocurrencies.map((item,i)=> <PriceItem key={i} counter={i} item={item}/>)}
 </>
 
-const tab2=()=> <>
+const Tab2=()=> <>
 <div className={styles.tabsBlock}>
     <div className={styles.numberBlock}>
         #
@@ -57,7 +57,7 @@ const tab2=()=> <>
     {Gainers.map((item,i)=> <PriceItem key={i} counter={i} item={item}/>)}
 </>
 
-const tab3=()=> <> 
+const Tab3=()=> <> 
 <div className={styles.tabsBlock}>
     <div className={styles.numberBlock}>
         #
@@ -78,14 +78,14 @@ const tab3=()=> <>
 
     </div>
 </div>
-{Lorens.map((item,i)=> <PriceItem key={i} item={item}/>)}
+{Lorens.map((item,i)=> <PriceItem key={i} counter={i} item={item}/>)}
 
 </>
 
 const tabList = [
-    {  anchor:"Top Cryptocurrencies",  element :tab1   },
-    {  anchor:"Top Gainers",  element :tab2   },
-    {  anchor:"Top Losers",  element :tab3   },
+    {  anchor:"Top Cryptocurrencies",  element :Tab1   },
+    {  anchor:"Top Gainers",  element :Tab2   },
+    {  anchor:"Top Losers",  element :Tab3   },
 ]
 
 export const Price = () => {

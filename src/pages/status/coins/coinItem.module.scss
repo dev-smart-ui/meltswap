@@ -83,9 +83,19 @@
     display: block;
     margin: auto;
 
+    &:hover {
+        background: #EABDC4;
+        color: #fff; 
+    }
+
     &.active {
         background: #EABDC4;
         color: #fff;
+
+        &:hover {
+            color: #EABDC4;
+            background: rgba(234, 189, 196, 0.15);
+        }
     }
 
     @include md {

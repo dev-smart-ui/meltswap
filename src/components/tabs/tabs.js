@@ -52,5 +52,6 @@ export const Tabs = ({tabList, hideArrow = 500}) => {
             {tabList[activeTab].element()}
         </div>
     </div>
+    
 };
  

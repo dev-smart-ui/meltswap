@@ -12,6 +12,7 @@
         margin-top: 37px;
         &:hover {
             background: #53C4AF;
+            color: #fff;
         }
 
         @include md {
@@ -48,7 +49,7 @@ h2 {
   }
 
   @include xl {
-    padding: 16px 58px 24px;
+    padding: 24px 58px ;
     grid-template-columns: 7% 27% 18% 17% 21% 11%;
   }
 }

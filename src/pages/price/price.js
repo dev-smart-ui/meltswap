@@ -6,6 +6,7 @@ import {Tabs} from "../../components/tabs/tabs";
 import {Cryptocurrencies} from "../../components/priceItem/dataCryptocurrencies";
 import {Lorens} from "../../components/priceItem/dataLorens";
 import {PriceItem} from "../../components/priceItem/priceItem";
+import {Pagination} from "../../components/tabs/pagination/pagination";
 
 const tab1=()=> <>
 <div className={styles.tabsBlock}>
@@ -28,7 +29,7 @@ const tab1=()=> <>
 
     </div>
 </div>
-{Cryptocurrencies.map((item,i)=> <PriceItem key={i} item={item}/>)}
+{Cryptocurrencies.map((item,i)=> <PriceItem key={i} counter={i} item={item}/>)}
 </>
 
 const tab2=()=> { return <div>
@@ -79,7 +80,7 @@ const tab3=()=> <>
 
     </div>
 </div>
-{Lorens.map((item,i)=> <PriceItem key={i} item={item}/>)}
+{Lorens.map((item,i)=> <PriceItem key={i} counter={i} item={item}/>)}
 
 </>
 
@@ -99,6 +100,7 @@ export const Price = () => {
                 <Search/>
             </div>
             <Tabs tabList={tabList}/>
+            <Pagination/>
         </div>
     </section>
 

@@ -76,6 +76,7 @@
     border: none;
     display: block;
     cursor: pointer;
+    transition: 0.4s;
     margin-left: auto;
 
     @include md {
@@ -85,6 +86,11 @@
         height: auto;
         font-size: 14px;
         background: rgba(145, 221, 207, 0.15);
+    }
+
+    &:hover {
+        background: #6DD7C3;
+        color: #fff;
     }
 }
 

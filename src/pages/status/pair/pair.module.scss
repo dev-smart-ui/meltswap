@@ -80,8 +80,12 @@
         color: #fff;
     }
 
+    &:hover {
+      background: #EABDC4;
+      color: #fff;
+    }
+
     @include sm {
-       
         display: block;
     }
 
@@ -116,10 +120,20 @@
            div {
             text-align: start;
           }
-  
-          @include md {
-          }
         }
+
+        &__option {
+
+          div {
+            justify-content: start;
+            cursor: pointer;
+          }
+  
+          &--is-focused {
+            background-color: #6dd7c3;
+          }
+  
+        }  
       }
     }
   }
@@ -127,7 +141,6 @@
   .option{
     display: flex;
     align-items: center;
-    justify-content: center;
   }
   
   .icon{

@@ -20,12 +20,14 @@
   justify-content: center;
   align-items: center;
   background-color: $primary;
+  border-radius: 6px;
+  margin: auto 0 8px 0;
 }
 
 .info {
   position: relative;
   padding: 16px 0 16px 15px;
-  border-left: 1px solid rgb(255, 255, 255);
+  border-left: 2px solid #E0E0E0;
 
   span {
     font-family: 'Sora';
@@ -52,6 +54,10 @@
       font-size: 11px;
     }
 
+    @include lg {
+      font-size: 12px;
+    }
+
     &:not(:last-child) {
       margin-bottom: 7px;
     }
@@ -61,18 +67,23 @@
 .time {
   width: 14px;
   height: 14px;
-  margin: 0 6px 0 16px;
+  margin: 0 6px 0;
   object-fit: contain;
+
+  @include lg {
+    margin: 0 6px 0 16px;
+  }
 }
 
 .wrapper {
   display: flex;
-  margin: 12px 0;
+  margin-bottom: 12px;
   align-items: center;
   justify-content: space-between;
+  margin: 0px 0 13px 13px;
 
-  @include xl {
-    margin: 12px 0 12px 21px;
+  @include md {
+    margin: 0px 0 12px 22px;
   }
 }
 
@@ -83,5 +94,29 @@
 
   &:hover{
     background: #53C4AF;
+    color: #fff;
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.wrapselect {
+  :global{
+    .prefix{
+      &__control::before{
+        content: "";
+        left: -4px;
+        display: block;
+        position: absolute;
+        background: url("./lock.svg");
+        width: 12px;
+        height: 16px;
+      }
+
+    }
   }
 }

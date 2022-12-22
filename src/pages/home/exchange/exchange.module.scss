@@ -7,11 +7,10 @@
     @include lg {
         background: #2B2B37;
         display: flex;
-        align-items: center;
         justify-content: space-between;
         max-width: 1245px;
         width: 90%;
-        margin: 36px auto;
+        margin: 53px auto 0;
         border-radius: 30px;
         padding: 0;
     }
@@ -23,7 +22,7 @@
     margin: auto;
 
     @include lg {
-        padding: 20px 20px 15px;
+        padding: 50px 25px ;
         max-width: 50%;
         border-radius: 0 30px 30px 0;
         margin: 0;
@@ -31,8 +30,14 @@
     }
 
     @include lg {
+        
+    }
+
+    @include xl {
         padding: 60px 69px 61px 73px;
     }
+
+    
 }
 
 .content {
@@ -50,12 +55,10 @@
         margin: 0;
         max-width: 50%;
         text-align: start;
-        padding: 0 35px 0 54px;
+        background: linear-gradient(60.04deg, rgba(145, 221, 207, 0.46) -9.01%, rgba(145, 221, 207, 0.22) -9%, rgba(145, 221, 207, 0) 70.99%);
+        padding: 127px 45px 127px 54px;
     }
 
-    @include xl {
-        padding: 60px 45px 60px 54px;
-    }
     h1 {
         font-weight: 700;
         font-size: 30px;

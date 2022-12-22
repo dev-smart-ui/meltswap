@@ -9,9 +9,13 @@
   display: block;
   font-family: 'Sora';
   font-weight: 600;
-  font-size: 14px;
+  font-size: 12px;
   margin-bottom: 5px;
   color: $secondFontColor;
+
+  @include md {
+    font-size: 14px;
+  }
 }
 
 .input{
@@ -43,14 +47,45 @@
         padding: 0;
         border:none;
         height: 45px;
+        box-shadow: none;
         background-color: rgba(255, 255, 255, 0.5);
-        width: 130px;
-
+        width: 145px;
+        border-radius: 0 4px 4px 0;
         @include md {
-          width: 155px;
           height: 55px;
         }
       }
+      &__menu {
+        background-color: rgba(255, 255, 255);
+
+        &-list {
+          padding-top: 0;
+          padding-bottom: 0;
+        }
+      }
+      &__option {
+
+        div {
+          justify-content: start;
+          cursor: pointer;
+        }
+
+        &--is-selected {
+          background-color: #6dd7c3;
+        }
+
+      }  
+      &__indicator {
+        cursor: pointer;
+        color: #2B2B37;
+      }
+      &__indicator-separator {
+        display: none;
+      }
+      &__single-value {
+        font-size: 22px;
+      }
+     
     }
   }
 }

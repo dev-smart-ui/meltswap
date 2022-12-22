@@ -1,0 +1,36 @@
+@import "src/var";
+
+.pagination {
+    display: flex;
+    padding: 60px 0 43px;
+    margin: auto;
+    max-width: max-content;
+    width: 100%;
+
+    :global{
+        .active {
+            color: #FFFFFF;
+            background: #6DD7C3;
+        }
+    }
+
+    @include md {
+        padding: 94px 0 43px;
+    }
+}
+
+.dots {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    font-family: 'Sora';
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+    color: #666666;
+    line-height: 38px;
+
+    &:not(:last-child) {
+        margin-right: 10px;
+    }
+}

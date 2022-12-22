@@ -25,7 +25,6 @@ export const ExchangeForm = () => {
             label={"You send"}
             value={input}
             setValue={setInput}/>
-
         <div className={styles.wrapper}>
             <div className={styles.info}>
                 <span>No extra fees</span>
@@ -35,12 +34,14 @@ export const ExchangeForm = () => {
                 <img src={switchIcon} alt="switchIcon"/>
             </button>
         </div>    
-        <CombinedInput
-            selectValue={  to }
-            setSelect={ setTo }
-            label={"You Get"}
-            value={input*currency}  />
-
-        <button type='button' className={"btn " + [styles.btn]}>Exchange</button>
+        <div className={styles.wrapselect}>
+            <CombinedInput
+                selectValue={  to }
+                setSelect={ setTo }
+                label={"You Get"}
+                value={input*currency}  />
+        </div>
+    
+        <button type='button' className={"button " + [styles.btn]}>Exchange</button>
     </div>
 };
