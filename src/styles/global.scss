@@ -1,5 +1,5 @@
 @import "src/var";
-@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@600;700&family=Sora:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@600;700&family=Sora:wght@400;500;700&display=swap');
 
 body , html {
 
@@ -69,14 +69,13 @@ button{
   @include lg{
     font-size: 48px;
     line-height: 73px;
-    margin-bottom: 80px;
+    margin-bottom: 49px;
   }
   span{
     display: block;
     font-size: 14px;
     line-height: 22px;
     font-weight: 500;
-    padding-top: 6px;
     color: $secondFontColor;
     font-family: $secondFont;
     @include lg{

@@ -29,15 +29,9 @@
         background: linear-gradient(335.29deg, rgba(234, 189, 196, 0.6) 20.2%, rgba(109, 215, 195, 0.372) 71.74%, rgba(44, 56, 66, 0.6) 120.96%);
     }
 
-    @include lg {
-        
-    }
-
     @include xl {
-        padding: 60px 69px 61px 73px;
+        padding: 60px 79px 61px 55px;
     }
-
-    
 }
 
 .content {
@@ -56,7 +50,7 @@
         max-width: 50%;
         text-align: start;
         background: linear-gradient(60.04deg, rgba(145, 221, 207, 0.46) -9.01%, rgba(145, 221, 207, 0.22) -9%, rgba(145, 221, 207, 0) 70.99%);
-        padding: 127px 45px 127px 54px;
+        padding: 127px 78px 114px 46px;
     }
 
     h1 {
@@ -85,7 +79,7 @@
         }
 
         @include xl {
-            font-size: 49px;
+            font-size: 53px;
             line-height: 60px;
         }
     }
@@ -97,11 +91,12 @@
         line-height: 20px;
         letter-spacing: 0.02em;
         color: #FFFFFF;
-        margin: 14px 0 50px;
+        margin: 14px 0 59px;
 
         @include md {
             margin: 18px 0;
             font-size: 17px;
+            line-height: 27px;
         }
 
         @include lg { 

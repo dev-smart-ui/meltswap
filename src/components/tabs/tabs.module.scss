@@ -16,7 +16,6 @@
   background-color: #F6F8FA;
   display: flex;
   overflow: auto;
-  height: 60px;
   padding-right: 60px;
   &::-webkit-scrollbar{
     height: 0;
@@ -36,14 +35,20 @@
 }
 
 .button{
-  padding: 18px 40px;
+  padding: 18px 11px;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
-  line-height: 20px;
+  line-height: 12px;
   letter-spacing: 0.5px;
   color: #666666;
   opacity: 0.4;
+
+  @include md{
+    line-height: 20px;
+    font-size: 16px;
+    padding: 18px 40px;
+  }
 
   &.active{
     border-bottom: solid $primary 3px;

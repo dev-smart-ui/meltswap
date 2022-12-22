@@ -8,16 +8,13 @@
     padding: 65px 0 105px;
   }
   @include xl{
-    padding-bottom: 165px;
+    padding-bottom: 138px;
   }
   :global{
     .title{
       margin-bottom: 45px;
       @include md{
-        margin-bottom: 70px;
-      }
-      @include xl{
-        margin-bottom: 100px;
+        margin-bottom: 68px;
       }
     }
   }

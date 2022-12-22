@@ -62,9 +62,9 @@ export const Footer = ({onClose}) => {
                     </ul>
                 </div>
                 <div className={styles.menuMobile}>
-                    <div className={styles.block}>
+                    <div>
                         <h3 className={styles.title}>Company</h3>
-                        <ul className={styles.list}>
+                        <ul>
                             {companyNav.map((item, i)=>{
                                 return <li className={styles.item} key ={i}>
                                     <Link onClick={onClose} to={item.path}>
@@ -75,9 +75,9 @@ export const Footer = ({onClose}) => {
                         </ul>
                     </div>
                     
-                    <div className={styles.block}>
+                    <div>
                         <h3 className={styles.title}>Support</h3>
-                        <ul className={styles.list}>
+                        <ul>
                             {supportNav.map((item, i)=>{
                                 return <li className={styles.item} key ={i}>
                                     <Link onClick={onClose} to={item.path}>
@@ -105,7 +105,7 @@ export const Footer = ({onClose}) => {
                 
                 <ul className={styles.socialNetwork}>
                     {socialNetwork.map((item, i)=>{
-                        return <li className={styles.socialItem} key ={i}>
+                        return <li key ={i}>
                             <Link onClick={onClose} to={item.path}>
                                 <img src={item.icon} alt={item.linkText} />
                             </Link>

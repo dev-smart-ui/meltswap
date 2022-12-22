@@ -4,7 +4,7 @@
   padding: 77px 20px 129px;
 
   @include lg {
-    padding: 77px 0 129px;
+    padding: 74px 0 138px;
   }
 }
 
@@ -14,17 +14,19 @@
   text-align: center;
   letter-spacing: 0.5px;
   color: $fontColor;
-  margin-bottom: 10px;
-}
+  margin-bottom: 88px;
 
-.subtitle {
-  font-family: $secondFont;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  text-align: center;
-  letter-spacing: 0.02em;
-  color: #666666;
+  span {
+      display: block;
+      font-family: $secondFont;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      text-align: center;
+      letter-spacing: 0.02em;
+      margin-top: 11px;
+      color: #666666;
+  }
 }
 
 .wrap {
@@ -43,22 +45,22 @@
 }
 
 .left {
-  max-width: 630px;
+  max-width: 608px;
   width: 100%;
   margin: auto;
 
   @include md {
     margin: 0;
-    padding: 35px 41px 42px;
+    padding: 32px 32px 38px;
   }
 }
 
 .right {
   background: $primary;
   border-radius: 20px;
-  max-width: 309px;
+  max-width: 320px;
   width: 100%;
-  padding: 35px 16px 35px 23px;
+  padding: 41px 16px 35px 23px;
   margin: 43px auto 0;
 
   @include md {
@@ -71,10 +73,12 @@
   align-items: flex-start;
   &:first-child {
     margin-bottom: 20px;
+
+    @include md {
+      margin-bottom: 47px;
+    }
   }
-  @include md {
-    margin-bottom: 40px;
-  }
+  
 }
 
 .icon {
