@@ -1,11 +1,15 @@
 @import "src/var";
 
 .application {
-    padding-bottom: 190px;
+    padding-bottom: 230px;
+
+    @media (max-width:335px) {
+        padding-bottom: 140px;
+    }
 
     @include md {
        padding: 177px 0 193px;
-     }
+    }
 }
 
 .wrap {
@@ -57,13 +61,16 @@
     button {
         margin-top: 30px;
         max-width: 193px;
+        width: 100%;
+        padding: 14px 0;
+        font-family: 'Sora';
+        border-radius: 10px;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 14px;
         background: #E0E0E0;
         opacity: 0.6;
         color: #666666;
-        &:hover {
-            background: #EABDC4;
-            color: #fff;
-        }
 
         @include md {
             margin: 38px 0 0;
@@ -86,5 +93,5 @@
     @include lg {
         bottom: -108px;
         max-width: 100%;
-     }
+    }
 }

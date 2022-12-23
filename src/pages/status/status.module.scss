@@ -22,10 +22,10 @@
 
 .tabHeader {
   align-items: center;
-  padding: 21px 12px;
+  padding: 21px 18px;
   display: grid;
   grid-template-rows: repeat(1, 1fr);
-  grid-template-columns: 51% 41% 38% 48% 34%;
+  grid-template-columns: 50% 54% 56% 51% 40%;
 
   @include sm {
     padding: 21px 18px;
@@ -50,7 +50,6 @@
     font-family: 'Sora';
     font-style: normal;
     font-weight: 500;
-    cursor: pointer;
     font-size: 12px;
     color: $dark;
     text-align: center;
@@ -62,6 +61,12 @@
     @include lg {
         font-size: 16px;
     }
+
+    &:not(:first-child):hover {
+      transition: 0.4s;
+      cursor: pointer;
+      transform: scale(1.06);
+    }
   }
 
   .currencyBlock {
@@ -71,11 +76,9 @@
 
 .filterIcon {
   width: 18px;
-  display: none;
-  @include sm {
-    display: inline-block;
-    margin-left: 9px;
-  }
+  display: inline-block;
+  margin-left: 9px;
+
   @include lg {
     margin-left: 18px;
   }
@@ -86,19 +89,23 @@
 
   @include md {
     display: flex;
-    margin-bottom: 26px;
+    margin-bottom: 41px;
     align-items: center;
     justify-content: space-between;
   }
 }
 
 .available {
-  padding-bottom: 94px;
+  padding-bottom: 113px;
+
+  @include md {
+    padding-bottom: 97px;
+  }
 }
 
 .availableTitle {
   font-size: 28px;
-  margin-bottom: 18px;
+  margin-bottom: 0px;
 
   @include md {
     font-size: 32px;
@@ -108,4 +115,19 @@
 .wrapper {
   max-width: 335px;
   width: 100%;
+  margin: 18px auto 30px;
+  @include md {
+    margin: 0;
+  }
+}
+
+.tabButton {
+  padding-right: 0;
+
+  button {
+    width: 50%;
+    @include md {
+      width: auto;
+    }
+  }
 }

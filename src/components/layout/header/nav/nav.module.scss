@@ -31,11 +31,11 @@
   @include lg {
     padding: 0;
     border: none;
+    &:not(:last-child) {
+      margin-right: 25px;
+    }
   }
 
-  &:not(:last-child) {
-    margin-right: 25px;
-  }
 }
 
 .list {

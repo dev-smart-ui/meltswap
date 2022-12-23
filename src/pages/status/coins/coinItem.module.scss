@@ -2,8 +2,9 @@
 
 .coinItem {
     display: grid;
+    align-items: center;
     grid-template-rows: repeat(1, 1fr);
-    grid-template-columns: 51% 41% 38% 48% 34%;
+    grid-template-columns: 50% 54% 41% 47% 35%;
 
     @include sm {
         grid-template-columns: 29% 25% 30% 31% 18%;
@@ -20,7 +21,7 @@
     }
 
     & > div {
-        padding: 17px;
+        padding: 18px;
         border-bottom: 1px solid #E0E0E0;
 
         @include md {
