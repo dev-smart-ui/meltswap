@@ -43,7 +43,11 @@
 
  .searchBlock{
     max-width: 500px;
-    margin: auto auto 70px;
+    margin: auto auto 44px;
+
+    @include md {
+      margin: auto auto 73px;
+    }
  }
 
  .blank {

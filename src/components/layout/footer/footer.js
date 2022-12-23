@@ -15,9 +15,9 @@ const navList =  [
     ROUTES.price ]
 
 const companyNav =  [
+    ROUTES.about ,
     ROUTES.how,
     ROUTES.status ,
-    ROUTES.about ,
  ]
 const supportNav =[
     ROUTES.contact,

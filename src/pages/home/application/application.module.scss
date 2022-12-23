@@ -1,11 +1,15 @@
 @import "src/var";
 
 .application {
-    padding-bottom: 190px;
+    padding-bottom: 230px;
+
+    @media (max-width:335px) {
+        padding-bottom: 140px;
+    }
 
     @include md {
        padding: 177px 0 193px;
-     }
+    }
 }
 
 .wrap {
@@ -86,5 +90,5 @@
     @include lg {
         bottom: -108px;
         max-width: 100%;
-     }
+    }
 }

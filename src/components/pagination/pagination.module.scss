@@ -3,8 +3,7 @@
 .pagination {
     overflow: auto;
     display: flex;
-    padding: 60px 0 43px;
-    margin: auto;
+    margin: 60px auto 0;
     max-width: max-content;
     width: 100%;
 
@@ -16,7 +15,7 @@
     }
 
     @include md {
-        padding: 94px 0 43px;
+        margin: 94px auto 0;
     }
 }
 

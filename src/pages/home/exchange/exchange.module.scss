@@ -50,8 +50,12 @@
         max-width: 50%;
         text-align: start;
         background: linear-gradient(60.04deg, rgba(145, 221, 207, 0.46) -9.01%, rgba(145, 221, 207, 0.22) -9%, rgba(145, 221, 207, 0) 70.99%);
-        padding: 127px 94px 114px 52px;
+        padding: 127px 47px 85px 52px;
         border-radius: 30px;
+    }
+
+    @include xxl {
+        padding: 127px 94px 114px 52px;
     }
 
     h1 {
@@ -75,11 +79,11 @@
         }
 
         @include lg {
-            font-size: 38px;
+            font-size: 39px;
             line-height: 53px;
         }
 
-        @include xl {
+        @include xxl {
             font-size: 53px;
             line-height: 60px;
         }

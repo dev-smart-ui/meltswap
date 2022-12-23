@@ -2,7 +2,7 @@
 .how {
   padding: 40px 0 80px;
   @include lg{
-    padding: 63px 0 64px;
+    padding: 63px 0 90px;
   }
 }
 .wrapperWorks{
@@ -79,8 +79,10 @@
   flex-wrap: wrap;
   display: flex;
   gap: 40px;
+  padding: 0 20px;
   @include sm{
     gap: 45px 60px;
+    padding: 0;
   }
   @include md{
     gap: 54px 75px;
