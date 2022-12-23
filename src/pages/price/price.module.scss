@@ -1,10 +1,10 @@
 @import 'src/var';
 
 .price {
-    padding: 42px 0 ;
+    padding: 42px 0 51px;
     
     @include md {
-        padding: 63px 0;
+        padding: 63px 0 124px;
     }
   :global{
     .title{

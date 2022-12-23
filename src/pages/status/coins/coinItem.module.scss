@@ -3,7 +3,7 @@
 .coinItem {
     display: grid;
     grid-template-rows: repeat(1, 1fr);
-    grid-template-columns: 30% 33% 36% 36% 23%;
+    grid-template-columns: 50% 54% 41% 47% 35%;
 
     @include sm {
         grid-template-columns: 29% 25% 30% 31% 18%;

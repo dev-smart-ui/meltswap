@@ -10,8 +10,11 @@
     @include md {
         display: flex;
         align-items: center;
+        padding: 54px 35px 49px 35px;
+    }
+
+    @include lg {
         padding: 54px 112px 49px 74px;
-        justify-content: space-between;
     }
 }
 
@@ -21,13 +24,19 @@
 
     @include md {
         margin: 0;
-        width: 91px;
+        width: 108px;
     }
 }
 
 .block {
-    max-width: 811px;
     width: 100%;
+    @include md {
+        margin-left: 57px;
+        max-width: 700px;
+    }
+    @include lg {
+        max-width: 811px;
+    }
 }
 
 .blockTitle {
@@ -67,7 +76,6 @@
     border: none;
     width: 100%;
     font-size: 14px;
-    max-width: 569px;
     color: #000;
     &::placeholder {
         color: #9d9d9d;
@@ -76,6 +84,7 @@
     @include md {
         padding: 17px 22px;
         font-size: 16px;
+        margin-right: 20px;
     }
 }
 
