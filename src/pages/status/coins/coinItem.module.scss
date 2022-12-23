@@ -2,6 +2,7 @@
 
 .coinItem {
     display: grid;
+    align-items: center;
     grid-template-rows: repeat(1, 1fr);
     grid-template-columns: 50% 54% 41% 47% 35%;
 

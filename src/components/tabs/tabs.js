@@ -4,7 +4,7 @@ import styles from './tabs.module.scss'
 import classNames from "classnames";
 import {useOpen} from "../../hooks/useOpen";
 
-export const Tabs = ({tabList, hideArrow = 500}) => {
+export const Tabs = ({tabList, hideArrow = 500, tabClass}) => {
     const [activeTab, setActiveTab] = useState(0);
     const {isOpen: isScrolled, onClose: onLeft, onOpen: onRight} = useOpen();
     const headerRef = useRef();
@@ -25,8 +25,8 @@ export const Tabs = ({tabList, hideArrow = 500}) => {
 
     }
     return <div className={styles.tabs}>
-        <header onScroll={scrollChecker} ref={headerRef} className={styles.header}>
-            {tabList.map((tab, i) => (<button className={classNames(styles.button, {[styles.active]: i === activeTab})}
+        <div onScroll={scrollChecker} ref={headerRef} className={classNames(styles.header, tabClass)} >
+            {tabList.map((tab, i) => (<button  className={classNames(styles.button, {[styles.active]: i === activeTab})}
                                               key={i}
                                               onClick={() => setActiveTab(i)}>
                     {tab.anchor}
@@ -46,7 +46,7 @@ export const Tabs = ({tabList, hideArrow = 500}) => {
                           strokeLinejoin="round"/>
                 </svg>
             </button>
-        </header>
+        </div>
 
         <div className={styles.body}>
             {tabList[activeTab].element()}

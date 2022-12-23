@@ -97,6 +97,10 @@
         @include lg{
             margin-left: 35px;
         }
+
+        &:hover {
+            transform: translateX(5px);
+        }
     }
 }
 
@@ -144,6 +148,12 @@
     margin: 60px auto 0;
     align-items: center;
     justify-content: space-between;
+
+    li:hover {
+        transition: 0.3s;
+        cursor: pointer;
+        transform: scale(1.1);
+    }
 
     @include md{
         margin: 0;

@@ -14,7 +14,7 @@
   
     @include md {
         padding: 16px 20px 24px;
-        grid-template-columns: 31% 8% 33% 15% 9%;
+        grid-template-columns: 33% 7% 33% 13% 14%;
     }
 
     @include xl {
@@ -169,7 +169,7 @@
   
     @include xl {
       padding: 16px 58px 24px;
-      grid-template-columns: 31% 8% 33% 15% 9%;
+      grid-template-columns: 33% 7% 33% 13% 14%;
     }
   
     div {
@@ -187,11 +187,18 @@
       @include lg {
           font-size: 16px;
       }
+
+      &:not(:nth-child(-n+3)):hover {
+        transition: 0.4s;
+        cursor: pointer;
+        transform: scale(1.06);
+      }
     }
   
     .currencyBlock {
       text-align: start;
     }
+    
   }
 
   .filterIcon {

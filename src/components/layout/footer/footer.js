@@ -21,7 +21,8 @@ const companyNav =  [
  ]
 const supportNav =[
     ROUTES.contact,
-    ROUTES.faq
+    ROUTES.faq,
+    ROUTES.price
 ]
 
 const privacy =[
