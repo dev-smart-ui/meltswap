@@ -12,11 +12,8 @@
   }
 }
 .wrapAccardion{
-  margin: 0 auto 60px;
+  margin: 0 auto 84px;
   max-width: 838px;
-  @include md{
-    margin-bottom: 80px;
-  }
   @include lg{
     margin-bottom: 102px;
   }

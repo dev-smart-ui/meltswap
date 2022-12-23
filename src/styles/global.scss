@@ -61,8 +61,8 @@ button{
 
 .title{
   font-weight: 700;
-  font-size: 36px;
-  line-height: 44px;
+  font-size: 34px;
+  line-height: 35px;
   text-align: center;
   margin: 0 30px 40px;
   color: $fontColor;
@@ -79,7 +79,7 @@ button{
     color: $secondFontColor;
     font-family: $secondFont;
     @include lg{
-      font-size: 16px;
+      font-size: 18px;
     }
   }
 }

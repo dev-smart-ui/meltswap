@@ -6,6 +6,13 @@
     @include md {
         padding: 63px 0;
     }
+  :global{
+    .title{
+      @include lg{
+        margin-bottom: 40px;
+      }
+    }
+  }
 }
 
 .tabsBlock {

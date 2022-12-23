@@ -109,6 +109,11 @@
     @include md{
         display: none;
     }
+    ul{
+        li:last-child{
+            margin-bottom: 0;
+        }
+    }
 }
 
 .title {

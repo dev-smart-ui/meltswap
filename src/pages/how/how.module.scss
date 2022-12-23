@@ -10,6 +10,7 @@
   @include md{
     display: flex;
     align-items: center;
+    justify-content: space-between;
     margin-bottom: 120px;
   }
   @include lg{
@@ -61,7 +62,10 @@
     gap: 77px 22px;
   }
   @include lg{
-    width: 62%;
+    width: 60%;
+  }
+  @include xl{
+    gap: 77px 60px;
   }
 }
 .offerTitle{
