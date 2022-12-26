@@ -12,7 +12,7 @@
     line-height: 26px;
   }
   @include md{
-    margin-bottom: 0;
+    margin-bottom: 40px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -26,7 +26,6 @@
         order: 1;
       }
     }
-
   }
 }
 .title{
@@ -47,11 +46,15 @@
   @include md{
     margin-bottom: 0;
     width: 45%;
+    max-height: 360px;
+    overflow: hidden;
   }
   img{
     max-width: 100%;
     margin: 0 auto;
     height: auto;
+    max-height: 360px;
+    width: auto;
   }
 }
 .content{

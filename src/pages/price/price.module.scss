@@ -1,11 +1,18 @@
 @import 'src/var';
 
 .price {
-    padding: 42px 0 ;
+    padding: 42px 0 51px;
     
     @include md {
-        padding: 63px 0;
+        padding: 63px 0 124px;
     }
+  :global{
+    .title{
+      @include lg{
+        margin-bottom: 40px;
+      }
+    }
+  }
 }
 
 .tabsBlock {
@@ -43,7 +50,11 @@
 
  .searchBlock{
     max-width: 500px;
-    margin: auto auto 70px;
+    margin: auto auto 44px;
+
+    @include md {
+      margin: auto auto 73px;
+    }
  }
 
  .blank {

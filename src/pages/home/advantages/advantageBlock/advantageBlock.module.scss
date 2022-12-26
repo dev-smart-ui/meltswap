@@ -3,14 +3,25 @@
 .wrapImg{
   max-height: 290px;
   figure{
+    height: auto;
+    @media screen and (max-width: 575px) {
+      padding-bottom: 0 !important;
+    }
+    @include sm{
+      height: 0;
+    }
     @include md{
       padding-bottom: 290px !important;
     }
   }
   img{
+    max-height: 230px;
     max-width: 100%;
     margin: 0 auto;
     height: auto;
     width: auto;
+    @include sm{
+      max-height: none;
+    }
   }
 }

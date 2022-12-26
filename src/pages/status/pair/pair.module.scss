@@ -14,7 +14,7 @@
   
     @include md {
         padding: 16px 20px 24px;
-        grid-template-columns: 31% 8% 37% 15% 9%;
+        grid-template-columns: 33% 7% 33% 13% 14%;
     }
 
     @include xl {
@@ -112,6 +112,7 @@
           height: 40px;
           background-color: rgba(255, 255, 255, 0.5);
           width: 100%;
+          max-width: 331px;
           font-family: 'Sora';
           font-weight: 400;
           font-size: 16px;
@@ -151,10 +152,10 @@
   
   .pairWrap {
     align-items: center;
-    padding: 21px 12px;
+    padding: 16px 16px 0;
     display: grid;
     grid-template-rows: repeat(1, 1fr);
-    grid-template-columns: 40% 23% 39%;
+    grid-template-columns: 44% 12% 44%;
   
     @include sm {
       padding: 21px 18px;
@@ -168,14 +169,14 @@
   
     @include xl {
       padding: 16px 58px 24px;
-      grid-template-columns: 31% 8% 37% 15% 9%;
+      grid-template-columns: 33% 7% 33% 13% 14%;
     }
   
     div {
       font-style: normal;
-      font-weight: 500;
+      font-weight: 400;
       font-size: 12px;
-      color: $dark;
+      color: $secondFontColor;
       text-align: center;
       white-space: nowrap;
   
@@ -186,11 +187,18 @@
       @include lg {
           font-size: 16px;
       }
+
+      &:not(:nth-child(-n+3)):hover {
+        transition: 0.4s;
+        cursor: pointer;
+        transform: scale(1.06);
+      }
     }
   
     .currencyBlock {
       text-align: start;
     }
+    
   }
 
   .filterIcon {

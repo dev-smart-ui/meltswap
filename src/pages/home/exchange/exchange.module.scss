@@ -30,7 +30,7 @@
     }
 
     @include xl {
-        padding: 60px 79px 61px 55px;
+        padding: 60px 69px 61px 73px;
     }
 }
 
@@ -50,12 +50,17 @@
         max-width: 50%;
         text-align: start;
         background: linear-gradient(60.04deg, rgba(145, 221, 207, 0.46) -9.01%, rgba(145, 221, 207, 0.22) -9%, rgba(145, 221, 207, 0) 70.99%);
-        padding: 127px 78px 114px 46px;
+        padding: 127px 47px 85px 52px;
+        border-radius: 30px;
+    }
+
+    @include xxl {
+        padding: 127px 94px 114px 52px;
     }
 
     h1 {
         font-weight: 700;
-        font-size: 30px;
+        font-size: 32px;
         line-height: 35px;
         letter-spacing: 0.5px;
         color: #fff;
@@ -74,11 +79,11 @@
         }
 
         @include lg {
-            font-size: 38px;
+            font-size: 39px;
             line-height: 53px;
         }
 
-        @include xl {
+        @include xxl {
             font-size: 53px;
             line-height: 60px;
         }
@@ -87,7 +92,7 @@
     p {
         font-family: $secondFont;
         font-weight: 400;
-        font-size: 11px;
+        font-size: 12px;
         line-height: 20px;
         letter-spacing: 0.02em;
         color: #FFFFFF;
@@ -101,6 +106,7 @@
 
         @include lg { 
             font-size: 18px;
+            line-height: 30px;
         }
     }
 }

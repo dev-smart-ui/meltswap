@@ -4,9 +4,13 @@
     background: #F6F8FA;
     border-radius: 10px;
     width: 100%;
-    padding: 15px 24px;       
+    padding: 12px 20px;
     display: flex;
     align-items: center;
+
+    @include md {
+      padding: 15px 24px;
+    }
  }
 
  .field {

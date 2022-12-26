@@ -99,7 +99,7 @@ export const Price = () => {
                 <Search/>
             </div>
             <Tabs tabList={tabList}/>
-            <Pagination/>
+            <Pagination length={5} active={1}/>
         </div>
     </section>
 

@@ -65,7 +65,7 @@ export const Status = () => {
                     </div>
                 </div>
                 
-                <Tabs tabList={tabList}/>
+                <Tabs hideArrow={0} tabClass={styles.tabButton} tabList={tabList}/>
                 <Pagination length={5} active={4}/>
             </div>
         </section>
