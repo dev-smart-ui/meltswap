@@ -15,33 +15,24 @@
     transition: .4s;
     height: auto;
     padding-bottom: 20px;
-    .title{
-      height: auto;
+    .wrap{
       &::after{
         transform: rotate(0);
       }
     }
   }
 }
-.title{
-  font-family: $mainFont;
+.wrap {
   position: relative;
   display: flex;
   align-items: center;
   height: 65px;
   width: 100%;
   padding: 20px 20px 18px 0;
-  margin: 0;
-
   background-color: transparent;
-  font-size: 14px;
-  line-height: 19px;
-  font-weight: 700;
-  color: $fontColor;
-  text-align: left;
-
   border: none;
   cursor: pointer;
+
   &::before, &::after{
     position: absolute;
     right: 0;
@@ -62,14 +53,34 @@
   &::after{
     transform: rotate(90deg);
   }
+
+  @include md{
+    height: 80px;
+    padding: 14px 20px 14px 0;
+  }
+  @include lg{
+    height: 100px;
+  }
+}
+
+.title{
+  font-family: $mainFont;
+  margin: 0;
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 700;
+  color: $fontColor;
+  max-width: 308px;
+  width: 100%;
+  text-align: left;
+  @include sm{
+    max-width: 100%;
+  }
   @include md{
     font-size: 16px;
-    height: 80px;
-    padding: 30px 20px 14px 0;
   }
   @include lg{
     font-size: 18px;
-    height: 100px;
   }
 }
 .content{
@@ -81,6 +92,9 @@
   letter-spacing: 0.02em;
   padding-right: 15px;
   font-family: $secondFont;
+  @include md{
+    font-size: 14px;
+  }
   @include lg{
     font-size: 16px;
     line-height: 26px;

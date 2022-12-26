@@ -2,13 +2,14 @@ import Select from "react-select";
 import {exchangeMock} from "../../../../components/exchangeForm/mockData";
 import  styles from "../pair.module.scss"
 
-export const PairSelect = ( {label, setSelect } )=>{
+export const PairSelect = ( {label , setSelect , selectValue} )=>{
     const handleChange = e => {
         setSelect(e);
     }
 
     return <Select
     placeholder={label}
+    value={selectValue}
     className={styles.select}
     classNamePrefix={ "prefix"}
     options={exchangeMock}

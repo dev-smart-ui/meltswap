@@ -12,10 +12,14 @@
     @include md {
         padding: 19px 30px 24px;
         grid-template-rows: repeat(1, 1fr);
-        grid-template-columns: 8% 26% 16.75% 13% 23.5% 13%;
+        grid-template-columns: 6% 27% 16.75% 16% 23.5% 11%;
         grid-template-areas:
         "numb currency value change market btnExchange";
        
+    }
+
+    @include lg {
+        grid-template-columns: 8% 26% 16.75% 13% 23.5% 13%;
     }
 
     @include xl {
@@ -48,7 +52,11 @@
     align-items: center;
     img {
         width: 32px;
-        margin-right: 15px;
+        margin-right: 11px;
+
+        @include lg {
+            margin-right: 15px;
+        }
     }
 
     & span {
@@ -58,7 +66,7 @@
 
        @include md {
             display: inline-block;
-        }
+       }
     }
 }
 
@@ -84,11 +92,15 @@
         max-width: 112px;
         width: 100%;
         height: auto;
-        font-size: 14px;
+        font-size: 12px;
         background: rgba(145, 221, 207, 0.15);
     }
 
-    &:hover {
+    @include lg {
+        font-size: 14px;
+    }
+
+    &:hover, &:focus {
         background-color: #53C4AF;
         color: #fff;
     }

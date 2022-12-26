@@ -1,7 +1,7 @@
 @import 'src/var';
 
 .contact {
-  padding: 77px 20px 129px;
+  padding: 42px 20px 70px;
 
   @include lg {
     padding: 74px 0 138px;
@@ -10,22 +10,35 @@
 
 .title {
   font-weight: 700;
-  font-size: 48px;
+  font-size: 34px;
   text-align: center;
   letter-spacing: 0.5px;
   color: $fontColor;
-  margin-bottom: 88px;
+  margin-bottom: 59px;
+
+  @include md {
+    font-size: 48px;
+    margin-bottom: 88px;
+  }
 
   span {
-      display: block;
-      font-family: $secondFont;
-      font-style: normal;
-      font-weight: 400;
+    display: block;
+    font-family: $secondFont;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #666666;
+    max-width: 165px;
+    width: 100%;
+    margin: 11px auto auto;
+
+    @include md {
+      max-width: 100%;
       font-size: 18px;
-      text-align: center;
-      letter-spacing: 0.02em;
-      margin-top: 11px;
-      color: #666666;
+    }
   }
 }
 
@@ -33,13 +46,11 @@
   max-width: 935px;
   width: 100%;
   margin: auto;
-  padding: 0 20px;
 
   @include md {
     background: #F6F8FA;
     border-radius: 20px;
     display: flex;
-    padding: 0;
     justify-content: space-between;
   }
 }
@@ -58,12 +69,13 @@
 .right {
   background: $primary;
   border-radius: 20px;
-  max-width: 320px;
+  max-width: 340px;
   width: 100%;
-  padding: 41px 16px 35px 23px;
+  padding: 28px 17px 36px;
   margin: 43px auto 0;
 
   @include md {
+    padding: 41px 16px 35px 23px;
     margin: 0;
   }
 }
@@ -83,12 +95,19 @@
 
 .icon {
   background: rgb(255 255 255 / 15%);
-  width: 45px;
-  height: 45px;
+  min-width: 45px;
+  min-height: 45px;
   border-radius: 50%;
   text-align: center;
-  margin-right: 23px;
+  margin-right: 15px;
   line-height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include md {
+    margin-right: 23px;
+  }
 
   img {
     width: auto;
@@ -97,12 +116,8 @@
 }
 
 .info {
-  max-width: 170px;
+  max-width: 245px;
   width: 100%;
-
-  @include md {
-    max-width: 202px;
-  }
 }
 
 .infoTitle {

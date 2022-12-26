@@ -4,7 +4,7 @@ import styles from './advantageBlock.module.scss'
 export const AdvantageBlock = ({props}) => {
     const sizePaddingBottom = ((props.height / props.width)  * 100);
 
-    return <div>
+    return <div className={styles.advantegeBlock}>
         <div className={styles.wrapImg}>
             <figure className={"figure-webp"}  style={{paddingBottom: `${sizePaddingBottom}%`}}>
                 <img src={props.img} alt={props.title}/>

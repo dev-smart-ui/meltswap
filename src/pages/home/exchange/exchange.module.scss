@@ -29,7 +29,7 @@
         background: linear-gradient(335.29deg, rgba(234, 189, 196, 0.6) 20.2%, rgba(109, 215, 195, 0.372) 71.74%, rgba(44, 56, 66, 0.6) 120.96%);
     }
 
-    @include xl {
+    @include xxl {
         padding: 60px 69px 61px 73px;
     }
 }
@@ -99,12 +99,13 @@
         margin: 14px 0 59px;
 
         @include md {
-            margin: 18px 0;
+            margin: 18px 0 59px;
             font-size: 17px;
             line-height: 27px;
         }
 
-        @include lg { 
+        @include lg {
+            margin: 18px 0 0;
             font-size: 18px;
             line-height: 30px;
         }

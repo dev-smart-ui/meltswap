@@ -21,17 +21,13 @@
 }
 
 .block {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-row-gap: 40px;
-
-    @include sm {
-        grid-template-columns: 1fr 1fr;
-        grid-column-gap: 6.25%;
-    }
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 
     @include lg {
-        grid-template-columns: 1fr 1fr 1fr;
+        flex-wrap: nowrap;
+        justify-content: space-between;
     }
 
     h3 {
@@ -61,6 +57,7 @@
         margin: auto;
 
         @include md {
+            font-size: 14px;
             max-width: 100%;
         }
 

@@ -4,10 +4,10 @@
     display: grid;
     align-items: center;
     grid-template-rows: repeat(1, 1fr);
-    grid-template-columns: 50% 54% 41% 47% 35%;
+    grid-template-columns: 38% 41% 59% 52% 47%;
 
     @include sm {
-        grid-template-columns: 29% 25% 30% 31% 18%;
+        grid-template-columns: 29% 25% 25% 33% 17%;
     }
   
     @include md {
@@ -17,18 +17,21 @@
 
     @include lg {
         padding: 16px 58px 24px;
-        grid-template-columns: 31% 14% 22% 19% 14%;
+        grid-template-columns: 29% 14% 22% 19% 16%;
     }
 
     & > div {
         padding: 18px;
         border-bottom: 1px solid #E0E0E0;
+        height: 67px;
 
         @include md {
             border-bottom: none;
+            height: 78px;
         }
 
         @include lg {
+            height: auto;
             padding: 0;
         }
     }

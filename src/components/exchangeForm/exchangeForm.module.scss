@@ -58,7 +58,7 @@
       font-size: 11px;
     }
 
-    @include lg {
+    @include xxl {
       font-size: 12px;
     }
 
@@ -78,20 +78,19 @@
   margin: 0 6px 0;
   object-fit: contain;
 
-  @include lg {
+  @include xxl {
     margin: 0 6px 0 25px;
   }
 }
 
 .wrapper {
   display: flex;
-  margin-bottom: 12px;
   align-items: center;
   justify-content: space-between;
-  margin: 0px 0 0px 13px;
+  margin: 0 0 0 13px;
 
   @include md {
-    margin: 0px 0 12px 22px;
+    margin: 0 0 12px 22px;
   }
 }
 

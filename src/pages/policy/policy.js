@@ -87,7 +87,7 @@ export const Policy = () => {
                     Contact Us
                 </h2>
                 <p className={styles.text}>
-                    If you have any questions please contact us via <a href="mailto:support@meltswap.com">support@meltswap.com</a> .
+                    If you have any questions please contact us via <a href="mailto:support@meltswap.com">support@meltswap.com</a>.
                 </p>
             </div>
         </div>
