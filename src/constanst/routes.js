@@ -6,6 +6,9 @@ import {Faq} from "../pages/faq/faq";
 import {Status} from "../pages/status/status";
 import {About} from "../pages/about/about";
 import {Price} from "../pages/price/price";
+import {Terms} from "../pages/policy/terms";
+import {Aml} from "../pages/policy/aml";
+import {Policy} from "../pages/policy/policy";
 
 export const ROUTES = {
     home:{
@@ -47,17 +50,20 @@ export const ROUTES = {
 
     policy:{
         linkText:"Privacy Policy",
-        path:"/"
+        path:"/policy",
+        element:<Policy/>
     },
 
     terms:{
         linkText:"Terms",
-        path:"/"
+        path:"/terms",
+        element:<Terms/>
     },
 
     aml:{
         linkText:"AML/KYC Policy",
-        path:"/"
+        path:"/aml",
+        element:<Aml/>
     },
 }
 
