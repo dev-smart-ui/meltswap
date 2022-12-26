@@ -59,9 +59,9 @@
     }
 
     button {
-        margin-top: 30px;
         max-width: 193px;
         width: 100%;
+        display: block;
         padding: 14px 0;
         font-family: 'Sora';
         border-radius: 10px;
@@ -71,6 +71,7 @@
         background: #E0E0E0;
         opacity: 0.6;
         color: #666666;
+        margin: 30px auto 0;
 
         @include md {
             margin: 38px 0 0;
@@ -91,6 +92,11 @@
     }
 
     @include lg {
+        bottom: -46px;
+        max-width: 39%;
+    }
+
+    @include xxl {
         bottom: -108px;
         max-width: 100%;
     }

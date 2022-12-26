@@ -1,5 +1,18 @@
 @import 'src/var';
 
+.advantegeBlock {
+  max-width: 329px;
+  width: 100%;
+
+  &:not(:last-child) {
+    margin-bottom: 40px;
+
+    @include lg {
+      margin-bottom: 0;
+    }
+  }
+}
+
 .wrapImg{
   max-height: 290px;
   figure{

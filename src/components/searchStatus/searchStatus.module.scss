@@ -101,8 +101,8 @@
     margin-top: 14px;
 
     &:hover{
-        background-color: rgba($accentColor, .15);
-        color: $accentColor;
+        background-color: #53C4AF;
+        color: #fff;
     }
 
     @include md {

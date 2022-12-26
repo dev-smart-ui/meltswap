@@ -2,11 +2,11 @@
 
 .input {
     margin-bottom: 20px;
-  
+
     @include md {
       margin-bottom: 30px;
     }
-  
+
     label {
       font-weight: 600;
       font-size: 14px;
@@ -43,11 +43,16 @@
   textarea {
     resize:none;
     height: 195px;
+
+    &::-webkit-scrollbar {
+      width: 3px;
+    }
   }
   
   
   .button {
     background: $primary;
+    margin-top: 35px;
     &:hover {
       background: #53C4AF;
     }

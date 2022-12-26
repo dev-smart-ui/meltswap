@@ -47,7 +47,7 @@
     p {
         order: 2;
 
-        @include md{
+        @include lg{
           margin-right: 30px;
         }
     }
@@ -63,14 +63,25 @@
     justify-content: center;
     margin-bottom: 10px;
 
-    @include md{
+    @include lg {
         margin-bottom: 0;
         order: 2;
     }
 }
 
-.privacyItem:not(:last-child) {
-    margin-right: 38px;
+.privacyItem {
+    &:not(:last-child) {
+        margin-right: 24px;
+    }
+    @include md {
+        &:not(:last-child) {
+            margin-right: 38px;
+        }
+        &:last-child {
+            margin-right: 38px;
+        }
+    }
+
 }
 
 .privacyItem, .bottom p {
@@ -156,6 +167,10 @@
     }
 
     @include md{
+        margin: 0 0 0 20px;
+    }
+
+    @include lg {
         margin: 0;
     }
 }

@@ -16,15 +16,14 @@
   }
 }
 .content{
-  font-size: 14px;
+  font-size: 12px;
   line-height: 22px;
   margin: 0 auto 17px;
   color: $secondFontColor;
   font-family: $secondFont;
-  @include sm{
-    span{
-      display: block;
-    }
+  display: block;
+  span{
+    display: block;
   }
   @include md{
     font-size: 16px;
