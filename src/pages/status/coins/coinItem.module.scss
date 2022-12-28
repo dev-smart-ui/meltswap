@@ -11,13 +11,13 @@
     }
   
     @include md {
-        grid-template-columns: 31% 15% 22% 19% 13%;
-        border-bottom: 1px solid #E0E0E0;
+        grid-template-columns: 31% 17% 25% 22% 21%;
     }
 
     @include lg {
         padding: 16px 58px 24px;
         grid-template-columns: 29% 14% 22% 19% 16%;
+        border-bottom: 1px solid #E0E0E0;
     }
 
     & > div {
@@ -26,11 +26,11 @@
         height: 67px;
 
         @include md {
-            border-bottom: none;
             height: 78px;
         }
 
         @include lg {
+            border-bottom: none;
             height: auto;
             padding: 0;
         }

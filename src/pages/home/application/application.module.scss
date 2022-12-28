@@ -8,6 +8,10 @@
     }
 
     @include md {
+        padding: 70px 0 180px
+    }
+
+    @include lg {
        padding: 177px 0 193px;
     }
 }

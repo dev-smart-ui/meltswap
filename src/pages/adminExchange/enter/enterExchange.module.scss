@@ -1,0 +1,187 @@
+@import 'src/var';
+
+.panel {
+  width: 100%;
+  @include sm {
+    max-width: 312px;
+  }
+
+  @include md {
+    max-width: 439px;
+  }
+}
+
+.clarification {
+  font-family: 'Sora', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #2B2B37;
+  margin-bottom: 43px;
+}
+
+.walletText {
+  font-family: 'Sora', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: #2B2B37;
+  display: block;
+  margin: 73px 0 4px;
+}
+
+.walletInput {
+  border: 1px solid #E0E0E0;
+  border-radius: 10px;
+  padding-left: 16px;
+  font-family: 'Sora', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  color: #666666;
+  display: block;
+  width: 100%;
+  height: 45px;
+
+  @include md {
+    padding-left: 18px;
+    height: 55px;
+  }
+}
+
+.button {
+  margin-top: 18px;
+  max-width: 100%;
+}
+
+
+.exchange {
+  background: #F6F8FA;
+
+  @include md {
+    padding: 57px 0;
+  }
+
+  @include lg {
+    padding: 57px 0 249px;
+  }
+}
+
+.cardBlock {
+  width: 100%;
+  margin: auto;
+  background: #FFFFFF;
+  border-radius: 10px;
+  padding: 42px 20px 100px;
+  position: relative;
+
+  @include sm {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @include md {
+    padding: 24px 24px 30px 30px;
+    max-width: 780px;
+  }
+}
+
+
+.stage {
+  max-width: 198px;
+  width: 100%;
+}
+
+.list {
+  margin: 60px 0 34px 13px;
+  padding-left: 22px;
+  border-left: 1px solid #E0E0E0;
+  li {
+    font-family: 'Sora', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    color: #2B2B37;
+    position: relative;
+
+    &:not(:last-child) {
+      margin-bottom: 31px;
+    }
+
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      top: -7px;
+      left: -36px;
+      background: #F6F8FA;
+      border: 1px solid #E0E0E0;
+      border-radius: 50%;
+    }
+
+    &.active {
+      &:before {
+        background: #6DD7C3 url("../img/check.svg") no-repeat center;
+      }
+    }
+
+  }
+}
+
+.transaction {
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #F6F8FA;
+  border: 1px solid #E0E0E0;
+  border-radius: 10px;
+  padding: 13px 15px 15px;
+
+  @include sm {
+    display: block;
+    position: static;
+    padding-left: 18px;
+  }
+
+  span {
+    font-family: 'Sora', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    color: #2B2B37;
+    display: block;
+
+    @include sm {
+      margin-bottom: 9px;
+    }
+  }
+}
+
+.transactionWrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.id {
+  background: #6DD7C3;
+  border-radius: 100px;
+  max-width: 139px;
+  width: 100%;
+  padding: 10px 17px;
+  font-family: 'Sora', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  color: #FFFFFF;
+  margin: 0 10px;
+  @include sm {
+    margin: 0;
+    padding: 10px 12px;
+  }
+}

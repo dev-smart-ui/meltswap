@@ -47,41 +47,39 @@
     p {
         order: 2;
 
-        @include lg{
+        @include md{
           margin-right: 30px;
         }
     }
 
     @include md{
         flex-wrap: wrap;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+    }
+
+    @include lg{
         flex-direction: inherit;
     }
+
 }
 
 .privacy {
     display: flex;
     justify-content: center;
     margin-bottom: 10px;
+    
+    @media (min-width: 896px) {
+        margin-bottom: 0;
+    }
 
     @include lg {
-        margin-bottom: 0;
         order: 2;
     }
 }
 
-.privacyItem {
-    &:not(:last-child) {
-        margin-right: 24px;
-    }
-    @include md {
-        &:not(:last-child) {
-            margin-right: 38px;
-        }
-        &:last-child {
-            margin-right: 38px;
-        }
-    }
-
+.privacyItem:not(:first-child) {
+    margin-left: 30px;
 }
 
 .privacyItem, .bottom p {

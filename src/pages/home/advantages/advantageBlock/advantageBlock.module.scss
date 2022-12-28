@@ -1,8 +1,12 @@
 @import 'src/var';
 
 .advantegeBlock {
-  max-width: 329px;
+  max-width: 280px;
   width: 100%;
+
+  @include xxl {
+    max-width: 329px;
+  }
 
   &:not(:last-child) {
     margin-bottom: 40px;
