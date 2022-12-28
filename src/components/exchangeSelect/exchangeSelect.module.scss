@@ -18,10 +18,10 @@
 
 .info {
   position: relative;
-  padding: 14px 0 16px 15px;
+  padding: 14px 0 16px 10px;
   border-left: 2px solid #E0E0E0;
 
-  span {
+  div {
     font-family: 'Sora',sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -34,24 +34,37 @@
     &:before {
       content: "";
       position: absolute;
-      left: -19px;
-      top: 3px;
+      left: -15px;
+      top: 2px;
       width: 7px;
       border-radius: 50%;
       height: 7px;
       background: #6DD7C3;
-    } 
+
+      @include md {
+        left: -19px;
+      }
+    }
+
+    @media (max-width: 352px) {
+      max-width: 176px;
+      flex-wrap: wrap;
+    }
 
     @include sm {
       font-size: 11px;
     }
 
-    @include xxl {
+    @include md {
       font-size: 12px;
     }
 
     &:not(:last-child) {
       margin-bottom: 6px;
+    }
+
+    span {
+      margin-right: 2px;
     }
   }
 
@@ -63,11 +76,15 @@
 .time {
   width: 14px;
   height: 14px;
-  margin: 0 6px 0;
+  margin: 0 5px 0 13px;
   object-fit: contain;
 
-  @include xxl {
-    margin: 0 6px 0 25px;
+  @include sm {
+    margin: 0 5px 0 8px;
+  }
+
+  @include md {
+    margin: 0 6px 0 51px;
   }
 }
 
@@ -75,10 +92,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0 0 0 13px;
+  margin: 0 0 10px 13px;
 
   @include md {
-    margin: 0 0 12px 22px;
+    margin: 0 0 10px 22px;
   }
 }
 

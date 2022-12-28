@@ -28,8 +28,7 @@
   grid-template-columns: 38% 41% 59% 52% 47%;
 
   @include sm {
-    padding: 21px 18px;
-    grid-template-columns: 29% 25% 30% 33% 19%;
+    grid-template-columns: 29% 25% 30% 33% 23%;
   }
 
   @include md {
@@ -54,12 +53,14 @@
     color: $dark;
     text-align: center;
 
-    @include md {
-      font-size: 14px;
-
+    @include sm {
       &:first-child {
         padding-left: 20px;
       }
+    }
+
+    @include md {
+      font-size: 14px;
     }
 
     @include lg {

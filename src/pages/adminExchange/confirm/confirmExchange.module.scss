@@ -3,10 +3,12 @@
 .panel {
   width: 100%;
   @include sm {
-    max-width: 312px;
+    max-width: 471px;
+    margin-right: 2%;
   }
 
   @include md {
+    margin-right: 0;
     max-width: 456px;
   }
 }
@@ -53,6 +55,8 @@
 
 .wrapper {
   display: flex;
+  margin-top: 35px;
+  width: 100%;
 }
 
 .buttonConfirm {
@@ -62,6 +66,10 @@
 
   @media (max-width: 360px) {
     max-width: 146px;
+  }
+
+  @include sm {
+    max-width: 58%;
   }
 
   @include md {
@@ -82,8 +90,19 @@
   color: #6DD7C3;
   margin-left: 15px;
   height: 46px;
+  transition: 0.4s;
+
+  &:hover {
+    background: #6DD7C3;
+    color: #ffffff;
+  }
+
+  @include sm {
+    max-width: 35%;
+  }
 
   @include md {
+    max-width: 110px;
     height: 53px;
   }
 }
@@ -99,6 +118,7 @@
   display: block;
   width: 20px;
   height: 20px;
+  cursor: pointer;
   border: 1px solid #E0E0E0;
   border-radius: 5px;
   background-repeat: no-repeat;
@@ -180,9 +200,13 @@
 }
 
 .list {
-  margin: 60px 0 34px 13px;
+  margin: 63px 0 121px 15px;
   padding-left: 22px;
   border-left: 1px solid #E0E0E0;
+  @include md {
+    margin: 67px 0 34px 13px;
+  }
+
   li {
     font-family: 'Sora', sans-serif;
     font-weight: 600;
@@ -227,11 +251,11 @@
   align-items: center;
   background: #F6F8FA;
   border: 1px solid #E0E0E0;
-  border-radius: 10px;
   padding: 13px 15px 15px;
 
   @include sm {
     display: block;
+    border-radius: 10px;
     position: static;
     padding-left: 18px;
   }
@@ -252,6 +276,12 @@
 .transactionWrap {
   display: flex;
   justify-content: space-between;
+
+  button {
+    width: 16px;
+    padding: 0;
+    margin-left: 13px;
+  }
 }
 
 .id {

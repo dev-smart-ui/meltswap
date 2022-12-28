@@ -12,7 +12,7 @@ export const Advantages = () => {
                     return <AdvantageBlock key={id} props={item}/>
                 })}
             </div>
-            <a href="/" className='button'>Learn MORE</a>
+            <a href="/how" className='button'>Learn MORE</a>
         </div>
     </section>
 };
