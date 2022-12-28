@@ -9,6 +9,9 @@ import {Price} from "../pages/price/price";
 import {Terms} from "../pages/policy/terms";
 import {Aml} from "../pages/policy/aml";
 import {Policy} from "../pages/policy/policy";
+import {ConfirmExchange} from "../pages/adminExchange/confirm/confirmExchange";
+import {EnterExchange} from "../pages/adminExchange/enter/enterExchange";
+import {SendExchange} from "../pages/adminExchange/send/sendExchange";
 
 export const ROUTES = {
     home:{
@@ -64,6 +67,24 @@ export const ROUTES = {
         linkText:"AML/KYC Policy",
         path:"/aml",
         element:<Aml/>
+    },
+
+    confirm:{
+        linkText:"Admin Exchange Confirm",
+        path:"/confirm",
+        element:<ConfirmExchange/>
+    },
+
+    enter:{
+        linkText:"Admin Exchange Enter",
+        path:"/enter",
+        element:<EnterExchange/>
+    },
+
+    send:{
+        linkText:"Admin Exchange Send",
+        path:"/send",
+        element:<SendExchange/>
     },
 }
 

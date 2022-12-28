@@ -1,0 +1,117 @@
+@import "var";
+
+.wrap{
+  display: flex;
+  align-items: flex-end;
+
+  label {
+    width: 100%;
+  }
+}
+
+.label{
+  display: block;
+  font-family: 'Sora';
+  font-weight: 600;
+  font-size: 12px;
+  opacity: 0.4;
+  margin-bottom: 5px;
+  color: $secondFontColor;
+
+  @include md {
+    font-size: 14px;
+  }
+}
+
+.input{
+  background-color: transparent;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: 1px solid #E0E0E0;
+  border-right: none;
+  height: 45px;
+  padding-left: 16px;
+  font-family: 'Sora', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #2B2B37;
+  width: 100%;
+
+  @include md {
+    padding-left: 19px;
+    font-size: 22px;
+    height: 55px;
+  }
+}
+
+.select{
+  :global{
+    .prefix{
+      &__control{
+        margin: 0;
+        padding: 0;
+        border: 1px solid #E0E0E0;
+        border-left: none;
+        height: 45px;
+        box-shadow: none;
+        background-color: transparent;
+        width: 145px;
+        border-radius: 0 10px 10px 0;
+        @include md {
+          width: 167px;
+          height: 55px;
+        }
+      }
+      &__value-container {
+        padding: 0px 2px 0 22px;
+      }
+      &__menu {
+        background-color: rgba(255, 255, 255);
+
+        &-list {
+          padding-top: 0;
+          padding-bottom: 0;
+        }
+      }
+      &__option {
+
+        div {
+          justify-content: start;
+          cursor: pointer;
+        }
+
+        &--is-selected {
+          background-color: #6dd7c3;
+        }
+
+      }  
+      &__indicator {
+        cursor: pointer;
+        color: #2B2B37;
+      }
+      &__indicator-separator {
+        display: none;
+      }
+      &__single-value {
+        font-size: 16px;
+        
+        @include md {
+          font-size: 22px;
+        }
+      }
+     
+    }
+  }
+}
+.option{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon{
+  height: 21px;
+  width: 21px;
+  object-fit: contain;
+}
+

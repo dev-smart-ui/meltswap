@@ -1,0 +1,274 @@
+@import 'src/var';
+
+.panel {
+  width: 100%;
+  @include sm {
+    max-width: 312px;
+  }
+
+  @include md {
+    max-width: 456px;
+  }
+}
+
+.clarification {
+  font-family: 'Sora', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #2B2B37;
+  margin-bottom: 31px;
+}
+
+.block:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.name {
+  font-family: 'Sora', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: #666666;
+  opacity: 0.4;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.number {
+  font-family: 'Sora', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  color: #2C3842;
+  margin-bottom: 5px;
+}
+
+.text {
+  font-family: 'Sora', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #2C3842;
+  display: block;
+  word-wrap: break-word;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.buttonConfirm {
+  margin: 0;
+  max-width: 204px;
+  height: 46px;
+
+  @media (max-width: 360px) {
+    max-width: 146px;
+  }
+
+  @include md {
+    height: 53px;
+    max-width: 314px;
+  }
+}
+
+.back {
+  border: 1px solid #6DD7C3;
+  border-radius: 10px;
+  max-width: 110px;
+  width: 100%;
+  font-family: 'Sora', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #6DD7C3;
+  margin-left: 15px;
+  height: 46px;
+
+  @include md {
+    height: 53px;
+  }
+}
+
+.checkboxInput {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.checkboxInput+label::before {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #E0E0E0;
+  border-radius: 5px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+  margin-right: 13px;
+  background-color: #F6F6F9;
+  position: absolute;
+  left: 0;
+  top: -2px;
+}
+
+
+.checkboxInput:checked+label::before {
+  border-color: #6DD7C3;
+  background-color: #6DD7C3;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+}
+
+.checkbox {
+  margin-top: 24px;
+   label {
+     font-family: 'Sora', sans-serif;
+     font-style: normal;
+     font-weight: 400;
+     font-size: 12px;
+     color: #666666;
+     max-width: 260px;
+     padding-left: 36px;
+     position: relative;
+     display: block;
+
+     @include md {
+       max-width: 100%;
+     }
+
+     a {
+       color: #6DD7C3;
+     }
+   }
+}
+
+
+.exchange {
+  background: #F6F8FA;
+
+  @include md {
+    padding: 57px 0;
+  }
+
+  @include lg {
+    padding: 57px 0 249px;
+  }
+}
+
+.cardBlock {
+  width: 100%;
+  margin: auto;
+  background: #FFFFFF;
+  border-radius: 10px;
+  padding: 42px 20px 100px;
+  position: relative;
+
+  @include sm {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @include md {
+    padding: 24px 24px 30px 30px;
+    max-width: 780px;
+  }
+}
+
+
+.stage {
+  max-width: 198px;
+  width: 100%;
+}
+
+.list {
+  margin: 60px 0 34px 13px;
+  padding-left: 22px;
+  border-left: 1px solid #E0E0E0;
+  li {
+    font-family: 'Sora', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    color: #2B2B37;
+    position: relative;
+
+    &:not(:last-child) {
+      margin-bottom: 31px;
+    }
+
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      top: -7px;
+      left: -36px;
+      background: #F6F8FA;
+      border: 1px solid #E0E0E0;
+      border-radius: 50%;
+    }
+
+    &.active {
+      &:before {
+        background: #6DD7C3 url("../img/check.svg") no-repeat center;
+      }
+    }
+
+  }
+}
+
+.transaction {
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #F6F8FA;
+  border: 1px solid #E0E0E0;
+  border-radius: 10px;
+  padding: 13px 15px 15px;
+
+  @include sm {
+    display: block;
+    position: static;
+    padding-left: 18px;
+  }
+
+  span {
+    font-family: 'Sora', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    color: #2B2B37;
+    display: block;
+
+    @include sm {
+      margin-bottom: 9px;
+    }
+  }
+}
+
+.transactionWrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.id {
+  background: #6DD7C3;
+  border-radius: 100px;
+  max-width: 139px;
+  width: 100%;
+  padding: 10px 17px;
+  font-family: 'Sora', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  color: #FFFFFF;
+  margin: 0 10px;
+  @include sm {
+    margin: 0;
+    padding: 10px 12px;
+  }
+}
