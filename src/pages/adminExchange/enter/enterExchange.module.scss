@@ -3,11 +3,11 @@
 .panel {
   width: 100%;
   @include sm {
-    max-width: 312px;
-  }
-
-  @include md {
     max-width: 439px;
+    margin-right: 2%;
+  }
+  @include md {
+    margin-right: 0;
   }
 }
 
@@ -93,9 +93,12 @@
 }
 
 .list {
-  margin: 60px 0 34px 13px;
+  margin: 47px 0 121px 20px;
   padding-left: 22px;
   border-left: 1px solid #E0E0E0;
+  @include md {
+    margin: 67px 0 34px 13px;
+  }
   li {
     font-family: 'Sora', sans-serif;
     font-weight: 600;
@@ -140,10 +143,10 @@
   align-items: center;
   background: #F6F8FA;
   border: 1px solid #E0E0E0;
-  border-radius: 10px;
   padding: 13px 15px 15px;
 
   @include sm {
+    border-radius: 10px;
     display: block;
     position: static;
     padding-left: 18px;
@@ -165,6 +168,11 @@
 .transactionWrap {
   display: flex;
   justify-content: space-between;
+  button {
+    width: 16px;
+    padding: 0;
+    margin-left: 13px;
+  }
 }
 
 .id {

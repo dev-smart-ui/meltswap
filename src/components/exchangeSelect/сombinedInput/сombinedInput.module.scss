@@ -61,9 +61,13 @@
           width: 167px;
           height: 55px;
         }
+
+        &:hover {
+          border-color: #E0E0E0;
+        }
       }
       &__value-container {
-        padding: 0px 2px 0 22px;
+        padding: 0 2px 0 22px;
       }
       &__menu {
         background-color: rgba(255, 255, 255);
@@ -88,6 +92,10 @@
       &__indicator {
         cursor: pointer;
         color: #2B2B37;
+
+        & svg {
+          fill: #6DD7C3;
+        }
       }
       &__indicator-separator {
         display: none;

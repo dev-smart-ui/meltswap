@@ -42,6 +42,6 @@ export const ExchangeForm = () => {
                 value={input*currency}  />
         </div>
     
-        <button type='button' className={"button " + [styles.btn]}>Exchange</button>
+        <a href="/enter" type='button' className={"button " + [styles.btn]}>Exchange</a>
     </div>
 };

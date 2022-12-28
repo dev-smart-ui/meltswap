@@ -91,9 +91,9 @@ const tabList = [
 export const Price = () => {
     return <section className={styles.price}>
         <div className='container'>
-            <h2 className={styles.title}>Price charts</h2>
+            <h2>Price charts</h2>
             <Tabs hideArrow={560} tabList={tabList}/>
-            <a href='/' className='button'>More assets</a>
+            <a href='/price' className='button'>More assets</a>
         </div>
     </section>
 };
