@@ -43,7 +43,7 @@ h2 {
     display: grid;
     padding: 16px 30px 24px;
     grid-template-rows: repeat(1, 1fr);
-    grid-template-columns: 6% 27% 16.75% 16% 23.5% 11%;
+    grid-template-columns: 5% 32% 15.75% 12% 23.5% 11%;
     grid-template-areas:
     "numberBlock currencyBlock  priceBlock changeBlock marketBlock";
   }
@@ -69,8 +69,8 @@ h2 {
     font-size: 12px;
     color: $dark;
 
-    @include md {
-        font-size: 16px;
+    @include lg {
+      font-size: 16px;
     }
 }
 
