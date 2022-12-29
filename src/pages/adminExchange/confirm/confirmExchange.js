@@ -24,8 +24,8 @@ export const ConfirmExchange = () => {
                     <span className={styles.text}>2-40 minutes</span>
                 </div>
                 <div className={styles.wrapper}>
-                    <button type="button" className={classNames("button ", styles.buttonConfirm)}>confirm</button>
-                    <button type="button" className={styles.back}>Back</button>
+                    <a href="/send" className={classNames("button ", styles.buttonConfirm)}>confirm</a>
+                    <a href="/enter" className={styles.back}>Back</a>
                 </div>
                 <div className={styles.checkbox}>
                     <input type="checkbox" className={styles.checkboxInput} id="happy" name="happy" value="yes"/>

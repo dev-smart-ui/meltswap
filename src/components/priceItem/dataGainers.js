@@ -1,8 +1,8 @@
 import bitcoin from './img/bitcoin.svg';
 import ethereum from './img/ethereum.svg';
 import tether from './img/tether.svg';
-import sol from "./img/sol.svg";
-import trx from "./img/trx.svg";
+import sol from "../../pages/status/img/sol.svg";
+import trx from "../../pages/status/img/trx.svg";
 import usd from "./img/usd.svg";
 import xrp from "./img/xrp.svg";
 
