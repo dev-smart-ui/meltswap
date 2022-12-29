@@ -9,43 +9,43 @@ import reddit  from "../media/reddit.svg";
 export const LINKS = {
     facebook:{
         linkText:"Facebook",
-        path:"/",
+        path:"https://www.facebook.com/profile.php?id=100077584958339",
         icon:facebook
     },
 
     twitter:{
         linkText:"Twitter",
-        path:"/",
+        path:"https://twitter.com/meltswap",
         icon:twitter
     },
 
     instagram:{
         linkText:"Instagram",
-        path:"/",
+        path:"https://www.instagram.com/meltswap/?hl=en",
         icon:instagram
     },
 
     linkedIn:{
         linkText:"LinkedIn",
-        path:"/",
+        path:"https://www.linkedin.com/in/melt-swap-92882a229/",
         icon:linkedIn
     },
 
     github:{
         linkText:"Github",
-        path:"/",
+        path:"https://github.com/Melt-swap",
         icon:github
     },
 
     discord:{
         linkText:"Discord",
-        path:"/",
+        path:"https://discord.com/channels/950511732885946419/950511820337184790",
         icon:discord
     },
 
     reddit:{
         linkText:"Discord",
-        path:"/",
+        path:"https://www.reddit.com/user/Melt-swap",
         icon:reddit
     },
 }
