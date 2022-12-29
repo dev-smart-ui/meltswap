@@ -7,7 +7,7 @@ import logo from "./img/contact-logo.svg";
 
 export const Contact = () => {
     return <section className={styles.contact}>
-        <h1 className={styles.title}>Get in Touch <span>Contact us for help to join the team</span> </h1>
+        <h1 className={styles.title}>Get in Touch <span>Contact us for help or to join the team</span> </h1>
         <div className={styles.wrap}>
             <div className={styles.left}>
                 <Form/>

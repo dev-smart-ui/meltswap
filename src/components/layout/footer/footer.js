@@ -18,11 +18,11 @@ const companyNav =  [
     ROUTES.about ,
     ROUTES.how,
     ROUTES.status ,
+    ROUTES.price
  ]
 const supportNav =[
     ROUTES.contact,
-    ROUTES.faq,
-    ROUTES.price
+    ROUTES.faq
 ]
 
 const privacy =[

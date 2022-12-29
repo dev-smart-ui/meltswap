@@ -45,14 +45,6 @@ export const dataFaq = {
             text: 'text',
         },
         {
-            title: 'Why should I have a customer account?',
-            text: 'text',
-        },
-        {
-            title: 'How to create a customer account',
-            text: 'text',
-        },
-        {
             title: 'When we may ask for your email?',
             text: 'text',
         },
