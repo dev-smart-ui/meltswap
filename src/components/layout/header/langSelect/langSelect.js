@@ -3,10 +3,7 @@ import Select from "react-select";
 import styles from "./langSelect.module.scss"
 
 export const LangSelect = () => {
-    const options = [{value: 'EN/USD', label: 'EN/USD'}, {value: 'UK/GBP', label: 'UK/GBP'}, {
-        value: 'FR/EUR',
-        label: 'FR/EUR'
-    }]
+    const options = [{value: 'EN/USD', label: 'EN/USD'}, {value: 'UK/GBP', label: 'UK/GBP'}, {value: 'FR/EUR', label: 'FR/EUR'}, {value: 'JP/JPY', label: 'JP/JPY'}, {value: 'AU/AUD', label: 'AU/AUD'}]
     const [language, setLanguage] = useState(options[0]);
     const changeLangHandler = (l) => {
         setLanguage(l)

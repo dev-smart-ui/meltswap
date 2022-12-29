@@ -107,9 +107,9 @@ export const Footer = ({onClose}) => {
                 <ul className={styles.socialNetwork}>
                     {socialNetwork.map((item, i)=>{
                         return <li key ={i}>
-                            <Link onClick={onClose} to={item.path}>
+                            <a href={item.path} target="blank">
                                 <img src={item.icon} alt={item.linkText} />
-                            </Link>
+                            </a>
                         </li>
                     })}
                 </ul>
