@@ -8,7 +8,7 @@
   }
 
   @include md {
-    margin-right: 0;
+    margin-rigяht: 0;
     max-width: 456px;
   }
 }
@@ -166,11 +166,7 @@
   background: #F6F8FA;
 
   @include md {
-    padding: 57px 0;
-  }
-
-  @include lg {
-    padding: 57px 0 249px;
+    padding: 57px 0 120px;
   }
 }
 
@@ -179,7 +175,7 @@
   margin: auto;
   background: #FFFFFF;
   border-radius: 10px;
-  padding: 42px 20px 100px;
+  padding: 42px 20px 84px;
   position: relative;
 
   @include sm {
@@ -200,7 +196,7 @@
 }
 
 .list {
-  margin: 63px 0 121px 15px;
+  margin: 63px 0 84px 15px;
   padding-left: 22px;
   border-left: 1px solid #E0E0E0;
   @include md {

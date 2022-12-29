@@ -10,15 +10,15 @@
             "currency change btnExchange";
     letter-spacing: 0.02em;
     @include md {
-        padding: 19px 30px 24px;
+        padding: 13px 30px 16px;
         grid-template-rows: repeat(1, 1fr);
         grid-template-columns: 5% 32% 15.75% 12% 23.5% 11%;
         grid-template-areas:
         "numb currency value change market btnExchange";
-       
     }
 
     @include lg {
+        padding: 19px 30px 24px;
         grid-template-columns: 8% 26% 16.75% 13% 23.5% 13%;
     }
 
@@ -39,8 +39,12 @@
         font-weight: 400;
 
         @include md {
+            font-size: 13px;
+        }
+
+        @include lg {
             font-size: 16px;
-        }  
+        }
 
     }
 
