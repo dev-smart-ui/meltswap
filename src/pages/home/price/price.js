@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './price.module.scss'
 import {Tabs} from "../../../components/tabs/tabs";
-import {Cryptocurrencies} from "../../../components/priceItem/dataCryptocurrencies";
+import {CryptocurrenciesHome} from "../../../components/priceItem/dataHomeCryptocurrencies";
 import {Gainers} from "../../../components/priceItem/dataGainers";
 import {Lorens} from "../../../components/priceItem/dataLorens";
 import {PriceItem} from "../../../components/priceItem/priceItem";
@@ -30,7 +30,7 @@ const Tab1=()=> <>
 
         </div>
     </div>
-    {Cryptocurrencies.map((item,i)=> <PriceItem key={i} counter={i} item={item}/>)}
+    {CryptocurrenciesHome.map((item,i)=> <PriceItem key={i} counter={i} item={item}/>)}
 </>
 
 const Tab2=()=> <>

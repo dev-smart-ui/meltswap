@@ -15,7 +15,7 @@ export const EnterExchange = () => {
                         Recipient Wallet
                     </label>
                     <input type="text" placeholder="Enter the payout address" className={styles.walletInput} />
-                    <button type={"submit"} className={classNames(styles.button , " button") }> Next</button>
+                    <a href="/confirm" className={classNames(styles.button , " button") }> Next</a>
                 </div>
             </div>
             <div className={styles.stage}>

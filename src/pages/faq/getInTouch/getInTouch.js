@@ -6,7 +6,7 @@ export const GetInTouch = ({props}) => {
         <div className={styles.getInTouch}>
             <h2 className={styles.title}>{props.title}</h2>
             <div className={styles.content} dangerouslySetInnerHTML={{__html: props.context}}/>
-            <button className={"button"} type="button">{props.button.name}</button>
+            <a href="/contact" className={"button"}>{props.button.name}</a>
         </div>
     );
 };
