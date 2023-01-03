@@ -44,9 +44,9 @@ export const dataFaq = {
             title: 'How long does an exchange take?',
             text: 'On average transactions could take 2-20 min. <br>' +
                 'If your transaction takes more time, it may be due to various issues: <br>' +
-                ' 1) DDoS attacks. Unfortunately, such problems happen from time to time, but we are always happy to help you and solve any issues; <br>' +
-                ' 2) Cryptocurrency updates. We may update the client and disable some coins. As soon as we turn them back on, you will get your funds right away; <br>' +
-                ' 3) The blockchain is overloaded. Too many transactions are waiting to be included into the blockchain, and yours may wait for its turn, too. Sometimes you might have to wait a little longer.',
+                ' &#8226; DDoS attacks. Unfortunately, such problems happen from time to time, but we are always happy to help you and solve any issues; <br>' +
+                ' &#8226; Cryptocurrency updates. We may update the client and disable some coins. As soon as we turn them back on, you will get your funds right away; <br>' +
+                ' &#8226; The blockchain is overloaded. Too many transactions are waiting to be included into the blockchain, and yours may wait for its turn, too. Sometimes you might have to wait a little longer.',
         },
         {
             title: 'Why does my transaction take so long?',
