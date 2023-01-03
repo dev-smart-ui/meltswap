@@ -12,7 +12,7 @@
 }
 
 .clarification {
-  font-family: 'Sora', sans-serif;
+  font-family: $secondFont;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -21,7 +21,7 @@
 }
 
 .walletText {
-  font-family: 'Sora', sans-serif;
+  font-family: $secondFont;
   font-weight: 600;
   font-size: 14px;
   color: #2B2B37;
@@ -33,7 +33,7 @@
   border: 1px solid #E0E0E0;
   border-radius: 10px;
   padding-left: 16px;
-  font-family: 'Sora', sans-serif;
+  font-family: $secondFont;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -96,7 +96,7 @@
     margin: 67px 0 34px 13px;
   }
   li {
-    font-family: 'Sora', sans-serif;
+    font-family: $secondFont;
     font-weight: 600;
     font-size: 12px;
     line-height: 15px;
@@ -149,7 +149,7 @@
   }
 
   span {
-    font-family: 'Sora', sans-serif;
+    font-family: $secondFont;
     font-weight: 600;
     font-size: 12px;
     color: #2B2B37;
@@ -177,7 +177,7 @@
   max-width: 139px;
   width: 100%;
   padding: 10px 17px;
-  font-family: 'Sora', sans-serif;
+  font-family: $secondFont;
   font-weight: 600;
   font-size: 12px;
   line-height: 15px;

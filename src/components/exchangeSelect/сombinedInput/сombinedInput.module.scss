@@ -11,7 +11,7 @@
 
 .label{
   display: block;
-  font-family: 'Sora';
+  font-family: $secondFont;
   font-weight: 600;
   font-size: 12px;
   opacity: 0.4;
@@ -31,7 +31,7 @@
   border-right: none;
   height: 45px;
   padding-left: 16px;
-  font-family: 'Sora', sans-serif;
+  font-family: $secondFont;
   font-weight: 600;
   font-size: 16px;
   color: #2B2B37;

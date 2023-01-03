@@ -14,7 +14,7 @@
 }
 
 .clarification {
-  font-family: 'Sora', sans-serif;
+  font-family: $secondFont;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -27,7 +27,7 @@
 }
 
 .name {
-  font-family: 'Sora', sans-serif;
+  font-family: $secondFont;
   font-weight: 600;
   font-size: 14px;
   color: #666666;
@@ -37,7 +37,7 @@
 }
 
 .number {
-  font-family: 'Sora', sans-serif;
+  font-family: $secondFont;
   font-weight: 700;
   font-size: 32px;
   color: #2C3842;
@@ -45,7 +45,7 @@
 }
 
 .text {
-  font-family: 'Sora', sans-serif;
+  font-family: $secondFont;
   font-weight: 400;
   font-size: 14px;
   color: #2C3842;
@@ -85,7 +85,7 @@
   border-radius: 10px;
   max-width: 110px;
   width: 100%;
-  font-family: 'Sora', sans-serif;
+  font-family: $secondFont;
   font-weight: 700;
   font-size: 14px;
   text-transform: uppercase;
@@ -146,7 +146,7 @@
 .checkbox {
   margin-top: 24px;
    label {
-     font-family: 'Sora', sans-serif;
+     font-family: $secondFont;
      font-style: normal;
      font-weight: 400;
      font-size: 12px;
@@ -209,7 +209,7 @@
   }
 
   li {
-    font-family: 'Sora', sans-serif;
+    font-family: $secondFont;
     font-weight: 600;
     font-size: 12px;
     line-height: 15px;
@@ -262,7 +262,7 @@
   }
 
   span {
-    font-family: 'Sora', sans-serif;
+    font-family: $secondFont;
     font-weight: 600;
     font-size: 12px;
     color: #2B2B37;
@@ -291,7 +291,7 @@
   max-width: 139px;
   width: 100%;
   padding: 10px 17px;
-  font-family: 'Sora', sans-serif;
+  font-family: $secondFont;
   font-weight: 600;
   font-size: 12px;
   line-height: 15px;

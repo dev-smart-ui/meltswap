@@ -21,7 +21,7 @@
 
   span {
     display: block;
-    font-family: 'Sora', sans-serif;
+    font-family: $secondFont;
     font-style: normal;
     font-weight: 400;
     margin-top: 10px;
@@ -68,7 +68,7 @@
 }
 
 .text {
-  font-family: 'Sora', sans-serif;
+  font-family: $secondFont;
   font-weight: 400;
   font-size: 12px;
   line-height: 20px;
