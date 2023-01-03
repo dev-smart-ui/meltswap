@@ -33,13 +33,13 @@
   padding: 14px 0 16px 15px;
   border-left: 2px solid #E0E0E0;
 
-  span {
-    font-family: 'Sora';
+  div {
+    font-family: 'Sora',sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 8px;
+    font-size: 10px;
     margin-right: 10px;
-    color: $secondFontColor;
+    color: #4e4e4e;
     display: flex;
     position: relative;
 
@@ -52,7 +52,12 @@
       border-radius: 50%;
       height: 7px;
       background: #F6F8FA;
-    } 
+    }
+
+    @media (max-width: 352px) {
+      max-width: 176px;
+      flex-wrap: wrap;
+    }
 
     @include sm {
       font-size: 11px;

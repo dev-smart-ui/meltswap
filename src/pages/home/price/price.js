@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './price.module.scss'
 import {Tabs} from "../../../components/tabs/tabs";
-import {CryptocurrenciesHome} from "../../../components/priceItem/dataHomeCryptocurrencies";
+import {Cryptocurrencies} from "../../../components/priceItem/dataCryptocurrencies";
 import {Gainers} from "../../../components/priceItem/dataGainers";
 import {Lorens} from "../../../components/priceItem/dataLorens";
 import {PriceItem} from "../../../components/priceItem/priceItem";
@@ -30,7 +30,7 @@ const Tab1=()=> <>
 
         </div>
     </div>
-    {CryptocurrenciesHome.map((item,i)=> <PriceItem key={i} counter={i} item={item}/>)}
+    {Cryptocurrencies.slice(0,10).map((item,i)=> <PriceItem key={i} counter={i} item={item}/>)}
 </>
 
 const Tab2=()=> <>
@@ -54,7 +54,7 @@ const Tab2=()=> <>
 
     </div>
 </div>
-    {Gainers.map((item,i)=> <PriceItem key={i} counter={i} item={item}/>)}
+    {Gainers.slice(0,10).map((item,i)=> <PriceItem key={i} counter={i} item={item}/>)}
 </>
 
 const Tab3=()=> <> 
@@ -78,7 +78,7 @@ const Tab3=()=> <>
 
     </div>
 </div>
-{Lorens.map((item,i)=> <PriceItem key={i} counter={i} item={item}/>)}
+{Lorens.slice(0,10).map((item,i)=> <PriceItem key={i} counter={i} item={item}/>)}
 
 </>
 
