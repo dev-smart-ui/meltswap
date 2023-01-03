@@ -17,12 +17,12 @@ const navList =  [
 const companyNav =  [
     ROUTES.about ,
     ROUTES.how,
-    ROUTES.status ,
-    ROUTES.price
+    ROUTES.price,
+    ROUTES.status
  ]
 const supportNav =[
-    ROUTES.contact,
-    ROUTES.faq
+    ROUTES.faq,
+    ROUTES.contact
 ]
 
 const privacy =[

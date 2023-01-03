@@ -1,6 +1,6 @@
-import defi from './img/DeFi-based.svg';
-import platform from './img/Non-custodial-platform.svg';
-import limitless from './img/Limitless-exchange.svg';
+import defi from './img/DeFi-based.png';
+import platform from './img/Non-custodial-platform.png';
+import limitless from './img/Limitless-exchange.png';
 
 export const dataAdvantages = {
     card: [

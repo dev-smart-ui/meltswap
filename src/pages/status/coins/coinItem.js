@@ -1,10 +1,11 @@
 import React from 'react';
 import styles from './coinItem.module.scss'
+import styleIcon from '../status.module.scss';
 import check from '../img/check.svg';
 export const ConstItem = ({item}) => {
 
     return <div className={styles.coinItem}>
-        <div className={styles.currency}>
+        <div className={styleIcon.currency}>
             <img src={item.icon} alt={item.currency} /> <div><span>{item.name}</span> {item.currency}</div>
         </div>
         <div className={styles.status}>

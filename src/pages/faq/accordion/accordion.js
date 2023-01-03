@@ -11,8 +11,7 @@ export const Accordion = ({props}) => {
                 </div>
             </div>
 
-
-            <div className={styles.content}>{props.text}</div>
+            <div className={styles.content}  dangerouslySetInnerHTML={{__html: props.text}}/>
         </div>
     );
 };
