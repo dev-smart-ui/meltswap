@@ -1,4 +1,10 @@
-import React from 'react';
+import {useState, useEffect, useMemo} from 'react';
+// Подключаем датагрид
+import 'ag-grid-community/styles/ag-grid.css';
+import 'ag-grid-community/styles/ag-theme-alpine.css';
+import {Table} from "../../components/table/table";
+import {AgGridReact} from 'ag-grid-react';
+
 import styles from './price.module.scss'
 import {Search} from "../../components/search/search";
 import {Tabs} from "../../components/tabs/tabs";
@@ -6,6 +12,7 @@ import {Cryptocurrencies} from "../../components/priceItem/dataCryptocurrencies"
 import {Lorens} from "../../components/priceItem/dataLorens";
 import {PriceItem} from "../../components/priceItem/priceItem";
 import {Pagination} from "../../components/pagination/pagination";
+
 
 const tab1=()=> <>
 <div className={styles.tabsBlock}>
@@ -90,7 +97,36 @@ const tabList = [
 ]
 
 
+
 export const Price = () => {
+
+    
+const [rowData, setRowData] = useState();
+// Создаем список колонок ( последняя наша кнопка, которая выводится через компонент Table )
+const [columnDefs] = useState([
+    { field: 'date' },
+    { field: 'sport' },
+    { field: 'gold' },
+    { field: 'silver' },
+    { field: 'bronze' },
+    { field: 'total' }, 
+    { cellRenderer: Table},
+]);
+
+// Подключаем данные с api 
+useEffect(() => {
+    fetch('https://www.ag-grid.com/example-assets/olympic-winners.json')
+    .then(result => result.json())
+    .then(rowData => setRowData(rowData))
+  }, []);
+
+// Подключаем филтрацию
+  const defaultColDef = useMemo( ()=> ( {
+    sortable: true, 
+    filter: true      
+}), []);
+
+
 
     return <section className={styles.price}>
         <div className='container'>
@@ -98,6 +134,18 @@ export const Price = () => {
             <div className={styles.searchBlock}>
                 <Search/>
             </div>
+
+            <div className="ag-theme-alpine" style={{height: 200}}>
+                {/* Выводим нашу таблицу */}
+                <AgGridReact 
+                    pagination={true}
+                    animateRows={true} 
+                    defaultColDef={defaultColDef} 
+                    rowData={rowData} 
+                    columnDefs={columnDefs}        
+                />
+            </div>
+
             <Tabs tabList={tabList}/>
             <Pagination length={5} active={1}/>
         </div>
