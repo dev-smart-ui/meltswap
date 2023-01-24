@@ -35,17 +35,17 @@
      grid-template-columns: 7% 27% 18% 17% 21% 11%;
    }
 
-   div {
-    font-family: $secondFont;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 12px;
-    color: $dark;
+  //  div {
+  //   font-family: $secondFont;
+  //   font-style: normal;
+  //   font-weight: 600;
+  //   font-size: 12px;
+  //   color: $dark;
 
-      @include lg {
-       font-size: 16px;
-      }
-    }
+  //     @include lg {
+  //      font-size: 16px;
+  //     }
+  //   }
  } 
 
  .searchBlock{
@@ -64,3 +64,88 @@
     font-size: 18px;
     color: #2C3842;
  }
+
+
+ :global {
+  body  .ag-paging-panel {
+      margin: auto;
+      border-top:none;
+  }
+  .ag-paging-row-summary-panel {
+      display: none;
+  }
+
+  .ag-header-cell-text {
+    font-family: $secondFont;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    color: $dark;
+
+    
+    @include lg {
+      font-size: 16px;
+    }
+  }
+
+  body .ag-header {
+    background-color: transparent;
+    border-bottom: none;
+  }
+
+  body .ag-header-cell[col-id='first'] {
+    @include md {
+      padding-left: 45px;
+    }
+  }
+
+  body .ag-root-wrapper {
+    border: none;
+  }
+  body .ag-header-cell-resize {
+    display: none;
+  }
+
+  body .ag-cell {
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    @include md {
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+    
+    &:first-child {
+      padding-left: 10px;
+      @include md {
+        padding-left: 45px;
+      }
+    }
+    &:last-child {
+      padding-right: 10px;
+    }
+  }
+  
+  body .ag-row {
+    background-color: #fff;
+    border-bottom: 1px solid #d7d7d7;
+  }
+
+  body .ag-cell-wrapper {
+    font-family: $secondFont;
+    font-size: 12px;
+    color: #666666;
+    height: 30px;
+    font-weight: 400;
+
+    @include md {
+      height: 50px;
+      font-size: 13px;
+    }
+
+    @include lg {
+      font-size: 16px;
+    }
+  }
+
+}
