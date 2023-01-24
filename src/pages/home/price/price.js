@@ -1,85 +1,20 @@
 import React from 'react';
 import styles from './price.module.scss'
 import {Tabs} from "../../../components/tabs/tabs";
-import {Cryptocurrencies} from "../../../components/priceItem/dataCryptocurrencies";
-import {Gainers} from "../../../components/priceItem/dataGainers";
-import {Lorens} from "../../../components/priceItem/dataLorens";
-import {PriceItem} from "../../../components/priceItem/priceItem";
-
-
-
+import {TabCryptocurrencies} from "../../../components/table/tableCryptocurrencies";
+import {TabGainers} from "../../../components/table/tableGainers";
+import {TabLorens} from "../../../components/table/tableLorens";
 
 const Tab1=()=> <>
-    <div className={styles.tabsBlock}>
-        <div className={styles.numberBlock}>
-            #
-        </div>
-        <div className={styles.currencyBlock}>
-            Currency
-        </div>
-        <div className={styles.priceBlock}>
-            Price
-        </div>
-        <div className={styles.changeBlock}>
-            24 Change
-        </div>
-        <div className={styles.marketBlock}>
-            Market Cap
-        </div>
-        <div>
-
-        </div>
-    </div>
-    {Cryptocurrencies.slice(0,10).map((item,i)=> <PriceItem key={i} counter={i} item={item}/>)}
+    <TabCryptocurrencies/>
 </>
 
 const Tab2=()=> <>
-<div className={styles.tabsBlock}>
-    <div className={styles.numberBlock}>
-        #
-    </div>
-    <div className={styles.currencyBlock}>
-        Currency
-    </div>
-    <div className={styles.priceBlock}>
-        Price
-    </div>
-    <div className={styles.changeBlock}>
-        24 Change
-    </div>
-    <div className={styles.marketBlock}>
-        Market Cap
-    </div>
-    <div>
-
-    </div>
-</div>
-    {Gainers.slice(0,10).map((item,i)=> <PriceItem key={i} counter={i} item={item}/>)}
+    <TabGainers/>
 </>
 
 const Tab3=()=> <> 
-<div className={styles.tabsBlock}>
-    <div className={styles.numberBlock}>
-        #
-    </div>
-    <div className={styles.currencyBlock}>
-        Currency
-    </div>
-    <div className={styles.priceBlock}>
-        Price
-    </div>
-    <div className={styles.changeBlock}>
-        24 Change
-    </div>
-    <div className={styles.marketBlock}>
-        Market Cap
-    </div>
-    <div>
-
-    </div>
-</div>
-{Lorens.slice(0,10).map((item,i)=> <PriceItem key={i} counter={i} item={item}/>)}
-
+    <TabLorens/>
 </>
 
 const tabList = [

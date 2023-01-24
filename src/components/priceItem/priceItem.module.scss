@@ -53,7 +53,11 @@
 
 .currency {
     display: flex;
+    line-height: normal;
     align-items: center;
+    @include lg {
+        line-height:1;
+    }
     img {
         width: 32px;
         margin-right: 11px;
@@ -112,6 +116,7 @@
 
 .value, .change {
     text-align: end;
+    line-height:normal;
     @include md {
        text-align: start;
     }
