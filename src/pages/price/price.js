@@ -7,15 +7,15 @@ import {TabGainers} from "../../components/table/tableGainers";
 import {TabLorens} from "../../components/table/tableLorens";
 
 const tab1=()=> <>
-    <TabCryptocurrencies/>
+    <TabCryptocurrencies pagination={true}/>
 </>
 
 const tab2=()=> <>
-    <TabGainers/>
+    <TabGainers pagination={true}/>
 </>
 
 const tab3=()=> <> 
-    <TabLorens/>
+    <TabLorens pagination={true}/>
 </>
 
 const tabList = [
@@ -31,7 +31,14 @@ export const Price = () => {
             <div className={styles.searchBlock}>
                 <Search/>
             </div>
-
+            <style jsx="true">{`
+              @media (max-width: 768px) {
+                body .ag-header  {
+                    display: none;
+                }
+              }
+            `}
+            </style>
             <Tabs tabList={tabList}/>
         </div>
     </section>

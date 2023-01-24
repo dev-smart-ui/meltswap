@@ -72,6 +72,10 @@
        margin-right: 5px;
        display: block;
 
+       &::first-letter {
+        text-transform: uppercase;
+       }
+
        @include md {
             display: inline-block;
        }

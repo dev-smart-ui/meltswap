@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../../priceItem/priceItem.module.scss'
+import styles from '../../../priceItem/priceItem.module.scss'
 export const TableBtn = () => {
 
     return(

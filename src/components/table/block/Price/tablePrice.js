@@ -1,9 +1,8 @@
 import React from 'react';
-import styles from '../../priceItem/priceItem.module.scss'
+import styles from '../../../priceItem/priceItem.module.scss'
 export const TablePrice = (props) => {
-    console.log(props);
 
-        if(!props?.data) {
+    if(!props?.data) {
             return <div/> 
         }
     return (<>

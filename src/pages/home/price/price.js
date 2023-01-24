@@ -29,6 +29,18 @@ export const Price = () => {
             <h2>Price charts</h2>
             <Tabs hideArrow={560} tabList={tabList}/>
             <a href='/price' className='button'>More assets</a>
+
+            <style jsx="true">{`
+                .ag-paging-panel {
+                    display: none;
+                }
+                @media (max-width: 768px) {
+                    body .ag-header  {
+                        display: none;
+                    }
+                }
+                `}
+            </style>
         </div>
     </section>
 };
