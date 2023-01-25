@@ -1,0 +1,18 @@
+:global {
+    .ag-header-cell[col-id="first"] .ag-header-cell-text {
+        margin:0;
+    }
+    .ag-header-cell-textpr {
+        margin:auto;
+    }
+    .ag-header-cell[col-id="first"] {
+        padding-right: 45px;
+    }
+    .ag-header-cell[col-id="first"] .ag-cell-label-container {
+        justify-content: start!important;
+    }
+    body .ag-header-cell-label {
+        flex: inherit;
+    }
+}
+

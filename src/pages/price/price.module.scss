@@ -95,8 +95,18 @@
 
   body .ag-header-cell[col-id='first'] {
     @include md {
+      padding-left: 20px;
+    }
+    @include lg {
       padding-left: 45px;
     }
+  }
+
+  body .ag-header-cell[col-id='second'] {
+    @include md {
+      padding-right: 45px;
+    }
+    
   }
 
   body .ag-root-wrapper {
@@ -118,11 +128,20 @@
     &:first-child {
       padding-left: 10px;
       @include md {
+        padding-left: 20px;
+      }
+      @include lg {
         padding-left: 45px;
       }
     }
     &:last-child {
       padding-right: 10px;
+      @include md {
+        padding-right: 20px;
+      }
+      @include lg {
+        padding-right: 45px;
+      }
     }
   }
   
@@ -146,6 +165,10 @@
     @include lg {
       font-size: 16px;
     }
+  } 
+
+  body .ag-cell-label-container {
+    flex-direction: inherit;
   }
 
 }

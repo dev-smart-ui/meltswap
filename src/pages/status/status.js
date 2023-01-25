@@ -4,7 +4,7 @@ import {Search} from "../../components/search/search";
 import {SearchStatus} from "../../components/searchStatus/searchStatus";
 
 import {Tabs} from "../../components/tabs/tabs";
-import {TabFromTo} from "../../components/table/tableFromTo";
+import {TabFromTo} from "../../components/table/tableFromTo/tableFromTo";
 
 import {DataPair} from "./pair/pairData/dataPair";
 import {PairHeader} from "./pair/pairHeader";

@@ -4,7 +4,7 @@ import 'ag-grid-community/styles/ag-grid.css';
 import 'ag-grid-community/styles/ag-theme-alpine.css';
 
 import {TableBtn} from "./block/Price/tableBtn";
-import {TablePrice} from "./block/Price/tablePrice";
+import {TablePriceMobile} from "./block/Price/tablePriceMobile";
 import {TableCurrencyName} from "./block/Price/tableCurrencyName";
 
 
@@ -29,7 +29,7 @@ export const TabGainers = () => {
     
         const colDefsMedalsExcluded = [
             { cellRenderer: TableCurrencyName, flex: 1.5, autoHeight:true},
-            { cellRenderer: TablePrice, flex: 1.2, autoHeight:true},
+            { cellRenderer: TablePriceMobile, flex: 1.2, autoHeight:true},
             { cellRenderer: TableBtn, flex: 0.7, autoHeight:true},
         ];
 
