@@ -30,7 +30,7 @@ export const TabCryptocurrencies = () => {
         // Columns that are output on the desktop version
         const columnDefsDesktop = [
             { headerName: '#', flex:0.6, colId:"first" , valueFormatter: idFormatter , valueGetter: 'node.id', autoHeight:true  },
-            { headerName: 'Currency', flex: 1.5, cellRenderer: TableCurrencyName, autoHeight:true},
+            { headerName: 'Currency', cellClass:"currency-block", flex: 1.5, cellRenderer: TableCurrencyName, autoHeight:true},
             { headerName: 'Price',  flex: 1.3, field: 'price', valueFormatter: currencyFormatter , autoHeight:true },
             { headerName: '24 Change',flex: 1, field: 'change', autoHeight:true },
             { headerName: 'Market Cap', flex: 1, field: 'marketCap', valueFormatter: currencyFormatter , autoHeight:true },
@@ -39,7 +39,7 @@ export const TabCryptocurrencies = () => {
     
         // Columns that are output on the mobile version
         const columnDefsModile = [
-            { cellRenderer: TableCurrencyName, flex: 1, autoHeight:true},
+            { cellRenderer: TableCurrencyName, cellClass:"currency-block", flex: 1, autoHeight:true},
             { cellRenderer: TablePriceMobile, maxWidth: 110,  autoHeight:true},
             { cellRenderer: TableBtn, maxWidth: 60, autoHeight:true},
         ];

@@ -67,13 +67,6 @@
       @include lg {
         padding-left: 45px;
       }
-
-      overflow-x: auto;
-      overflow-y: hidden;
-      &::-webkit-scrollbar{
-        height: 4px;
-        padding-top: 5px;
-      }
     }
     &:last-child {
       padding-right: 10px;
@@ -120,5 +113,12 @@
   }
   .ag-cell-value {
     overflow:inherit;
+  }
+  .currency-block {
+    overflow-x: auto;
+    overflow-y: hidden;
+    &::-webkit-scrollbar{
+      height: 7px;
+    }
   }
 }

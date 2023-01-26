@@ -14,7 +14,7 @@ export const TabFromTo = () => {
     const [rowData, setRowData] = useState();
 
     const columnDefs = [
-        { headerName: 'Currency', cellRenderer: TableFromToName, colId:"first", flex: 1, minWidth: 200, autoHeight:true},
+        { headerName: 'Currency', cellRenderer: TableFromToName, cellClass:"currency-block", colId:"first", flex: 1, minWidth: 200, autoHeight:true},
         { headerName: 'Status', cellRenderer: ButtonStatus , maxWidth: 150, autoHeight:true},
         { headerName: 'Exchange From', cellRenderer: Check,  maxWidth: 200, field: 'ticker', autoHeight:true},
         { headerName: 'Exchange To', cellRenderer: Check,  maxWidth: 200, field: 'ticker', autoHeight:true},
