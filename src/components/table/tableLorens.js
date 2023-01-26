@@ -54,8 +54,7 @@ export const TabLorens = () => {
 
     const defaultColDef = {
         resizable: true,
-        sortable: true,
-        wrapText: true
+        sortable: true
     };
     const paginationPageSize = 11;
     const domLayout = 'autoHeight';
