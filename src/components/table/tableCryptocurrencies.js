@@ -20,7 +20,7 @@ export const TabCryptocurrencies = () => {
 
         // add a "$" sign to the number and format it
         const currencyFormatter = (params) => {
-            return '$' + Intl.NumberFormat().format(params.value);
+            return '$' + Intl.NumberFormat('en-IN').format(params.value);
         };
 
         const idFormatter = (params) => {
