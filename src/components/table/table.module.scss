@@ -118,7 +118,11 @@
     overflow-x: auto;
     overflow-y: hidden;
     &::-webkit-scrollbar{
-      height: 7px;
+      height: 3px;
+
+      @include md {
+        height: 7px;
+      }
     }
   }
 }

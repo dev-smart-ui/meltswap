@@ -1,6 +1,6 @@
 import React from 'react';
 import coinranking from './img/coinranking-logo.svg';
-import cryptovirally from './img/cryptovirally-logo.svg';
+import cryptovirally from './img/cryptovirally-logo.png';
 import pixeltrue from './img/pixeltrue-logo.svg';
 
 
