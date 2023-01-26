@@ -1,5 +1,5 @@
 import React from 'react';
-import phone from './img/phones.svg';
+import phone from './img/phones.png';
 
 import styles from './application.module.scss'
 

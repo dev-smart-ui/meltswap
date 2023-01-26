@@ -97,15 +97,17 @@
        position: absolute;
        right: 51px;
        bottom: -40px;
+       
     }
 
     @include lg {
-        bottom: -46px;
-        max-width: 39%;
+        bottom: -43px;
+        max-width: 359px;
+        
     }
 
     @include xxl {
+        max-width: 477px;
         bottom: -108px;
-        max-width: 100%;
     }
 }
