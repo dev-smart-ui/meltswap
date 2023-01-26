@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './price.module.scss'
+import classNames from "classnames";
 import {Tabs} from "../../../components/tabs/tabs";
 import {TabCryptocurrencies} from "../../../components/table/tableCryptocurrencies";
 import {TabGainers} from "../../../components/table/tableGainers";
@@ -28,7 +29,7 @@ export const Price = () => {
         <div className='container'>
             <h2>Price charts</h2>
             <Tabs hideArrow={560} tabList={tabList}/>
-            <a href='/price' className='button'>More assets</a>
+            <a href='/price'  className={classNames(styles.more , " button") } >More assets</a>
 
             <style jsx="true">{`
                 .ag-paging-panel {

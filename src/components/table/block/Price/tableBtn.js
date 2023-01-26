@@ -4,7 +4,7 @@ export const TableBtn = () => {
 
     return(
       <div className={styles.btnExchange}>
-        <button type='button'>Exchange</button>
+        <a href='/enter'>Exchange</a>
     </div>
     )
 };

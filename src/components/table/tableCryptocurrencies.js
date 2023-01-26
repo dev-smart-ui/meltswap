@@ -2,7 +2,7 @@ import {useState, useEffect} from 'react';
 import {AgGridReact} from 'ag-grid-react';
 import 'ag-grid-community/styles/ag-grid.css';
 import 'ag-grid-community/styles/ag-theme-alpine.css';
-
+import './table.module.scss';
 import {TableBtn} from "./block/Price/tableBtn";
 import {TablePriceMobile} from "./block/Price/tablePriceMobile";
 import {TableCurrencyName} from "./block/Price/tableCurrencyName";
@@ -23,9 +23,13 @@ export const TabCryptocurrencies = () => {
             return '$' + Intl.NumberFormat().format(params.value);
         };
 
+        const idFormatter = (params) => {
+            return params.value * 1 + 1;
+        };
+
         // Columns that are output on the desktop version
         const columnDefsDesktop = [
-            { headerName: '#', flex:0.6, colId:"first" , valueGetter: 'node.id', autoHeight:true  },
+            { headerName: '#', flex:0.6, colId:"first" , valueFormatter: idFormatter , valueGetter: 'node.id', autoHeight:true  },
             { headerName: 'Currency', flex: 1.5, cellRenderer: TableCurrencyName, autoHeight:true},
             { headerName: 'Price',  flex: 1.3, field: 'price', valueFormatter: currencyFormatter , autoHeight:true },
             { headerName: '24 Change',flex: 1, field: 'change', autoHeight:true },
@@ -50,8 +54,7 @@ export const TabCryptocurrencies = () => {
 
     const defaultColDef = {
         resizable: true,
-        sortable: true,
-        wrapText: true
+        sortable: true
     };
     const paginationPageSize = 11;
     const domLayout = 'autoHeight';

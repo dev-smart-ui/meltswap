@@ -17,26 +17,37 @@ export const TabGainers = () => {
         fetch('./CoinPrices.json')
         .then(result => result.json())
         .then(rowData => setRowData(rowData.data.coins))
-       
-        const columnDefsMedalsIncluded = [
-            { headerName: '#', width:110, colId:"first", valueGetter: 'node.id', autoHeight:true  },
+
+        // add a "$" sign to the number and format it
+        const currencyFormatter = (params) => {
+            return '$' + Intl.NumberFormat().format(params.value);
+        };
+
+        const idFormatter = (params) => {
+            return params.value * 1 + 1;
+        };
+
+        // Columns that are output on the desktop version
+        const columnDefsDesktop = [
+            { headerName: '#', flex:0.6, colId:"first" , valueFormatter: idFormatter , valueGetter: 'node.id', autoHeight:true  },
             { headerName: 'Currency', flex: 1.5, cellRenderer: TableCurrencyName, autoHeight:true},
-            { headerName: 'Price',  flex: 1.3, field: 'price', autoHeight:true },
+            { headerName: 'Price',  flex: 1.3, field: 'price', valueFormatter: currencyFormatter , autoHeight:true },
             { headerName: '24 Change',flex: 1, field: 'change', autoHeight:true },
-            { headerName: 'Market Cap', flex: 1, field: 'marketCap', autoHeight:true },
+            { headerName: 'Market Cap', flex: 1, field: 'marketCap', valueFormatter: currencyFormatter , autoHeight:true },
             { cellRenderer: TableBtn,  flex: 1,autoHeight:true},
-          ];
+        ];
     
-        const colDefsMedalsExcluded = [
-            { cellRenderer: TableCurrencyName, flex: 1.5, autoHeight:true},
-            { cellRenderer: TablePriceMobile, flex: 1.2, autoHeight:true},
-            { cellRenderer: TableBtn, flex: 0.7, autoHeight:true},
+        // Columns that are output on the mobile version
+        const columnDefsModile = [
+            { cellRenderer: TableCurrencyName, flex: 1, autoHeight:true},
+            { cellRenderer: TablePriceMobile, maxWidth: 110,  autoHeight:true},
+            { cellRenderer: TableBtn, maxWidth: 60, autoHeight:true},
         ];
 
         if(window.screen.width < 768) {
-            setColumnDefs(colDefsMedalsExcluded);
+            setColumnDefs(columnDefsModile);
         } else {
-            setColumnDefs(columnDefsMedalsIncluded);
+            setColumnDefs(columnDefsDesktop);
         }
     
     }, []);

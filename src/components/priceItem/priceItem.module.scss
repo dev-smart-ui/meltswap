@@ -82,12 +82,12 @@
     }
 }
 
-.btnExchange button {
+.btnExchange a {
     width: 31px;
+    display: block;
     height: 31px;
     background: #6DD7C3 url("./img/exchange.svg") no-repeat center;
     border-radius: 10px;
-    padding: 11px 0;
     font-family: $secondFont;
     font-weight: 700;
     font-size: 0;
@@ -100,7 +100,6 @@
     margin-left: auto;
 
     @include md {
-        display: inline-block;
         max-width: 112px;
         width: 100%;
         height: auto;
